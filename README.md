@@ -8,11 +8,14 @@ Compatible con entornos de orquestacion autonoma como Hermes, OpenClaw, interfac
 * **Sergio Aparicio**
 * **Juan Diego Leon**
 
+> 📄 **Documento Técnico Oficial:** Para consultar el análisis exhaustivo de arquitectura, motor vectorial, gobernanza HITL, pruebas unitarias y consumo detallado de tokens, accede al [Reporte Técnico Completo (REPORTE_TECNICO.md)](./REPORTE_TECNICO.md).
+
 ---
 
 
 ## Indice General y Navegacion por Paginas
 
+* 📄 **[Reporte Técnico Completo (Whitepaper y Token Budget)](./REPORTE_TECNICO.md)**
 1. [Pagina 1: Vision General y Fundamento Juridico-Constitucional](#pagina-1-vision-general-y-fundamento-juridico-constitucional)
 2. [Pagina 2: Arquitectura Tecnica y Matriz de las 6 Herramientas](#pagina-2-arquitectura-tecnica-y-matriz-de-las-6-herramientas)
 3. [Pagina 3: Motor RAG Hibrido y Base de Datos Vectorial SQLite](#pagina-3-motor-rag-hibrido-y-base-de-datos-vectorial-sqlite)
@@ -158,6 +161,7 @@ AMPARA/
 ├── hermes_manifest.json     # Manifiesto raiz de interoperabilidad
 ├── main.py                  # Script ejecutable de demostracion integral
 ├── README.md                # Documentacion principal del repositorio
+├── REPORTE_TECNICO.md       # Reporte tecnico exhaustivo, arquitectura y token budget
 └── requirements.txt         # Especificacion de dependencias Python
 ```
 
