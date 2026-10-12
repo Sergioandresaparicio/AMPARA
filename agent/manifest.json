@@ -1,0 +1,360 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "name": "AMPARA",
+  "display_name": "AMPARA - Asistente Jurídico en Salud y Tutelas",
+  "version": "1.0.0",
+  "description": "Agente autónomo experto en el Sistema General de Seguridad Social en Salud de Colombia y la Acción de Tutela (Art. 86 CP y Decreto 2591 de 1991). Diseñado para orquestación en Hermes, OpenClaw y servidores MCP.",
+  "author": "Equipo AMPARA",
+  "license": "MIT",
+  "runtime": {
+    "type": "python",
+    "version": ">=3.11",
+    "entrypoint": "main.py",
+    "module_path": "agent.tools"
+  },
+  "governance": {
+    "system_prompt_file": "SOUL.md",
+    "audit_logging": "S4_UNATTENDED_JSON",
+    "privacy_policy": {
+      "data_masking_enabled": true,
+      "pii_tokenization": ["[PACIENTE_X]", "[CEDULA_X]", "[EPS_X]"],
+      "phi_consent_required": true,
+      "regulation": "Ley Estatutaria 1581 de 2012 y Ley 1751 de 2015"
+    },
+    "interrupt_nodes": [
+      {
+        "id": "INTERRUPT_CONSENT_PHI",
+        "phase": "COLLECTION",
+        "description": "Interrupción forzada para solicitar y validar consentimiento informado antes de procesar diagnósticos o historias clínicas.",
+        "trigger": "consent_status != 'GRANTED'"
+      },
+      {
+        "id": "INTERRUPT_CRITICAL_VITAL_RISK",
+        "phase": "RISK_ANALYSIS",
+        "description": "Interrupción de emergencia vital cuando se detecta riesgo inminente a la vida o patologías de alto costo (cáncer, diálisis, urgencias vitales).",
+        "trigger": "critical_escalation == true"
+      },
+      {
+        "id": "INTERRUPT_HUMAN_REVIEW_DRAFT",
+        "phase": "VERIFICATION",
+        "description": "Interrupción obligatoria de revisión humana antes de dar por definitivo o radicar cualquier memorial judicial.",
+        "trigger": "human_review_required == true"
+      }
+    ]
+  },
+  "tools": [
+    {
+      "name": "state_machine_interview",
+      "display_name": "Case Interviewer",
+      "category": "intake",
+      "description": "Entrevista guiada estructurada para casos de tutela en salud en Colombia. Gestiona una máquina de estados finita (CONSENT, CLASSIFICATION, COLLECTION, RISK, COMPLETED), valida campos obligatorios y detecta banderas de urgencia vital crítica.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "user_message": {
+            "type": "string",
+            "description": "Mensaje enviado por el usuario o paciente en la entrevista."
+          },
+          "case_state": {
+            "type": "object",
+            "description": "Estado actual acumulado del expediente (fase, hechos, consentimiento y riesgos). Si es el primer mensaje, enviar null."
+          },
+          "hitl_action": {
+            "type": "string",
+            "enum": ["resume", "abort", null],
+            "description": "Acción tomada por el operador humano ante una interrupción previa."
+          },
+          "hitl_feedback": {
+            "type": "string",
+            "description": "Observaciones o instrucciones ingresadas por el operador humano."
+          }
+        },
+        "required": ["user_message"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "assistant_response": {"type": "string"},
+          "current_state": {"type": "string"},
+          "consent_status": {"type": "string"},
+          "risk_level": {"type": "string"},
+          "critical_escalation": {"type": "boolean"},
+          "human_review_required": {"type": "boolean"},
+          "case_state": {"type": "object"}
+        }
+      }
+    },
+    {
+      "name": "legal_rag_search",
+      "display_name": "Legal Knowledge Search",
+      "category": "knowledge_retrieval",
+      "description": "Búsqueda híbrida (vectorial densa 55% + BM25 léxica 45%) sobre la base SQLite (228 fragmentos vectorizados) de corpus normativo y jurisprudencial estructurado bajo las 6 Consultas Base de la Corte Constitucional (Entrada 4): medicamentos, No PBS/MIPRES, citas con especialistas, cirugías e integralidad, sujetos de especial protección (cáncer/urgencias vitales) y transporte/viáticos.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "query": {
+            "type": "string",
+            "description": "Término de consulta jurídica, situación de hecho o derecho vulnerado."
+          },
+          "top_k": {
+            "type": "integer",
+            "default": 3,
+            "description": "Número de fuentes jurisprudenciales o normativas a recuperar (1 a 10)."
+          },
+          "filter_type": {
+            "type": "string",
+            "enum": ["all", "norma", "jurisprudencia"],
+            "default": "all",
+            "description": "Filtro de tipología de fuente legal."
+          }
+        },
+        "required": ["query"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "query": {"type": "string"},
+          "total_found": {"type": "integer"},
+          "results": {
+            "type": "array",
+            "items": {
+              "type": "object",
+              "properties": {
+                "chunk_id": {"type": "string"},
+                "title": {"type": "string"},
+                "score": {"type": "number"},
+                "snippet": {"type": "string"},
+                "metadata": {"type": "object"}
+              }
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "ocr_and_document_parser",
+      "display_name": "Document Analyzer",
+      "category": "document_analysis",
+      "description": "Analizador y extractor estructurado para 8 tipologías de documentos médicos y judiciales (Fórmula Médica, Historia Clínica con CIE-10, Carta de Negación EPS, Derecho de Petición, Auto Judicial, Fallo de Tutela, Incapacidad Económica, Cédula). Evalúa calidad de escaneo y emite alertas clínicas.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "document_text": {
+            "type": "string",
+            "description": "Texto extraído por OCR o transcrito del documento médico o judicial."
+          },
+          "document_type_hint": {
+            "type": "string",
+            "enum": [
+              "AUTO",
+              "FORMULA_MEDICA",
+              "HISTORIA_CLINICA",
+              "CARTA_NEGACION_EPS",
+              "DERECHO_PETICION",
+              "AUTO_JUDICIAL",
+              "FALLO_TUTELA",
+              "INCAPACIDAD_ECONOMICA",
+              "DOCUMENTO_IDENTIDAD"
+            ],
+            "default": "AUTO",
+            "description": "Sugerencia de tipo documental; si es 'AUTO', el clasificador semántico lo determinará automáticamente."
+          },
+          "file_path": {
+            "type": "string",
+            "description": "Ruta opcional al archivo original (PDF, JPG, PNG) para auditoría."
+          }
+        },
+        "required": ["document_text"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "document_type": {"type": "string"},
+          "document_description": {"type": "string"},
+          "scan_quality": {
+            "type": "object",
+            "properties": {
+              "score": {"type": "number"},
+              "status": {"type": "string"},
+              "warnings": {"type": "array", "items": {"type": "string"}}
+            }
+          },
+          "extracted_entities": {"type": "object"},
+          "critical_alerts": {"type": "array", "items": {"type": "string"}},
+          "summary_for_tutela": {"type": "string"}
+        }
+      }
+    },
+    {
+      "name": "draft_template_engine",
+      "display_name": "Petition Generator",
+      "category": "legal_drafting",
+      "description": "Motor de generación de memoriales judiciales rigurosos bajo el Decreto 2591 de 1991: Acción de Tutela ordinaria, Tutela con Medidas Cautelares Provisionales (Art. 7), Derecho de Petición, Incidente de Desacato e Impugnación de Fallo, cubriendo 8 materias de salud.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "case_data": {
+            "type": "object",
+            "description": "Datos estructurados del paciente y del caso (patient_name, patient_id, eps_name, diagnosis, urgency_level, city, etc.).",
+            "required": ["patient_name", "eps_name"]
+          },
+          "legal_sources": {
+            "type": "array",
+            "description": "Fuentes jurisprudenciales y normativas recuperadas previamente por Legal RAG.",
+            "items": {"type": "object"}
+          },
+          "document_analyses": {
+            "type": "array",
+            "description": "Resultados de análisis documentales emitidos por Document Analyzer.",
+            "items": {"type": "object"}
+          },
+          "action_type": {
+            "type": "string",
+            "enum": [
+              "AUTO",
+              "ACCION_TUTELA",
+              "TUTELA_CON_MEDIDA_PROVISIONAL",
+              "DERECHO_PETICION",
+              "INCIDENTE_DESACATO",
+              "IMPUGNACION_FALLO"
+            ],
+            "default": "AUTO",
+            "description": "Tipo de memorial procesal a redactar."
+          },
+          "subject_matter": {
+            "type": "string",
+            "description": "Materia específica del reclamo (medicamentos, cirugias, tratamientos, citas_especialista, traslados, etc.)."
+          },
+          "export_docx": {
+            "type": "boolean",
+            "default": false,
+            "description": "Si es True, exporta automáticamente el memorial en formato Microsoft Word (.docx) formalmente maquetado."
+          },
+          "output_docx_path": {
+            "type": "string",
+            "description": "Ruta opcional personalizada para almacenar el documento Word (.docx) generado."
+          }
+        },
+        "required": ["case_data"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "action_type": {"type": "string"},
+          "subject_matter": {"type": "string"},
+          "full_draft": {"type": "string"},
+          "docx_path": {"type": "string"},
+          "docx_file_path": {"type": "string"},
+          "sections": {"type": "object"},
+          "metadata": {
+            "type": "object",
+            "properties": {
+              "word_count": {"type": "integer"},
+              "estimated_pages": {"type": "integer"},
+              "has_provisional_measures": {"type": "boolean"},
+              "human_review_required": {"type": "boolean"},
+              "docx_generated": {"type": "boolean"}
+            }
+          }
+        }
+      }
+    },
+    {
+      "name": "case_db_crud",
+      "display_name": "Case Tracker",
+      "category": "case_management",
+      "description": "Base relacional SQLite para la gestión de expedientes digitales, trazabilidad de eventos y cómputo de términos legales perentorios colombianos (10 días hábiles fallo tutela Art. 86 CP, 15 días derecho de petición, 48 horas medidas cautelares, 3 días impugnación).",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "action": {
+            "type": "string",
+            "enum": [
+              "create",
+              "read",
+              "update",
+              "delete",
+              "list",
+              "add_event",
+              "get_timeline",
+              "calculate_deadlines"
+            ],
+            "description": "Operación CRUD o de cómputo de plazos a ejecutar."
+          },
+          "case_id": {
+            "type": "string",
+            "description": "Identificador único del expediente (ej. AMP-2026-00492)."
+          },
+          "case_data": {
+            "type": "object",
+            "description": "Diccionario con datos del caso (patient_name, patient_id, eps_name, case_type, urgency_level, facts, etc.)."
+          },
+          "event_data": {
+            "type": "object",
+            "description": "Datos de evento procesal para registrar en la línea de tiempo (event_type, description, actor, deadline_impact)."
+          },
+          "filing_date": {
+            "type": "string",
+            "description": "Fecha de radicación judicial en formato YYYY-MM-DD para calcular términos."
+          },
+          "action_type": {
+            "type": "string",
+            "description": "Tipo de acción (ACCION_TUTELA, DERECHO_PETICION, etc.) para aplicar la regla de términos correspondiente."
+          }
+        },
+        "required": ["action"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "status": {"type": "string"},
+          "case": {"type": "object"},
+          "timeline": {"type": "array", "items": {"type": "object"}},
+          "deadlines": {"type": "object"}
+        }
+      }
+    },
+    {
+      "name": "semantic_compliance_eval",
+      "display_name": "Compliance Checker",
+      "category": "compliance_auditing",
+      "description": "Auditor semántico de respuestas de la EPS frente a fallos judiciales o solicitudes del paciente. Detecta tácticas dilatorias evasivas (remisiones a Mipres/CTC, desabastecimiento, falta de red de prestadores) y proyecta Incidente de Desacato bajo el Art. 52 del Decreto 2591 de 1991.",
+      "parameters": {
+        "type": "object",
+        "properties": {
+          "petition_summary": {
+            "type": "string",
+            "description": "Resumen de lo solicitado por el paciente o de la orden impartida por el juez."
+          },
+          "eps_response_text": {
+            "type": "string",
+            "description": "Texto completo de la respuesta o comunicación emitida por la EPS."
+          },
+          "court_order_text": {
+            "type": "string",
+            "description": "Texto específico de la parte resolutiva del fallo judicial tutelar, si aplica."
+          },
+          "patient_condition": {
+            "type": "string",
+            "description": "Condición clínica del paciente para sopesar riesgo de daño irreparable."
+          }
+        },
+        "required": ["petition_summary", "eps_response_text"]
+      },
+      "returns": {
+        "type": "object",
+        "properties": {
+          "compliance_status": {
+            "type": "string",
+            "enum": ["CUMPLIMIENTO_TOTAL", "CUMPLIMIENTO_PARCIAL", "INCUMPLIMIENTO_EVASIVO", "NEGACION_EXPRESA", "RESPUESTA_AMBIGUA"]
+          },
+          "evasive_tactics_detected": {"type": "array", "items": {"type": "string"}},
+          "similarity_score": {"type": "number"},
+          "legal_recommendation": {"type": "string"},
+          "desacato_recommended": {"type": "boolean"},
+          "analysis_details": {"type": "object"}
+        }
+      }
+    }
+  ]
+}

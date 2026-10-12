@@ -1,0 +1,926 @@
+{\rtf1\adeflang1025\ansi\ansicpg1252\uc1\adeff0\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang3082\deflangfe3082{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f2\fmodern\fcharset0\fprq1{\*\panose 02070309020205020404}Courier New;}{\f3\froman\fcharset2\fprq2{\*\panose 05050102010706020507}Symbol;}{\f10\fnil\fcharset2\fprq2{\*\panose 05000000000000000000}Wingdings;}
+{\f36\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f37\froman\fcharset238\fprq2 Times New Roman CE;}{\f38\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f40\froman\fcharset161\fprq2 Times New Roman Greek;}
+{\f41\froman\fcharset162\fprq2 Times New Roman Tur;}{\f42\fbidi \froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f43\fbidi \froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f44\froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\f45\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f47\fswiss\fcharset238\fprq2 Arial CE;}{\f48\fswiss\fcharset204\fprq2 Arial Cyr;}{\f50\fswiss\fcharset161\fprq2 Arial Greek;}{\f51\fswiss\fcharset162\fprq2 Arial Tur;}
+{\f52\fbidi \fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f53\fbidi \fswiss\fcharset178\fprq2 Arial (Arabic);}{\f54\fswiss\fcharset186\fprq2 Arial Baltic;}{\f55\fswiss\fcharset163\fprq2 Arial (Vietnamese);}{\f57\fmodern\fcharset238\fprq1 Courier New CE;}
+{\f58\fmodern\fcharset204\fprq1 Courier New Cyr;}{\f60\fmodern\fcharset161\fprq1 Courier New Greek;}{\f61\fmodern\fcharset162\fprq1 Courier New Tur;}{\f62\fbidi \fmodern\fcharset177\fprq1 Courier New (Hebrew);}
+{\f63\fbidi \fmodern\fcharset178\fprq1 Courier New (Arabic);}{\f64\fmodern\fcharset186\fprq1 Courier New Baltic;}{\f65\fmodern\fcharset163\fprq1 Courier New (Vietnamese);}{\f397\fswiss\fcharset238\fprq2 Tahoma CE;}
+{\f398\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f400\fswiss\fcharset161\fprq2 Tahoma Greek;}{\f401\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f402\fbidi \fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f403\fbidi \fswiss\fcharset178\fprq2 Tahoma (Arabic);}
+{\f404\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f405\fswiss\fcharset163\fprq2 Tahoma (Vietnamese);}{\f406\fswiss\fcharset222\fprq2 Tahoma (Thai);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;\red240\green245\blue255;}{\stylesheet{\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 
+\snext0 \styrsid15156238 Normal;}{\s1\ql \li0\ri0\sb240\sa60\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \ab\af1\afs32\alang1025 \ltrch\fcs0 
+\b\f1\fs32\lang3082\langfe3082\kerning32\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid5025 heading 1;}{\s4\ql \li0\ri0\sb240\sa60\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\ab\af0\afs28\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid5025 heading 4;}{\s5\ql \li0\ri0\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel4\adjustright\rin0\lin0\itap0 
+\rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid15156238 heading 5;}{
+\s6\qc \li0\ri0\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel5\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \styrsid15156238 
+heading 6;}{\*\cs10 \additive \slink33 \slocked \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tblind0\tblindtype3\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{
+\s15\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af36\afs16\alang1025 \ltrch\fcs0 \f36\fs16\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext15 \ssemihidden Balloon Text;}{
+\s16\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext16 \ssemihidden \styrsid15156238 
+footnote text,Texto nota pie Car,Footnote Text Char Char Char Char Char,Footnote Text Char Char Char Char,Footnote reference,FA Fu,Footnote Text Char Char Char;}{\s17\qc \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 \ssemihidden \styrsid15156238 caption;}{\s18\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 
+\rtlch\fcs1 \ab\af0\afs24\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext18 \styrsid15156238 Body Text;}{\s19\qj \li360\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0 
+\rtlch\fcs1 \ai\af0\afs24\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext19 \styrsid15156238 Body Text Indent;}{\s20\qj \li0\ri-232\widctlpar\wrapdefault\nooverflow\faauto\rin-232\lin0\itap0 \rtlch\fcs1 
+\af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext20 \styrsid15156238 Body Text 3;}{\s21\qj \li0\ri-232\widctlpar\wrapdefault\faauto\adjustright\rin-232\lin0\itap0 \rtlch\fcs1 \af0\afs28\alang1025 
+\ltrch\fcs0 \fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext21 \styrsid15156238 Sangr\'eda de t. independiente;}{\*\cs22 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \super \sbasedon10 \ssemihidden \styrsid15156238 footnote reference;}{
+\s23\qj \li567\ri51\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin51\lin567\itap0 \rtlch\fcs1 \ai\af0\afs28\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe1033\cgrid\langnp3082\langfenp1033 \sbasedon0 \snext23 \styrsid5025 Block Text;}{
+\s24\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext24 \styrsid15486898 
+footer;}{\*\cs25 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \sbasedon10 \styrsid15486898 page number;}{\s26\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 
+\ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext26 \styrsid15486898 header;}{\s27\qj \li0\ri0\sl360\slmult1\nowidctlpar\wrapdefault\nooverflow\faroman\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs28\alang1025 \ltrch\fcs0 
+\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext27 \styrsid16733234 Body Text 21;}{\*\cs28 \additive \rtlch\fcs1 \ab\af0 \ltrch\fcs0 \b \sbasedon10 \styrsid6955073 Strong;}{
+\s29\ql \li0\ri0\sb100\sa100\sbauto1\saauto1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 
+\sbasedon0 \snext29 \styrsid13257708 Normal (Web);}{\s30\ql \li0\ri0\sa120\sl480\slmult1\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext30 \styrsid11484405 Body Text 2;}{\*\cs31 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \i \sbasedon10 \styrsid4154712 Emphasis;}{\*\cs32 \additive \rtlch\fcs1 \af0 \ltrch\fcs0 \ul\cf2 
+\sbasedon10 \styrsid4154712 Hyperlink;}{\s33\ql \li0\ri0\sa160\sl-240\slmult0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\cf1\lang1024\langfe1024\cgrid\noproof\langnp9226\langfenp3082 \sbasedon0 \snext33 \slink10 \styrsid2693557 Car;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}{\*\listtable{\list\listtemplateid1139306466\listhybrid{\listlevel\levelnfc23\levelnfcn23
+\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace360\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace360\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360
+\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid382556437}{\list\listtemplateid2018660646\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat5\levelspace0\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid618532566}{\list\listtemplateid1782238670\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid778140242}{\list\listtemplateid-1674940372\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid840317014}{\list\listtemplateid-1778855790\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat5\levelspace0
+\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid982541143}{\list\listtemplateid209241576\listhybrid{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace0
+\levelindent0{\leveltext\leveltemplateid-720733388\'02\'00);}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\fbias0 \fi-720\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'04.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1001543433}{\list\listtemplateid1715481150\listhybrid{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23
+\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0
+\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1040782832}{\list\listtemplateid-109814166\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat5\levelspace0\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1055620522}{\list\listtemplateid1939886682\listhybrid{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace0
+\levelindent0{\leveltext\leveltemplateid77640894\'02\'00);}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fbias0 \fi-720\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'04.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1328165368}{\list\listtemplateid-2031163412\listhybrid{\listlevel
+\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\levelspace360\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li720\jclisttab\tx720\lin720 }{\listlevel\levelnfc23\levelnfcn23\leveljc0
+\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace360\levelindent0{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace360\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360
+\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0
+{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace360\levelindent0{\leveltext
+\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1354041055}{\list\listtemplateid1300666632\listhybrid{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0
+\levelstartat0\levelspace0\levelindent0{\leveltext\leveltemplateid1063695338\'01-;}{\levelnumbers;}\loch\af0\hich\af0\dbch\af0\fbias0 \fi-360\li360\jclisttab\tx360\lin360 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1
+\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0
+\levelindent0{\leveltext\leveltemplateid201981957\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li1800\jclisttab\tx1800\lin1800 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0
+{\leveltext\leveltemplateid201981953\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li2520\jclisttab\tx2520\lin2520 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext
+\leveltemplateid201981955\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li3240\jclisttab\tx3240\lin3240 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li3960\jclisttab\tx3960\lin3960 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981953
+\'01\u-3913 ?;}{\levelnumbers;}\f3\fbias0 \fi-360\li4680\jclisttab\tx4680\lin4680 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981955
+\'01o;}{\levelnumbers;}\f2\fbias0 \fi-360\li5400\jclisttab\tx5400\lin5400 }{\listlevel\levelnfc23\levelnfcn23\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative\levelspace0\levelindent0{\leveltext\leveltemplateid201981957
+\'01\u-3929 ?;}{\levelnumbers;}\f10\fbias0 \fi-360\li6120\jclisttab\tx6120\lin6120 }{\listname ;}\listid1709454129}{\list\listtemplateid-952307982\listhybrid{\listlevel\levelnfc2\levelnfcn2\leveljc0\leveljcn0\levelfollow0\levelstartat2\levelspace0
+\levelindent0{\leveltext\leveltemplateid-805377642\'02\'00);}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\fbias0 \fi-720\li1080\jclisttab\tx1080\lin1080 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'01.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li1440\jclisttab\tx1440\lin1440 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'02.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li2160\jclisttab\tx2160\lin2160 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'03.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li2880\jclisttab\tx2880\lin2880 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'04.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li3600\jclisttab\tx3600\lin3600 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'05.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li4320\jclisttab\tx4320\lin4320 }{\listlevel\levelnfc0\levelnfcn0\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981967\'02\'06.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5040\jclisttab\tx5040\lin5040 }{\listlevel\levelnfc4\levelnfcn4\leveljc0\leveljcn0\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981977\'02\'07.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-360\li5760\jclisttab\tx5760\lin5760 }{\listlevel\levelnfc2\levelnfcn2\leveljc2\leveljcn2\levelfollow0\levelstartat1\lvltentative
+\levelspace0\levelindent0{\leveltext\leveltemplateid201981979\'02\'08.;}{\levelnumbers\'01;}\rtlch\fcs1 \af0 \ltrch\fcs0 \fi-180\li6480\jclisttab\tx6480\lin6480 }{\listname ;}\listid1872913756}}{\*\listoverridetable{\listoverride\listid840317014
+\listoverridecount0\ls1}{\listoverride\listid1040782832\listoverridecount0\ls2}{\listoverride\listid778140242\listoverridecount0\ls3}{\listoverride\listid982541143\listoverridecount0\ls4}{\listoverride\listid618532566\listoverridecount0\ls5}
+{\listoverride\listid382556437\listoverridecount0\ls6}{\listoverride\listid1055620522\listoverridecount0\ls7}{\listoverride\listid1328165368\listoverridecount0\ls8}{\listoverride\listid1872913756\listoverridecount0\ls9}{\listoverride\listid1001543433
+\listoverridecount0\ls10}{\listoverride\listid1354041055\listoverridecount0\ls11}{\listoverride\listid1709454129\listoverridecount0\ls12}}{\*\pgptbl {\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}{\pgp\ipgp0\itap0\li0\ri0\sb0\sa0}}{\*\rsidtbl \rsid126\rsid694\rsid5025
+\rsid73489\rsid80142\rsid91440\rsid91771\rsid133787\rsid136828\rsid137107\rsid210274\rsid218862\rsid282508\rsid290116\rsid293894\rsid354658\rsid355836\rsid359942\rsid400360\rsid472574\rsid473503\rsid474755\rsid487748\rsid539009\rsid545803\rsid600989
+\rsid735513\rsid739026\rsid790974\rsid799232\rsid804272\rsid817344\rsid818605\rsid862700\rsid863564\rsid929104\rsid986892\rsid1001492\rsid1065954\rsid1066872\rsid1078512\rsid1080462\rsid1118662\rsid1140099\rsid1329367\rsid1383760\rsid1396326\rsid1399513
+\rsid1472669\rsid1529910\rsid1591057\rsid1597011\rsid1652725\rsid1704558\rsid1705052\rsid1777440\rsid1779123\rsid1780739\rsid1797473\rsid1838917\rsid1849058\rsid1996100\rsid2172223\rsid2194722\rsid2236763\rsid2243330\rsid2243400\rsid2253663\rsid2256168
+\rsid2257344\rsid2305881\rsid2386345\rsid2431070\rsid2447607\rsid2505076\rsid2577373\rsid2652551\rsid2690705\rsid2693557\rsid2712732\rsid2716101\rsid2774870\rsid2821687\rsid2907068\rsid2966939\rsid2981341\rsid3015759\rsid3031577\rsid3036762\rsid3037396
+\rsid3146983\rsid3170333\rsid3226987\rsid3240700\rsid3366299\rsid3371604\rsid3414293\rsid3473528\rsid3475988\rsid3477174\rsid3485370\rsid3489727\rsid3502870\rsid3505275\rsid3544320\rsid3554385\rsid3560966\rsid3605560\rsid3611813\rsid3614909\rsid3625749
+\rsid3626169\rsid3678181\rsid3693595\rsid3762150\rsid3810632\rsid3833131\rsid3880773\rsid3892490\rsid3897560\rsid4003317\rsid4003873\rsid4021358\rsid4154712\rsid4156365\rsid4218842\rsid4261849\rsid4262134\rsid4287918\rsid4337928\rsid4406369\rsid4416305
+\rsid4462911\rsid4473515\rsid4535267\rsid4592899\rsid4600482\rsid4615929\rsid4655078\rsid4656012\rsid4659066\rsid4728530\rsid4743954\rsid4785401\rsid4874824\rsid4876339\rsid4877821\rsid4984206\rsid4989393\rsid5008010\rsid5057443\rsid5112354\rsid5133740
+\rsid5183693\rsid5202398\rsid5262037\rsid5375334\rsid5398913\rsid5506668\rsid5506744\rsid5513182\rsid5515387\rsid5523250\rsid5581053\rsid5596819\rsid5656520\rsid5706092\rsid5724706\rsid5767791\rsid5795047\rsid5799648\rsid5839906\rsid5846275\rsid5854915
+\rsid5858004\rsid5861720\rsid5864293\rsid5905920\rsid5909000\rsid5912116\rsid5917001\rsid5927534\rsid5982979\rsid5993205\rsid6042196\rsid6100057\rsid6116186\rsid6123043\rsid6124516\rsid6162312\rsid6167747\rsid6176789\rsid6183015\rsid6230966\rsid6235612
+\rsid6241839\rsid6243523\rsid6317212\rsid6371259\rsid6383618\rsid6427597\rsid6556693\rsid6559144\rsid6620676\rsid6621566\rsid6631174\rsid6647635\rsid6685448\rsid6687762\rsid6694640\rsid6702930\rsid6710778\rsid6756707\rsid6894777\rsid6896335\rsid6946946
+\rsid6955073\rsid7016765\rsid7026496\rsid7034696\rsid7035196\rsid7085793\rsid7106500\rsid7170225\rsid7175883\rsid7285999\rsid7299590\rsid7305980\rsid7350250\rsid7426199\rsid7435865\rsid7472046\rsid7478290\rsid7538269\rsid7538736\rsid7542902\rsid7610012
+\rsid7611802\rsid7741172\rsid7743849\rsid7756267\rsid7802986\rsid7812035\rsid7830476\rsid7893463\rsid7938467\rsid7941865\rsid7951936\rsid8022602\rsid8026237\rsid8070713\rsid8091706\rsid8138304\rsid8147797\rsid8200873\rsid8208196\rsid8266238\rsid8267188
+\rsid8271580\rsid8278145\rsid8279092\rsid8287772\rsid8400046\rsid8409695\rsid8409974\rsid8412180\rsid8482825\rsid8482977\rsid8531804\rsid8534452\rsid8650954\rsid8677025\rsid8716342\rsid8788269\rsid8852489\rsid8877476\rsid8919252\rsid8986202\rsid8989630
+\rsid8990431\rsid8994913\rsid9065478\rsid9076127\rsid9120867\rsid9140598\rsid9141218\rsid9205814\rsid9250250\rsid9251492\rsid9253621\rsid9336816\rsid9374385\rsid9385588\rsid9389734\rsid9397717\rsid9444737\rsid9466387\rsid9467546\rsid9503652\rsid9577238
+\rsid9703677\rsid9705815\rsid9712685\rsid9723666\rsid9773288\rsid9775052\rsid9783263\rsid9855991\rsid9917077\rsid9966367\rsid9979726\rsid10029825\rsid10042672\rsid10052389\rsid10097367\rsid10108911\rsid10110938\rsid10122183\rsid10164471\rsid10165625
+\rsid10308203\rsid10367100\rsid10431361\rsid10437150\rsid10439729\rsid10492414\rsid10493652\rsid10502721\rsid10508760\rsid10514011\rsid10553190\rsid10555193\rsid10617951\rsid10636866\rsid10644316\rsid10693400\rsid10765827\rsid10772477\rsid10820258
+\rsid10821261\rsid10841221\rsid10897934\rsid10907001\rsid10907282\rsid10971113\rsid10971860\rsid11085293\rsid11097510\rsid11146180\rsid11152974\rsid11161314\rsid11276772\rsid11279883\rsid11286199\rsid11291310\rsid11293487\rsid11360035\rsid11405932
+\rsid11435323\rsid11484405\rsid11497856\rsid11600230\rsid11751954\rsid11797139\rsid11800867\rsid11814017\rsid12146544\rsid12270696\rsid12321889\rsid12329971\rsid12345817\rsid12350678\rsid12392167\rsid12393837\rsid12412969\rsid12520351\rsid12542468
+\rsid12585156\rsid12607402\rsid12608585\rsid12649374\rsid12677632\rsid12680559\rsid12716756\rsid12736239\rsid12805719\rsid12867345\rsid12927148\rsid12927700\rsid12982658\rsid13006294\rsid13055887\rsid13121497\rsid13187070\rsid13257708\rsid13318376
+\rsid13324189\rsid13377808\rsid13379933\rsid13457531\rsid13515844\rsid13646731\rsid13650450\rsid13700035\rsid13725670\rsid13764235\rsid13778999\rsid13828630\rsid13841103\rsid13853138\rsid14026055\rsid14102534\rsid14103397\rsid14179788\rsid14181205
+\rsid14185249\rsid14230269\rsid14245416\rsid14297984\rsid14311027\rsid14486144\rsid14507949\rsid14553570\rsid14566265\rsid14581125\rsid14690819\rsid14693575\rsid14703954\rsid14704469\rsid14710061\rsid14749320\rsid14768321\rsid14816475\rsid14821150
+\rsid14836451\rsid14884829\rsid14968265\rsid14974743\rsid15009842\rsid15012936\rsid15014315\rsid15031981\rsid15081941\rsid15084154\rsid15084267\rsid15092762\rsid15140024\rsid15140074\rsid15156238\rsid15169960\rsid15205797\rsid15221348\rsid15275286
+\rsid15275962\rsid15295843\rsid15300311\rsid15340156\rsid15349032\rsid15359605\rsid15361969\rsid15362200\rsid15362534\rsid15431569\rsid15486898\rsid15497546\rsid15552172\rsid15616584\rsid15670413\rsid15675370\rsid15694662\rsid15737748\rsid15739293
+\rsid15740243\rsid15751215\rsid15760748\rsid15795525\rsid15816578\rsid15826455\rsid15861980\rsid15878590\rsid15925820\rsid15938797\rsid16015465\rsid16068522\rsid16080165\rsid16123238\rsid16128083\rsid16129519\rsid16209055\rsid16270708\rsid16319007
+\rsid16325475\rsid16331656\rsid16396647\rsid16401608\rsid16402350\rsid16412419\rsid16414242\rsid16537885\rsid16542582\rsid16546193\rsid16586823\rsid16593660\rsid16594143\rsid16594349\rsid16607473\rsid16653910\rsid16665491\rsid16667282\rsid16711761
+\rsid16717588\rsid16718452\rsid16733234\rsid16739733}{\*\generator Microsoft Word 11.0.0000;}{\info{\title REPUBLICA DE COLOMBIA}{\author  }{\operator Gobernaci\'f3n de Cundinamarca}{\creatim\yr2009\mo8\dy8\hr17\min9}{\revtim\yr2009\mo8\dy8\hr17\min9}
+{\printim\yr2008\mo6\dy10\hr2\min19}{\version2}{\edmins0}{\nofpages15}{\nofwords4498}{\nofchars24740}{\nofcharsws29180}{\vern24613}{\*\password 00000000}}{\*\xmlnstbl {\xmlns1 http://schemas.microsoft.com/office/word/2003/wordml}{\xmlns2 urn:schemas-micro
+soft-com:office:smarttags}}\paperw12242\paperh18705\margl1701\margr1478\margt2268\margb2268\gutter0\ltrsect 
+\deftab708\widowctrl\ftnbj\aenddoc\hyphhotz425\revisions\donotembedsysfont1\donotembedlingdata0\grfdocevents0\validatexml1\showplaceholdtext0\ignoremixedcontent0\saveinvalidxml0\showxmlerrors1\noxlattoyen
+\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\formshade\horzdoc\dgmargin\dghspace78\dgvspace106\dghorigin1701\dgvorigin2268\dghshow2\dgvshow2
+\jexpand\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot\splytwnine\ftnlytwnine\htmautsp\nolnhtadjtbl\useltbaln\alntblind\lytcalctblwd\lyttblrtgr\lnbrkrule\nobrkwrptbl\snaptogridincell\allowfieldendsel\wrppunct
+\asianbrkrule\rsidroot15156238\newtblstyruls\nogrowautofit \fet0{\*\wgrffmtfilter 013f}\ilfomacatclnup0{\*\ftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 
+\af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7106500 \chftnsep 
+\par }}{\*\ftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid7106500 \chftnsepc 
+\par }}{\*\aftnsep \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid7106500 \chftnsep 
+\par }}{\*\aftnsepc \ltrpar \pard\plain \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid7106500 \chftnsepc 
+\par }}\ltrpar \sectd \ltrsect\psz120\linex0\colsx708\endnhere\titlepg\sectlinegrid212\sectdefaultcl\sectrsid8278145\sftnbj {\headerr \ltrpar \pard\plain \ltrpar\s26\qr \li0\ri0\widctlpar
+\tqc\tx4252\tqr\tx8504\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid1529910 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 
+
+\par 
+\par Expediente T-1\rquote 734.208
+\par }}{\footerl \ltrpar \pard\plain \ltrpar\s24\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\pvpara\phmrg\posxr\posy0\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10820258 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs25\insrsid14103397 PAGE  }}{\fldrslt }}\sectd \linex0\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs25\insrsid14103397 
+\par }\pard \ltrpar\s24\ql \li0\ri360\widctlpar\tqc\tx4252\tqr\tx8504\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin360\lin0\itap0\pararsid15486898 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 
+\par }}{\footerr \ltrpar \pard\plain \ltrpar\s24\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\pvpara\phpg\posx10671\posnegy-924\wraparound\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid15486898 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\field{\*\fldinst {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs25\insrsid14103397 PAGE  }}{\fldrslt {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs25\lang1024\langfe1024\noproof\insrsid3037396 14}}}\sectd 
+\linex0\endnhere\sectdefaultcl\sftnbj {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs25\insrsid14103397 
+\par }\pard \ltrpar\s24\ql \li0\ri360\widctlpar\tqc\tx4252\tqr\tx8504\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin360\lin0\itap0\pararsid15486898 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10108911 
+\rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid10108911 Sentencia }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238\charrsid6702930 T-}{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \b\fs28\insrsid9397717 600}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238\charrsid6702930 /0}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid8409974\charrsid6702930 8}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid2693557 
+\par }\pard \ltrpar\qj \li546\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin546\itap0\pararsid2693557 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 DERECHO A LA SALUD DEL}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid2693557\charrsid13765953  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 MENOR DISCAPACITADO}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 -Protecci\'f3n especial y preferente
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 PRINCIPIO DE INTEGRALIDAD DEL SISTEMA DE SEGURIDAD SOCIAL EN SALUD}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 
+-Deber de las entidades encargadas del servicio p\'fablico de seguridad social en salud de prestar el tratamiento integral de manera proporcional a afiliados y beneficiarios 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 INAPLICACION DE NORMAS DEL PLAN OBLIGATOPRIO DE SALUD}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 -Casos en que procede
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 DERECHO AL DIAGNOSTICO}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 -Deber del m\'e9dico de fundamentar su negativa
+\par }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \cs28\b\fs28\chshdng0\chcfpat0\chcbpat17\insrsid2693557\charrsid13765953 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid13765953 DERECHO A LA SALUD DEL MENOR}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\b\fs28\insrsid2693557\charrsid13765953 DISCAPACITADO}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 -Orden de entrega de Ortesis tobillo pie bilateral
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid2693557 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2693557\charrsid13765953 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10108911 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid2693557\charrsid6702930 
+\par }\pard \ltrpar\qj \li3978\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin3978\itap0\pararsid10108911 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 Referencia: }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid10108911\charrsid10108911 expediente }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 T-1\rquote }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873\charrsid10108911 734.208}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15156238\charrsid10108911 
+\par 
+\par Accionante: }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873\charrsid10108911 Claudia Yaneth Giraldo Rivera en representaci\'f3n de Johan Felipe Sastre Giraldo}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6631174\charrsid10108911  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 
+\par 
+\par Magistrado Ponente: 
+\par }\pard\plain \ltrpar\s5\qj \li3978\ri0\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel4\adjustright\rin0\lin3978\itap0\pararsid10108911 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 
+{\rtlch\fcs1 \af0 \ltrch\fcs0 \b0\insrsid10108911 Dr. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b0\insrsid10108911\charrsid10108911 MARCO GERARDO MONROY CABRA}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b0\insrsid15156238\charrsid10108911 
+\par }\pard\plain \ltrpar\qj \li3553\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin3553\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid15156238 
+\par }\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 Bogot\'e1 D.C., }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9397717 diecinueve}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  (}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9397717 19}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 ) de }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16718452 juni}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid8409974 o}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  de dos mil }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8409974 ocho}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  (200}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8409974 8}
+{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 ).
+\par 
+\par La Sala }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8716342 Sexta}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+ de la Corte Constitucional, integrada por los Magistrados doctores, Humberto Antonio Sierra Porto, Nilson Pinilla Pinilla y Marco Gerardo Monroy Cabra, quien la preside, en ejercicio de sus
+ competencias constitucionales y legales ha pronunciado la siguiente 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par 
+\par }\pard\plain \ltrpar\s6\qc \li0\ri0\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel5\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15156238 SENTENCIA
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15156238 
+\par En el proceso de re}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873 visi\'f3n de la tutela n\'famero T-1\rquote 734.208}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9577238 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10508760  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid15156238 acci\'f3n promovida por la se\'f1ora }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873 Claudia Yaneth Giraldo Rivera}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9577238 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15156238  en representaci\'f3n de su hijo }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873 Johan Felipe Sastre Giraldo}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9577238 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  contra }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873 la E.P.S}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 .}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873  Seguro Social.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid10508760 El}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  fallo fue proferido por }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10508760 e}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 l }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid8200873 Juzgado Cuarenta y Uno Civil del Circuito de Bogot\'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3762150 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8200873  el 12 de septiembre de 2007}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15156238 .
+\par 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 I. ANTECEDENTES
+\par 
+\par 1. Hechos:
+\par 
+\par }\pard\plain \ltrpar\s18\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \ab\af0\afs24\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid3560966 La }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10553190 accionante}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966 , en representaci\'f3n de su hijo }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10553190 Johan Felipe Sastre Giraldo}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid9577238 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966  interpu}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid3560966\charrsid10367100 so acci\'f3n de tutela }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966 
+contra la E.P.S.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8531804  del}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10553190 Seguro Social, Seccional Bogot\'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966 
+ por considerar vulnerados }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid4600482 los}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966  derechos fundamentales a la }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10553190 salud en conexidad con la }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid3560966 vida, en raz\'f3n a que la demandada }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10693400 no autoriza }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid10553190 la entrega de las Ortesis (f\'e9rulas) por encontrarse fuera del POS.}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3560966\charrsid2690705 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \ai\af0\afs28 
+\ltrch\fcs0 \fs28\insrsid3560966\charrsid10367100 Para fundamentar su solicitud de amparo, }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \fs28\insrsid4592899 la se\'f1ora Giraldo }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \fs28\insrsid3560966\charrsid10367100 
+puso de presente los siguientes hechos:
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid3560966 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 Que}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10772477 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid799232  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid694 el menor Johan Felipe Sastre Giraldo de 12 a\'f1os de edad se encuentra afiliado a la E.P.S. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 del }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid694 Seguro Social en calidad de benefic
+iario desde el 7 de junio de 1995.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15092762 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4592899 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3475988 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 D}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid694 esde su nacimiento padece }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969 de }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid694 Hi}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9141218 poxia que consiste en la falta de ox}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 \'ed}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9141218 geno en el ce}{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \fs28\insrsid9397717 r}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9141218 ebro}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9141218  lo que le produjo una enfermedad }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid5864293 cerebral motriz y una cuadriplejia mixta (atetosica-esp}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9397717 \'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5864293 stica)}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 ,
+}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5864293  severo retraso sensoperceptual, NF y D retraso desarrollo del lenguaje alalico y disartria severa.
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4592899 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8409695 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 E}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078 l m\'e9dico tratante determin\'f3 necesario practicarle una cirug\'ed
+a con el fin de colocarle un }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078 Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid4655078 .}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9773288 
+\par 
+\par -}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8409695  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 El}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078  d\'eda 7 de junio de 2007}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10772477 ,}{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \fs28\insrsid4655078  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 la accionante }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078 solicit\'f3 a la E.P.S.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804  del}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid4655078  Seguro Social, autorizaci\'f3n }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10164471 para la}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'93}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid4655078 Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078 . Pero, la E.P}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8531804 .S. demandada neg
+\'f3}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078  la autorizaci\'f3n el 21 de junio, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1118662 por}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4655078 
+que ese elemento no lo contempla el Plan Obligatorio de Salud.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3475988 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8409695 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid799232 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 L}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10164471 a entidad demandada le inform\'f3 que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 
+la accionante}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580  deb\'eda cubrir el }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969 valor}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580  de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969  }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580 l}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969 as}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969 f\'e9rulas,}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid8271580  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1118662 cuy}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580 o }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15361969 el costo }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1118662 es }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8271580 de $254.000,oo aproximadamente.
+\par  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13457531 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid12716756 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 Afirma la accionante que}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1797473  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5202398 
+el costo de la Ortesis no lo puede cubrir}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1118662  por}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 que el}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5202398  \'fanico ingreso e}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid487748 n su hogar e}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5202398 s el sueldo que recibe su esposo ($472.779,oo) con el que cubren los gastos del hogar (vestuario, pr\'e9stamo hipotecario, servicios p\'fa
+blicos, transportes, alimentaci\'f3n, y educaci\'f3n de sus dos hijos).}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid600989 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid12716756 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid600989 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid487748 S}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid600989 olicita}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13318376 
+ se le protejan los derechos fundamentales a la salud}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13700035  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4592899 en conexidad con la vida}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4003317  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid7538269 y se ordene a }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 la E.P.S. Seguro Social }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7538269 que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 autorice la}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid2236763  entrega de las f\'e9rulas \'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid2236763 \'94, elemento con el que se le }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 evita}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid2236763 r\'eda }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 que los pies }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid2236763 de su hijo, }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727 se}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8677025  le}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3489727  deformen m\'e1s.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid600989 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6243523 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 2. Contestaci\'f3n de la Entidad demandada
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid12607402 El }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1597011 3}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid12607402  de }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1597011 septiembre}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid12607402  de 2007, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1797473 la E.P.S. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7538269 del }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1597011 Seguro Social}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid12607402  dio respuesta al Juzgado Segundo }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1597011 Cuarenta y Uno del Circuito de Bogot\'e1, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5917001 en la que }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid1597011 manifest}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid5917001 \'f3 }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7426199 lo siguiente}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid12607402 :}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid4743954  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1597011 
+\par }\pard \ltrpar\qj \li468\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin468\itap0\pararsid10821261 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid400360 \'93
+1- Johan Felipe Sastre Giraldo, se encuentra afiliado al sistema de seguridad social en salud.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid1597011 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid400360 
+\par 2- Johan Felipe Sastre Giraldo solicita Ortesis Tobillo Pie }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid2966939 (}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid400360 
+.T.P.) Bilateral insumo excluido de la coberturas del Plan Obligatorio de Salud, y que fuera formulado por m}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid7538269 \'e9}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid400360 
+dico no adscrito al ISS EPS (Asociaci\'f3n Colombiana Pronito con Par\'e1lisis Cerebral).
+\par 
+\par 3- El ISS EPS ha autorizado los servicios m\'e9dicos requeridos por el accionante, conforme al Plan Obligatorio de Salud.\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid400360\charrsid400360 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4743954 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid15156238 3.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15156238  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 Pruebas
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670 Solicitud }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4728530 realizada el}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670  7 de junio de 2007, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4728530 
+por parte }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647 de }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670 la accionante a la E.P.S. demandada}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4728530 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid16396647  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4728530 con el fin de que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647 se le}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670  autori}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid4728530 zar\'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670  la }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13725670 Ortesis tobillo pie }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid16396647 bilatera}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7538269 l}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647  en el Centro CIREC,}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid10772477  lo anterior al considerar}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10772477 que es el sitio especializado y le genera }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647 
+confianza.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3146983 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16396647 
+\par - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15795525 Respuesta de la E.P.S. Seguro Social de 21 de junio de 2007, inform\'e1ndole a la }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4728530 se\'f1ora }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15795525 
+ lo siguiente:
+\par 
+\par }\pard \ltrpar\qj \li468\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin468\itap0\pararsid10821261 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15795525  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525 \'93Con relaci\'f3
+n a su derecho de petici\'f3n donde solicita Ortesis de Tobillo pie, para el menor Jhon }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15795525 (sic)}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525 
+ Felipe Sastre Giraldo identificado con tarjeta de identidad 95.071105688, le inform\'f3 que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid3625749 e}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525 l Plan Obligatorio de Salud \endash  Resoluci\'f3
+n 5261 de 1994, emanada del Ministerio de Salud no establece estos insumos dentro del Plan Obligatorio de Salud.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid16396647 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525 
+\par Adicionalmente el Decreto 806 de 1998 define los beneficios para los afiliados al R\'e9gimen Contributivo. Y se\'f1ala que los servicios no incluidos en el POS deber\'e1 financiarlos directamente el usuario.
+\par 
+\par Por no encontrarse dentro del POS las Ortesis solicitadas, la EPS }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid739026 del }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525 Seguro Social no los suministra a sus usuarios por no permitirlo as\'ed
+ la norma, en consecuencia su petici\'f3n no se puede atender favorablemente.\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15795525\charrsid15795525 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4659066 Diagn\'f3stico}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8266238  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid15221348 la enfermedad que padece el men}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8266238 o}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15221348 r}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8266238  Jhon Felipe Sastre Giraldo}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15221348 adelantada por }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 la Asociaci\'f3n Colombiana Pro}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15861980 -N}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15221348 i\'f1o con Par\'e1lisis C}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 erebral, \'93PROPACE\'94, fechada 14 de agosto de 2007, que dice:
+\par 
+\par }\pard \ltrpar\qj \li390\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin390\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid14245416 \'93DX: ENFERMEDAD CEREBRAL MOTRIZ
+\par CUADRIPLEJIA MIXTA.
+\par 
+\par SS: ORTESIS TOBILLO PIE (O.T.P.) BILATERAL
+\par RECIBIDAS CON VELCRO EN CUELLO DE PIE Y ANTEPIE.\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15861980 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 - Cotizaci\'f3n en el Centro Integral de rehabilitaci\'f3n de Colombia \'93CIREC\'94
+, fechada 16 de agosto de 2007, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15675370 de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  dos }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15816578 (2) }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 
+\'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid6685448 \'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15816578 
+por un  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 valor}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15816578  de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416  $254.000,oo pesos.
+\par 
+\par - Acta de reevaluaci\'f3n realizada al menor Johan Felipe Sastre Giraldo en la Asociaci\'f3n Colombiana pro-ni\'f1o con }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15675370 P}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 ar\'e1lisis }{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \fs28\insrsid15675370 C}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 erebral \'93PROPACE\'94 de febrero de 2007.
+\par 
+\par - }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1777440 Comprobante de n\'f3mina del se\'f1or Jorge Eli\'e9cer Sastre Marin (padre del }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15816578 menor }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1777440 
+Johan Felipe Sastre) del 31 de julio de 2007, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14704469 salario devengado}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1777440  $472.779,oo peso}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14704469 s}{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \fs28\insrsid1777440  mensuales, quien se desempe\'f1a en el cargo de Supervisor de vigilancia en la Compa\'f1\'eda Colombiana de }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10029825 Cer\'e1mica}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid1777440  S.A. Corona \endash  Madrid.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14245416 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1777440 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8986202 - C\'e9dula de ciudadan\'eda de la se\'f1ora Claudia Yaneth Giraldo Rivera, n\'famero 39.799.702 de Tunjuelito \endash  Usme.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1777440 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid8986202 
+\par - Tarjeta de identidad del menor Johan Felipe Sastre Giraldo, n\'famero de identificaci\'f3n 95071105688.
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 4.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 Sentencia objeto de revisi\'f3n
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1078512\charrsid1078512 El Juzgado}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid1078512  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055 Cuarenta y Uno Civil del}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid16402350  Circuito de Bogot\'e1, el 12 de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055  septiembre de 2007, neg\'f3 el amparo solicitado}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10492414 . A}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid14026055 firm\'f3 que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10492414 no se cumplen }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055 
+los requisitos que la jurisprudencia de la Corte Constitucional ha planteado para que el derecho a la salud sea protegido mediante esta acci\'f3n.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3473528 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055 
+\par Lo anterior, debido a que la orden m\'e9dica fue dada por la Asociaci\'f3n \'93PROPACE\'94, la cual no tiene convenio con la E.P.S.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934  del}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055 
+ Seguro Social, requisito que s}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15740243 e hace necesario para proteger los derechos fundamentales invocados por la accionante.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14026055 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid3544320 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid3544320 5. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid6230966 Pruebas solicitadas por esta Corporaci\'f3n}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid3544320 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid6230966 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16733234 5.1. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16733234\charrsid9503652 Me}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16733234 diante auto del 21 de febrero de 2008, esta Sala orden\'f3 que}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15552172 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16733234  por Secretar\'eda General de la Corte Constitucional }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15552172 se oficiar\'e1}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid16733234  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234 a la E.P.S.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10897934  del}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid16733234\charrsid16733234  Seguro Social, Seccional Bogot\'e1, para ordenarl}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234 e}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15552172  que}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid16733234  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234 en el t\'e9rmino de tres (3) d\'edas h\'e1biles contados a partir de la notificaci\'f3n de la presente providencia, un m\'e9dico es
+pecialista adscrito a esa E.P.S. valor}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15552172 ara}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234  y estable}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15552172 ciera}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10897934 si es o no necesario}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234 
+ el suministro de los aparatos }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6685448 O}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16733234\charrsid16733234 rtesis al menor Johan Felipe Sastre Giraldo}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid16733234\charrsid16733234 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16733234\charrsid80142 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid2716101 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934 Sin embargo,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16711761  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid9140598 e}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4535267\charrsid4535267 l 5 d}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4535267 e marzo de 2008, la Secretaria General }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934 de esta Corporaci\'f3n }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4535267 inform\'f3 al despacho que
+ trascurrido el tiempo }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7478290 referido anterio}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14179788 r}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7478290 mente}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4535267 
+ por este Despacho para que se diera respuesta al Auto en menci\'f3n, no se recibi\'f3 comunicaci\'f3n alguna.
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7802986 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934 El}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid11152974  d\'eda 7 de marzo del presente a\'f1o, el Seguro Social, Seccional Bogot\'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934 , expres\'f3
+ a la Corte}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid11152974  lo siguiente:}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7802986 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid11152974 
+\par }\pard \ltrpar\qj \li390\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin390\itap0\pararsid10821261 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid11152974 \'93\'85, me permito manifestarle que}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i\fs28\insrsid10042672  una vez recibida su comunicaci\'f3n se dio el respectivo tr}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid9397717 \'e1}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid10042672 
+mite, por ser competencia de la seccional Cundinamarca se le traslado el oficio de la referencia para su cumplimiento.\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\i\fs28\super\insrsid16015465 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\s16\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid3614909 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397  El Seguro Social anex\'f3 copia del traslado a {\*\xmlopen\xmlns2{\factoidname PersonName}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 
+la Seccional Cundinamarca}}}la Seccional Cundinamarca{\*\xmlclose}, el 7 de marzo de 2008.}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid11152974\charrsid16015465 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16711761 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14179788 Por tal motivo, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid10897934 mediante autos de 8 y 17 de abril de 2008,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7802986  }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid1704558 la Sala requiri\'f3 en cumplimiento del auto de pruebas }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14884829 al Seguro Social, Seccional Cundinamarca, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid473503 entidad que}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid14884829  no dio respuesta alguna.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16711761 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4535267 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15737748\charrsid16015465 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 II. CONSIDERACIONES  Y FUNDAMENTOS}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 A. Competencia.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par 
+\par Esta Corte es competente para revisar el presente fallo de tutela, de conformidad con lo previsto en los art\'edculos 86 y 241 de la Constituci\'f3n Nacional, el Decreto 2591 de 1991 y las dem\'e1s disposiciones pertinentes. 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\tx7035\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 B. Fundamentos jur\'eddicos
+\par 
+\par 1. Problema Jur\'eddico
+\par 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\tx9214\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid15156238 Corresponde a la Sala determinar si los derech
+os fundamentales a la salud en conexidad con la vida y a la seguridad social del menor }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465 Jhoan Felipe Sastre Giraldo}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid15156238  han sido vulnerados por }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465 la E.P.S. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid5912116 del }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465 Seguro Social}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid15156238 
+ al no autorizar }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465 la entrega de las }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid6685448 \'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465 Ortesis}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\cf1\insrsid539009  de Tobillo pie}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid6685448  bilateral\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid16015465  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\cf1\insrsid539009 (f\'e9rulas) }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid15156238 por encontrarse fuera del POS.
+\par 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid15156238 Para tal efecto se estudiar\'e1n los siguientes }{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\cf1\insrsid210274 tema}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid15156238 s: }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid6176789 i)}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid6955073  }{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid6955073 D}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6955073\charrsid6955073 erecho a la salud del }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \cs28\fs28\insrsid6955073\charrsid6955073 menor discapacitado}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid6176789 ,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid16667282  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid15156238 i}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid6176789 i}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid15156238 )}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid14816475  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\lang1034\langfe3082\langnp1034\insrsid11435323\charrsid11435323 
+Integralidad del sistema de seguridad social en salud}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\lang1034\langfe3082\langnp1034\insrsid11435323 , iii)}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid11435323  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\cf1\insrsid14816475 Postulados para que se a}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid6176789 utori}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid9253621 cen }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid14816475 
+implementos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid9253621  m\'e9dicos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid136828  que}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid14816475  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\cf1\insrsid16667282 se encuentran excluidos del POS}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid11435323  y iv}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid16667282 ) }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid16546193 D}
+{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid16667282 erecho al diagn}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid4659066 \'f3}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid16667282 stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\cf1\insrsid11435323  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid11435323\charrsid11435323 por parte de la E.P.S. demandada.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid15156238\charrsid11435323 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\tx9214\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs16 \ltrch\fcs0 
+\b\insrsid15156238\charrsid15081941 2. }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15081941  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid15081941 
+El derecho a la salud del }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15081941 menor }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid15081941 discapaci}{\rtlch\fcs1 
+\ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15081941 tado}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\i\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid15081941 
+\par }\pard \ltrpar\s20\ql \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\i\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid14768321 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid5912116 El}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid5839906  Art\'edculo 44 }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid5912116 d}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6183015 e }{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid5912116 la Constituci\'f3n }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6183015 protege de manera especial}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid4337928  y preferente}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid6183015  la salud y la seguridad social de los menores de edad}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid5912116 , as\'ed:}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6183015 
+\par 
+\par }\pard \ltrpar\qj \li390\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin390\itap0\pararsid10821261 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid5839906  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid13257708\charrsid14768321 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid5839906 Son derechos fundamentales de los ni\'f1os: la vida, la integridad f\'edsica, la salud y la seguridad social, la alimentaci\'f3
+n equilibrada, su nombre y nacionalidad, tener una familia y no ser separados de ella, el cuidado y amor, la educaci\'f3n y la cultura, la recreaci\'f3n y la libre expresi\'f3n de su opini\'f3n}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid13257708\charrsid14768321 .\'94
+\par }\pard\plain \ltrpar\s20\ql \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid3897560 
+\par }\pard\plain \ltrpar\s19\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \ai\af0\afs24\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid4218842 Pero incluso la Carta otorga protecci\'f3n reforzada a los menores de edad}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid14566265  al encontrarse}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid3897560  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid4337928 en circunstancia de debilidad manifiesta en raz\'f3n de su }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang1034\langfe3082\langnp1034\insrsid472574 c}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid3897560 on}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid472574 di}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang1034\langfe3082\langnp1034\insrsid3897560 ci\'f3n}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid4337928  f\'edsica o mental.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang1034\langfe3082\langnp1034\insrsid16607473  Al respecto refiri\'e9ndose al derecho a la igualdad, dijo}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang1034\langfe3082\langnp1034\insrsid8990431 :}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang1034\langfe3082\langnp1034\insrsid13257708\charrsid4337928 
+\par }\pard \ltrpar\s19\qj \li360\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid13257708\charrsid14768321 
+\par }\pard \ltrpar\s19\qj \li360\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin360\itap0\pararsid10821261 {\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid16607473 \'93}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid14768321 En este sentido, ordena al Estado adoptar medidas a favor de grupos discriminados o marginados, en especial aquellos que por su condici\'f3n f\'ed
+sica o mental se encuentran en situaciones de debilidad manifiesta, lo que ha sido llamado por la jurisprudencia constitucional acciones afirmativas.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\lang9226\langfe3082\super\langnp9226\insrsid13257708\charrsid14768321 \chftn {\footnote \ltrpar \pard\plain \ltrpar\s19\qj \fi30\li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5112354 \rtlch\fcs1 
+\ai\af0\afs24\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \cs22\i0\fs20\super\insrsid14103397\charrsid14703954 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\insrsid14103397\charrsid14703954  }{\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \i0\fs20\insrsid14103397\charrsid14703954 Sobre el tema de las acciones afirmativas a favor de ni\'f1os con S\'edndrome de Down, ver sentencia }{\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 
+\i0\fs20\lang9226\langfe3082\langnp9226\insrsid14103397\charrsid14703954 Sentencia T-826 de {\*\xmlopen\xmlns2{\factoidname metricconverter}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2004. M}}}2004. M{\*\xmlclose}.P. Rodrigo Uprim}{
+\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \i0\fs20\lang9226\langfe3082\langnp9226\insrsid14103397 n}{\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \i0\fs20\lang9226\langfe3082\langnp9226\insrsid14103397\charrsid14703954 y Yepes. }}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid14703954 \'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid13257708 
+\par }\pard \ltrpar\s19\qj \li360\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid14703954\charrsid14703954 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid14768321 Lo anterior significa que }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid8990431 el Estado}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid4218842 , la sociedad y la familia son los encargados}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid8990431  de brindar }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid9389734 la ayuda oportuna y }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13257708\charrsid14768321 la totalidad del tratamiento previsto para }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13841103 
+mejorar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734  la}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid8990431  enfermedad que }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734 pade}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid13841103 ce}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734  el menor}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2257344  discapacitado}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734 , }{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid14703954 siendo}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid7026496 \'e9}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734 sta}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid14703954 , la}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734  poblaci\'f3n }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14703954 que se }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2257344 encuentra}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14703954  en una}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid8990431\charrsid14768321  situaci\'f3n de inferioridad o desventaja}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid9389734 
+ ante el resto de la sociedad.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13257708\charrsid14768321 
+\par 
+\par }\pard\plain \ltrpar\s19\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \ai\af0\afs24\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 Es por ello que si el }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 menor }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid7034696 discapacitado }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 es beneficiario del sistema de seguridad social}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid16270708  en salud}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 , }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 es obligaci
+\'f3n del personal }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 m\'e9dic}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 o}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 prestar}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 un servicio }{\rtlch\fcs1 \ai0\af0\afs28 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid16270708\charrsid14768321 eficiente, integral, \'f3ptimo en tratamiento y rehabilitaci\'f3n}{\rtlch\fcs1 \ai0\af0\afs28 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7034696 ,}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7034696 bas\'e1ndose en el conocimiento tanto cient\'edfico como t\'e9cnico }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid12393837 proporcionando}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7034696  de esta manera, una mejor condici\'f3n de }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 vida}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7034696 a}{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16270708 l ni\'f1o}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 , as\'ed la enfermedad no}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid16270708  pueda derrotarse.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\i0\lang9226\langfe3082\super\langnp9226\insrsid16270708 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\s16\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid5112354 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397\charrsid16270708 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397\charrsid16270708  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 Ver entre otras {\*\xmlopen\xmlns2{\factoidname PersonName}
+{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue la Sentencia T-179}}}la Sentencia T-179{\*\xmlclose} de {\*\xmlopen\xmlns2{\factoidname metricconverter}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2000. M}}}2000. M{\*\xmlclose}
+.P. Alejandro Mart\'ednez Caballero.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397\charrsid5112354  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 {\*\xmlopen\xmlns2{\factoidname PersonName}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 
+La Corte}}}La Corte{\*\xmlclose} estudi\'f3 el caso de menores que ven\'edan siendo atendidos por una Instituci\'f3n especializada en problemas neurol\'f3gicos. Sin embargo, {\*\xmlopen\xmlns2{\factoidname PersonName}{\xmlattr\xmlattrns0{\xmlattrname 
+ProductID}{\xmlattrvalue la EPS}}}la EPS{\*\xmlclose} suspendi\'f3 el contrato y los ni\'f1os quedaron sin la atenci\'f3n especial que requer\'eda. Aqu\'ed {\*\xmlopen\xmlns2{\factoidname PersonName}{\xmlattr\xmlattrns0{\xmlattrname ProductID}
+{\xmlattrvalue La Corte}}}la Corte{\*\xmlclose} orden\'f3 que los m\'e9dicos tratantes realizaron una evaluaci\'f3n con el fin de reemplazar en forma id\'e9ntica el servicio que se les ven\'eda prestando.
+\par }}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid16270708 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid14768321 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid13257708\charrsid12329971 En este sentido, en la }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13257708\charrsid12329971 Declaraci\'f3
+n de los Derechos de los Impedidos, Proclamada por la Asamblea General de las Naciones Unidas en su resoluci\'f3n 3447 (XXX), de 9 de diciembre de 1975,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10841221 
+ aprobada en Colombia mediante la Ley 361 de 1997,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2257344  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13257708\charrsid12329971 se establece en el numeral 5 y 6 lo siguiente:}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid12329971\charrsid12329971 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12329971 
+\par }\pard\plain \ltrpar\s1\qj \li390\ri405\sb240\sa60\keepn\widctlpar\wrapdefault\aspalpha\aspnum\faauto\outlinelevel0\adjustright\rin405\lin390\itap0\pararsid10821261 \rtlch\fcs1 \ab\af1\afs32\alang1025 \ltrch\fcs0 
+\b\f1\fs32\lang3082\langfe3082\kerning32\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid12329971 \'935. El impedido tiene der}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\b0\i\f0\fs28\insrsid7034696\charrsid12329971 echo a las medidas destinadas a }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid12329971 permitirle lograr la mayor autonom\'eda posible. 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid6694640\charrsid7812035 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid7812035 6. El impedido tiene derecho a recibir atenci\'f3n m\'e9dica, psicol\'f3
+gica y funcional, incluidos los aparatos de pr\'f3tesis y ortopedia; a la readaptaci\'f3n m\'e9dica y social; a la educaci\'f3n; la formaci\'f3n y a la readaptaci\'f3n profesionales; las ayudas, consejos, servicios de colocaci\'f3
+n y otros servicios que aseguren el aprovechamiento m\'e1ximo de sus facultades y aptitudes y aceleren el proceso de su integraci\'f3n o reintegraci\'f3n social.\'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid7812035\charrsid7812035 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid9076127 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid7812035 As\'ed mismo, en el Principio 5 de la Declaraci\'f3n de los Derechos del Ni\'f1
+o, proclamada por la Asamblea General de las Naciones Unidas en su resoluci\'f3n 1386 (XIV), de 20 de noviembre de 1959, se establece que \'93}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid7812035 el ni\'f1o f\'ed
+sica o mentalmente impedido o que sufra alg\'fan impedimento social debe recibir el tratamiento, la educaci\'f3n y el cuidado especiales que requiere su caso particular}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b0\i\f0\fs28\insrsid13257708\charrsid7812035 
+. En los art\'edculos 23 y 24 de la Convenci\'f3n sobre los Derechos del Ni\'f1o, adoptada por la Asamblea General de las Naciones Unidas el 20 de noviembre de 1989, y posteriormente aprobada en Colombia a trav\'e9s de la Ley 12 de 1991, se se\'f1
+ala respecto a los menores con discapacidad:
+\par }\pard\plain \ltrpar\s4\ql \li567\ri405\sb240\sa60\keepn\widctlpar\tx709\wrapdefault\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin405\lin567\itap0\pararsid10821261 \rtlch\fcs1 \ab\af0\afs28\alang1025 \ltrch\fcs0 
+\b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \ai\af0 \ltrch\fcs0 \i\insrsid13257708\charrsid7812035 \'93\tab Art\'edculo 23
+\par }\pard\plain \ltrpar\qj \li567\ri405\widctlpar\tx709\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin567\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 
+\ai\af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid7812035 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid7812035 1. Los Estados Partes reconocen que el ni\'f1o mental o f\'edsicamente impedido deber\'e1
+ disfrutar de una vida plena y decente en condiciones que aseguren su dignidad, le permitan llegar a bastarse a s\'ed mismo y faciliten la participaci\'f3n activa del ni\'f1o en la comunidad. }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\i\fs28\insrsid7812035\charrsid7812035 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid7812035 2. Los Estados Partes reconocen el derecho del ni\'f1o impedido a recibir cuidados especiales y alentar\'e1n y asegurar\'e1n, con sujeci\'f3
+n a los recursos disponibles, la prestaci\'f3n al ni\'f1o que re\'fana las condiciones requeridas y a los responsables de su cuidado de la asistencia que se solicite y que sea adecuada al estado del ni\'f1o y a las circunstancias de sus padres o de o}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid7812035\charrsid7812035 tras personas que cuiden de \'e9l.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid7812035 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid7812035\charrsid7812035 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid9076127 3. En atenci\'f3n a las necesidades especiales del ni\'f1o impedido, la asistencia que se preste conforme al p\'e1rrafo 2 del presente art\'edculo ser\'e1
+ gratuita siempre que sea posible, habida cuenta de la situaci\'f3n econ\'f3mica de los padres o de las otras personas que cuiden del ni\'f1o, y estar\'e1 destinada a asegurar que el ni\'f1o impedido tenga un acceso efectivo a la educaci\'f3
+n, la capacitaci\'f3n, los servicios sanitarios, los servicios de rehabilitaci\'f3n, la preparaci\'f3n para el empleo y las oportunidades de esparcimiento y reciba tales servicios con el objeto de que el ni\'f1o logre la integraci\'f3
+n social y el desarrollo individual, incluido su desarrollo cultural y espiritual, en la m\'e1xima medida posible. }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid9076127\charrsid9076127 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid9076127 4. Los Estados Partes promover\'e1n, con esp\'edritu de cooperaci\'f3n internacional, el intercambio de informaci\'f3n adecuada en la esfera de la atenci\'f3
+n sanitaria preventiva y del tratamiento m\'e9dico, psicol\'f3gico y funcional de los ni\'f1os impedidos, incluida la difusi\'f3n de informaci\'f3n sobre los m\'e9todos de rehabilitaci\'f3n y los servicios de ense\'f1anza y formaci\'f3n profesional, as
+\'ed como el acceso a esa informaci\'f3n a fin de que los Estados Partes puedan mejorar su capacidad y conocimientos y ampliar su experiencia en estas esferas. A este respecto, se tendr\'e1n especialmente en cuenta las necesidades de los pa\'ed
+ses en desarrollo.}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \i\fs28\insrsid13257708\charrsid9076127 
+\par }\pard\plain \ltrpar\s4\qj \li567\ri405\sb240\sa60\keepn\widctlpar\tx709\wrapdefault\aspalpha\aspnum\faauto\outlinelevel3\adjustright\rin405\lin567\itap0\pararsid10821261 \rtlch\fcs1 \ab\af0\afs28\alang1025 \ltrch\fcs0 
+\b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid13257708\charrsid9076127 Art\'edculo 24}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\insrsid9076127\charrsid9076127 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b0\i\insrsid13257708\charrsid9076127 Los Estados Partes reconocen el derecho del ni\'f1o al disfrute del m\'e1s alto nivel posible de salud y a servicios para el tratamiento de las enfermedades y la rehabilitaci\'f3
+n de la salud. Los Estados Partes se esforzar\'e1n por asegurar que ning\'fan ni\'f1o sea privado de su derecho al disfrute de esos servicios sanitarios.\'94}{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\b0\i\super\insrsid9076127\charrsid9076127  }{\rtlch\fcs1 
+\af0 \ltrch\fcs0 \cs22\b0\super\insrsid9076127\charrsid9076127 \chftn {\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid9076127 \rtlch\fcs1 \af0\afs20\alang1025 
+\ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397  Sentencia T-518 de {\*\xmlopen\xmlns2{\factoidname metricconverter}
+{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2006. M}}}2006. M{\*\xmlclose}.P. Marco Gerardo Monroy Cabra.}}}{\rtlch\fcs1 \ai\af0 \ltrch\fcs0 \b0\i\insrsid13257708\charrsid9076127 
+\par }\pard\plain \ltrpar\s18\qj \li0\ri0\widctlpar\tx709\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \ab\af0\afs24\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 
+\ai\af0 \ltrch\fcs0 \insrsid13257708 
+\par }{\rtlch\fcs1 \ai\af0 \ltrch\fcs0 \insrsid6371259 En suma}{\rtlch\fcs1 \ai\af0 \ltrch\fcs0 \insrsid9076127 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid13257708\charrsid14768321  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid9076127 es deber d}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid13257708\charrsid14768321 el Estado ofrecer un tratamiento integral encaminado a lograr la integraci\'f3n social del ni\'f1o. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid7610012 Para lo cual}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid13257708\charrsid14768321 , debe ofrecerse todos los }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3880773 instrumento}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid13257708\charrsid14768321 s que se encuentren al alcance con el fin de obtener su rehabilitaci
+\'f3n.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\super\insrsid3880773\charrsid3880773  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\super\insrsid3880773\charrsid14768321 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\s16\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid3880773 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397\charrsid14768321 T-282 de 2006}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 . }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid14103397\charrsid14768321  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397 M.P. Alfredo Beltr\'e1n Sierra. Ver entre otras {\*\xmlopen\xmlns2{\factoidname PersonName}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue la  Sentencia T-920}}}
+la  Sentencia T-920{\*\xmlclose} de {\*\xmlopen\xmlns2{\factoidname metricconverter}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2000. M}}}2000. M{\*\xmlclose}.P. Eduardo Cifuentes Mu\'f1oz.}}}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid13257708\charrsid14768321 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\fs28\insrsid1066872\charrsid11497856 
+\par }\pard\plain \ltrpar\s20\ql \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs16 \ltrch\fcs0 
+\b\insrsid1066872\charrsid11497856 3. }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid11497856 Integralidad del sistema de seguridad social en salud}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 
+\b\lang1034\langfe3082\langnp1034\insrsid15205797 .}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid11497856 
+\par }\pard\plain \ltrpar\s19\qj \li360\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin360\itap0\pararsid6124516 \rtlch\fcs1 \ai\af0\afs24\alang1025 \ltrch\fcs0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 
+\ab\af0 \ltrch\fcs0 \b\i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid12412969 
+\par }\pard \ltrpar\s19\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797 E}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid16594143 n reiteradas ocasiones esta Cor}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid12412969 te}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 
+ ha manifestado que }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797 la }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 S}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797 eguridad }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 S}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797 ocial es un servicio p\'fablico de car\'e1cter o}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 bligatorio que debe ser}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797  presta}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 do}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797  bajo la direcci\'f3n, coordinaci\'f3n y control del Estado, con sujeci\'f3n a los principios de eficiencia, universalidad y solidaridad, en los t\'e9rminos que establezca la ley. }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 As}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7610012 \'ed }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid16594143 
+mismo, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13324189 en la prestaci\'f3n del servicio de}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid4416305  salud}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\i0\lang9226\langfe3082\langnp9226\insrsid7610012 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid4416305  debe}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797  garantiza}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid7610012 rse}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid15751215\charrsid15205797  a todas las personas el acceso a los servicios de promoci\'f3n, protecci
+\'f3n y recuperaci\'f3n de la misma. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i0\lang9226\langfe3082\langnp9226\insrsid13324189 
+\par 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455 En este sentido, el legislador }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid7610012 d}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455 esarroll}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid7610012 \'f3}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455  el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid9336816 principio de integralidad}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455  consagrado en el literal d. del art\'edculo 2 de la Ley 100 de 1993, que se define como \'93}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 
+\i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid9336816 la cobertura de todas las contingencias que afectan la salud, la capacidad econ\'f3mica y en general las condiciones de vida de toda la poblaci\'f3n. Para este efecto cada quien contribuir
+\'e1 seg\'fan su capacidad y recibir\'e1 lo necesario para atender sus contingencias amparadas por esta Ley}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455 \'94.
+\par 
+\par As\'ed mismo, el sistema}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid9336816  de seguridad social}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455  ha previsto una }{
+\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455 gu\'eda de atenci\'f3n integral, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid15826455 definida
+ por el art\'edculo 4\'b0 numeral 4 del Decreto 1938 de 1994 como: \'93}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid9336816 
+el conjunto de actividades y procedimientos mas indicados en el abordaje de la promoci\'f3n y fomento de la salud, la prevenci\'f3n, el diagn\'f3stico, el tratamiento y la rehabilitaci\'f3n de la enfermedad; en la que se definen los pasos m\'ed
+nimos a seguir y el orden secuencial de \'e9stos, el nivel de complejidad y el personal de salud calificado que debe atenderlos, teniendo en cuenta las condiciones de elegibilidad del paciente de acuerdo a variables de g\'e9ner
+o, edad, condiciones de salud, expectativas laborales y de vida, como tambi\'e9n de los resultados en t\'e9rminos de calidad y cantidad de vida ganada; y con la mejor utilizaci\'f3n de los recursos y tecnolog\'ed
+as a un costo financiable por el sistema de seguridad social y por los afiliados al mismo}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid14768321 \'94.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid14768321  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid12412969 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16123238 La}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  Ley}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid16123238  100 de 1993 asegura}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  la calidad de vida }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid16123238 de las personas brind\'e1ndoles}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  la }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 
+\b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 cobertura integral,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  de ah\'ed que \'e9ste sea uno de los principios que }{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid9775052 r}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 i}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid9775052 g}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 en el sistema de seguridad social integral. El numeral 3\'b0 del art\'edculo 153 ib\'eddem }{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid355836 en lo relativo a}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16123238  la}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 protecci\'f3n integral}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 
+\b\lang1034\langfe3082\langnp1034\insrsid9775052 ,}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid9775052\charrsid9775052 dispone}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 : }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid16123238\charrsid12412969 
+\par }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid16123238 
+\par }\pard \ltrpar\s20\qj \li468\ri405\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin405\lin468\itap0\pararsid10821261 {\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 \'93}{\rtlch\fcs1 
+\ai\af0\afs28 \ltrch\fcs0 \i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 El sistema general de seguridad social en salud brindar\'e1 atenci\'f3n en salud integral a la poblaci\'f3n en sus fases de educaci\'f3n, informaci\'f3
+n y fomento de la salud y la prevenci\'f3n, diagn\'f3stico, tratamiento y rehabilitaci\'f3n, en cantidad, oportunidad, calidad y eficiencia, de conformidad con lo previsto en el art\'edculo 162 respecto del plan obligatorio de salud}{\rtlch\fcs1 
+\ai\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 \'94. }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16123238 
+\par }\pard \ltrpar\s20\qj \li468\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin468\itap0\pararsid6124516 {\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16123238 
+\par }\pard \ltrpar\s20\qj \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid5905920 Del mismo modo}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 , el literal c- del art\'edculo 156 }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid6621566 de la Ley 100 de 1993}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  expresa que}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16123238 :}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid16537885 
+\par }\pard \ltrpar\s20\qj \li468\ri405\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin405\lin468\itap0\pararsid10821261 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 \'93}{\rtlch\fcs1 \ai\af0\afs28 
+\ltrch\fcs0 \i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 Todos los afiliados al sistema general de seguridad social en salud recibir\'e1n un plan integral}{\rtlch\fcs1 \ab\ai\af0\afs28 \ltrch\fcs0 
+\b\i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238  }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 de protecci\'f3n de la salud, con atenci\'f3n preventiva, m\'e9dico quir\'fa
+rgica y medicamentos esenciales, que ser\'e1 denominada el }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \b\i\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid1849058 plan obligatorio de salud}{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 
+\lang1034\langfe3082\langnp1034\insrsid15751215\charrsid16123238 \'94.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid15751215 
+\par }\pard \ltrpar\s20\qj \li468\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin468\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang1034\langfe3082\langnp1034\insrsid5057443\charrsid16537885 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321 De otra parte}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10907282 ,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321  la jurisprudencia de esta Corporaci\'f3n }{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10907282 ha }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321 se\'f1ala}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10907282 do}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid15751215\charrsid14768321  que este principio implica que la atenci\'f3n y el tratamiento a que tienen derecho }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14181205 las personas que se encuentran afiliadas}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321  al sistema de seguridad social en salud, son integrales}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cs22\fs28\super\insrsid14181205 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\qj \li0\ri-219\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin-219\lin0\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397\charrsid14181205  }{\rtlch\fcs1 \af0\afs20 \ltrch\fcs0 \fs20\insrsid14103397\charrsid14181205 Deben contener todo cuidado, suministro de medicamentos, intervenciones quir
+\'fargicas, pr\'e1cticas de rehabilitaci\'f3n, ex\'e1menes para el diagn\'f3stico y el seguimiento, as\'ed como todo otro componente que el m\'e9
+dico tratante valore como necesario para el pleno restablecimiento de la salud del paciente o para mitigar las dolencias que le impiden llevar su vida en mejores condiciones.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397\charrsid14768321  }}}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14181205 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6042196  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3678181 As\'ed}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid15751215\charrsid14768321 ,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3678181  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321 el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\fs28\insrsid15751215\charrsid3678181 
+tratamiento integral}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15751215\charrsid14768321  debe ser proporcionado a sus afiliados }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16325475 y beneficiarios }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid15751215\charrsid14768321 por las entidades encargadas de prestar el servicio p\'fablico de la seguridad social en salud. }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6042196 
+\par }\pard \ltrpar\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf6\insrsid15751215\charrsid14768321 
+\par }\pard\plain \ltrpar\s27\qj \li0\ri0\nowidctlpar\wrapdefault\nooverflow\faroman\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs28\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\lang9226\langfe3082\langnp9226\insrsid16325475\charrsid16325475 4.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang9226\langfe3082\langnp9226\insrsid16665491  Presupuestos}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\lang9226\langfe3082\langnp9226\insrsid218862  }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid16665491\charrsid16665491 para que proceda la tutela cuando los medicamentos, cirug\'edas y tratamientos se encuentran fuera del POS}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid11435323 .}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid16665491 
+\par }\pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid16665491 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 La Corte Constitucional ha ordenado la prestaci\'f3n de servicios m\'e9dicos, cirug\'ed
+as o suministro de medicamentos excluidos del POS bajo el cumplimiento de los siguientes presupuestos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cs22\fs28\super\insrsid12680559 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\s16\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397   Sentencia T-365A de {\*\xmlopen\xmlns2{\factoidname metricconverter}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2006. M}}}2006. M{\*\xmlclose}
+.P. Marco Gerardo Monroy Cabra.}}}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 : 
+\par }\pard \ltrpar\qj \fi-360\li720\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin720\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 
+\par }\pard \ltrpar\qj \fi-360\li720\ri405\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin720\itap0\pararsid10821261 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid16665491 \'93
+i) la falta del medicamento o procedimiento amenaza o vulnera los derechos fundamentales a la vida o la integridad personal del afiliado, lo cual se presenta no s\'f3lo cuando existe inminente riesgo de muerte sino tambi\'e9
+n cuando se afectan con dicha omisi\'f3n las condiciones de existencia digna; 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid3037396 ii)\tab }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid16665491 el medicam
+ento o procedimiento excluido no pueda ser reemplazado por otro que figure dentro del POS o cuando el sustituto no tenga el mismo nivel de efectividad que aquel; }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid3037396 iii)\tab }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid16665491 el paciente no tenga capacidad de pago para sufragar el costo de los servicios m\'e9dicos q
+ue requiera y no pueda acceder a ellos a trav\'e9s de ning\'fan otro sistema o plan de salud; y }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid3037396 iv)\tab }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid16665491\charrsid16665491 estos \'faltimos hayan sido prescritos por un m\'e9
+dico adscrito a la entidad de seguridad social a la cual est\'e9 afiliado el accionante}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cs22\fs28\super\insrsid16665491\charrsid16665491 
+\chftn {\footnote \ltrpar \pard\plain \ltrpar\s16\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {
+\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1036\langfe3082\langnp1036\insrsid14103397   V\'e9anse las sentencias T-289 de 2001, T-627 de 2002 y T-I78 de 2003.}}}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid16665491\charrsid16665491 \'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cs22\fs28\super\insrsid16665491\charrsid16665491 \chftn {\footnote \ltrpar \pard\plain \ltrpar
+\s16\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397   Sentencia T-903 de {\*\xmlopen\xmlns2{\factoidname metricconverter}{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2005. M}}}2005. M{\*\xmlclose}
+.P. Marco Gerardo Monroy Cabra.}}}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 
+\par }\pard \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 
+\par De lo anterior, se colige que la acci\'f3n de tutela procede para la protecci\'f3n de los derechos a la salud en conexidad con la vida cuando los medicamentos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid5523250 , tratamientos y cirug\'edas}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491  se encuentran fuera del POS, siempre y cuando se cumpla con los presupuestos anteriormente mencionados}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\cs22\fs28\super\insrsid16665491\charrsid16665491 \chftn {\footnote \ltrpar \pard\plain \ltrpar\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid10821261 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 
+\fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\fs20\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs20\insrsid14103397  Ver {\*\xmlopen\xmlns2{\factoidname PersonName}
+{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue la Sentencias SU-480}}}la Sentencias SU-480{\*\xmlclose} de 1997 y SU-819 de 1999. }}}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16665491\charrsid16665491 . 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid6241839 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid6241839\charrsid6241839 5.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid5506744  Derecho al }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\fs28\lang9226\langfe3082\langnp9226\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid5506744  por parte de la E.P.S. demandada.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\fs28\lang9226\langfe3082\langnp9226\insrsid6241839 
+\par 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887 Respecto a este tema, la Corte ha manifestado que e}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981 n los casos en que el m\'e9dico o m\'e9
+dicos que han atendido a la persona que solicita el amparo mediante la acci\'f3n de tutela no es el m\'e9dico tratante ni adscrito a la E.P.S. demandada, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981\charrsid15031981 
+no es posible proferir tal orden.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid15031981\charrsid6241839  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981\charrsid15031981 Sin embargo, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid15031981 ha se\'f1alado que la E.P.S.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  accionada}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981  debe tener }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14968265 
+en cuenta, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981 que ya un m\'e9dico }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid14968265 especializado}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  }{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid14968265 ha }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981 emitido un }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981  sobre el}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  padecimiento de dicha persona, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625 encontr\'e1ndose en el deber esta entidad de salud}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid13055887  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625 de realizar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16593660 nuevamente un}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid13055887 a valoraci\'f3n a}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625 l}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  paciente y con base en ese }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  argument}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625 ar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13055887  tanto t\'e9cnica como cient\'ed
+ficamente }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625 el por}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid8650954  qu\'e9}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10165625  de su respuesta}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid16593660 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid15031981 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16593660\charrsid16593660 Al respecto}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid16593660  la Sentencia }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7285999 T-500 de 2007}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\cs22\fs28\super\insrsid7285999 \chftn {\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 
+\fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 \cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang1046\langfe3082\langnp1046\insrsid14103397\charrsid7285999   M.P. Manuel Jos\'e9 Cepeda Espinosa.}
+}}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7285999 , sobre el derecho al }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid7285999  dijo:}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15084267\charrsid16593660 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid16593660\charrsid16593660 
+\par }\pard \ltrpar\qj \li390\ri405\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin390\itap0\pararsid10821261 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid218862 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\i\fs28\insrsid6241839\charrsid6241839 En el escrito de tutela se solicita la realizaci\'f3n de una biopsia y el suministro de unos medicamentos ordenados por un m\'e9
+dico particular consultado por la accionante, para el tratamiento de las lesiones en la piel. Con todo, como se dijo, los mismos no han sido ordenados por un m\'e9
+dico tratante adscrito a la EPS por lo que, dadas las circunstancias del caso, no es posible proferir tal orden. 
+\par 
+\par Sin embargo, teniendo en cuenta, primero, que la accionante manifiesta que el brote cr\'f3nico que padece en la frente le genera una }{\rtlch\fcs1 \ai\af0\afs28 \ltrch\fcs0 \i\fs28\insrsid6241839\charrsid6241839 \'93una picaz\'f3n desesperante\'94}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid6241839\charrsid6241839  y }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\i\fs28\insrsid6241839\charrsid10165625 que ya otro m\'e9dico consider\'f3 que por lo menos era necesaria la pr\'e1ctica de un examen }{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \b\i\fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid6241839\charrsid6241839  (biopsia) y, segundo, que la EPS consider\'f3 que dicha patolog\'eda era de car\'e1cter est\'e9
+tico sin que hubiera ofrecido argumentos t\'e9cnicos que fundamentaran dicha consideraci\'f3n y sin que la usuaria hubiera sido valorada por un especialista, se ordenar\'e1 a la EPS que eval\'fae la situaci\'f3
+n de la paciente adecuadamente, (i) asignando un m\'e9dico que tenga conocimiento especializado en este tipo de patolog\'edas y (ii) realizando los ex\'e1menes diagn\'f3sticos que \'e9ste eventualmente l}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\i\fs28\insrsid7285999 legare a considerar necesarios.\'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\fs28\insrsid6241839\charrsid6241839 
+\par }\pard \ltrpar\qj \li390\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin390\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6241839\charrsid15084267 
+\par }\pard \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165 En conclusi\'f3n}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid7285999 ,}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid7285999 el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165 
+ que realice}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid7285999  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165 el m\'e9dico de }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid7285999 la entidad de salud demandada }{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165 debe ser fundamentado con el fin de que justifique su negativa, pero, si el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid4659066 diagn\'f3stico}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165 
+ es que el paciente requiere }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2172223 del}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165  tratamiento,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2172223  del}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid16080165  medicamento o}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2172223  de la}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16080165  cirug\'eda, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid6241839\charrsid16080165 la E}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16414242 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6241839\charrsid16080165 P}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16414242 .}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid6241839\charrsid16080165 S}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid16414242 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid474755  deber\'e1 atenderlo}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid6241839\charrsid16080165  integralmente de acuerdo con lo ordenado por}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13377808  el m\'e9dico especialista tratante.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid6241839\charrsid16080165 
+
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid6042196\charrsid6241839 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid16325475 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\lang9226\langfe3082\langnp9226\insrsid15156238 III. CASO CONCRETO
+\par 
+\par }\pard\plain \ltrpar\s30\qj \li0\ri0\sa120\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 En este caso espec\'edfico la Sala analizar\'e1 si la E}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 P}
+{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 S}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid11484405\charrsid11484405  S}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 eguro Social}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405  al no autorizar }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid11484405 las }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11291310 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 Ortesis tobillo pie}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11291310  bilateral\'94}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11291310 por no estar incluidos en }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 el POS}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid12927148  y no ser ordenados por }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11291310 el}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid12927148  m\'e9dico }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11291310 
+tratante y adscrito a esta entidad}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 , le est\'e1 vulnerando los derechos fundamentales a la salud en conexidad con la vida e integridad f\'edsica }{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid11291310 de}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405\charrsid11484405 l }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 menor Jhoan Felipe Sastre Giraldo}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid11484405\charrsid11484405 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid11484405 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid12927148 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873\charrsid4003873 En efecto, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid8994913 de acuerdo a las pruebas anexadas al proceso, }{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873\charrsid4003873 se }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid8994913 evidencia}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid4003873  que el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid2712732 menor}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873  }{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid2712732 (}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873 12 a\'f1os de edad}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid2712732 )}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873  padece desde su nacimiento de Hipoxia lo que le produce una enfermedad Cerebral Motriz, Cuadriplej\'ed
+a mixta, severo }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid14710061 r}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4003873 
+etraso Sensoperceptual, retraso en el desarrollo del lenguaje alalico y disartria severa.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid16586823  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid11291310 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid10514011 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid6685448 En raz\'f3n a su enfermedad}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid16586823 , el m\'e9
+dico que lo atiende en el Instituto Propace le orden\'f3 las }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid3810632 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid16586823 
+Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid3810632 \'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid11291310 , }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid14486144 las cuales}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid11291310  tienen la funci\'f3n de}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid5506668  }{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid7350250 estabili}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid11291310 zar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid5506668 , }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid3810632 
+de hacer m\'e1s c\'f3modo y eficiente el }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid91771 desarrollo de actividades f\'edsicas}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid14486144  del menor}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\cf1\insrsid3810632 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid2712732\charrsid11291310 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\cf1\insrsid2712732 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\cf1\insrsid15275286 Ahora bien, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cf1\insrsid15938797  como se estableci\'f3 en }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cf1\insrsid12146544 la parte considerativa de esta }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\cf1\insrsid15938797 providencia, la soluci\'f3n del problema jur\'eddico planteado exige la verificaci\'f3n del cumplimiento de }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cf1\insrsid12146544 los preceptos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\cf1\insrsid15938797  de procedibilidad de la acci\'f3n de tutela}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cf1\insrsid15275286  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2172223\charrsid2172223 de la siguiente manera: 
+\par }\pard\plain \ltrpar\qj \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\cf1\insrsid12146544 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri0\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid4154712\charrsid4154712 a) }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid4156365 El menor Jhon Felipe Sastre padece de una enfermedad }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid5656520 denominada Hipoxia }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5656520 que entre otros efectos, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590 produce}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid5656520  la p\'e9rdida de }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712 capacidad }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693 f\'edsica}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590 
+ y mental, siendo evidente la urgencia de que se le suministren }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693 los elementos }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946 antes}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693  mencionados}
+{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590 , ya que}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693  de esta manera se le }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946 brinda}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590 r\'eda
+}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693  el derecho }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946\charrsid6946946 a }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590 tene}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid6946946\charrsid6946946 r}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid15878590  una vida digna}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946  evitando as\'ed, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6556693 qu}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \insrsid14297984 e sus pies lleguen a deforma}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid91771 rse. Luego}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid10514011 ,}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid91771  est\'e1
+ demostrado el primer requisito de procedibilidad.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712\charrsid4154712 
+\par b) }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946 La E.P.S. Seguro Social en ning\'fan momento manifest\'f3 que el elemento solicitado }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 por la accionante }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid6946946 pueda ser reemplazado por otr}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid14297984 o}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid6946946  que preste el mismo servicio es decir, que evite }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid14297984 deformaciones y dolor al menor;}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712\charrsid4154712  
+\par 
+\par c) En cuanto a la capacidad de pago para cubrir }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid2447607 el costo de las }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 \'93}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid2447607 
+Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 \'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712\charrsid4154712 , }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid2447607 la accionante manifest\'f3
+ en el escrito de tutela, lo siguiente: }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \i\insrsid2447607 \'93Si nuestra condici\'f3n econ\'f3mica fuera mejor, le aseguro que no someter\'eda a tanta humillaci\'f3n, ni pondr\'ed
+a en riesgo su vida, pero definitivamente el costo del elemento supera nuestros ingresos, pues yo no trabajo y mi esposo gana $472.779, con sus ingresos pagamos cr\'e9dito hipotecario de la casa, servicios p\'fablicos y educaci\'f3n de nues
+tros dos hijos, adem\'e1s de la subsistencia, alimentaci\'f3n y transporte.\'94}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid2447607  Agreg\'f3}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010  la se\'f1ora Giraldo}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid2447607  que el costo de l}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 a}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid2447607 s }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 plantilla}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid2447607 s es de $254.000,oo pesos}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5008010 , presupuesto con el que no cuenta}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid10514011 , demostrando as\'ed su incapacidad econ\'f3mica.}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \insrsid4154712\charrsid4154712 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid4154712 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 d)}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867\charrsid4154712  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 Las \'93Ortesis tobillo pie bilateral\'94}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \insrsid11800867\charrsid4154712  fue}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 ron}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid10636866  ordenada}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 s}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \insrsid11800867\charrsid4154712  por el m\'e9dico }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 especialista del Instituto Propace, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid10636866 presupuesto}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid11800867  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867\charrsid4154712 que no }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 cumple}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid10636866  con lo se\'f1alado por esta Corporaci\'f3
+n para que proceda la acci\'f3n de tutela}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid5515387 , es decir, que la orden m\'e9dica debe ser emitida por el m\'e9dico tratante y adscrito a la E.P.S. accionada.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\insrsid11800867\charrsid4154712 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \insrsid11800867 
+\par }\pard\plain \ltrpar\s27\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs28\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 Sin embargo, esta Cor}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid15362200 poraci\'f3n }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 
+mediante Auto de 21 de febrero del presente a\'f1o orden\'f3 a la E.P.S. demandada realizar al menor una valoraci\'f3n para establecer si es o no necesario el suministro de los aparatos ya antes mencionados. }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid3036762 A lo que la}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400  E.P.S. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid3036762 respondi\'f3 q}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 ue }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid3036762 no era el ente}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400  competent}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid3036762 e.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid11097510 \line }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid6124516 En definitiva}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid7951936 
+ no se recibi\'f3 una respuesta de fondo por parte de la entidad demandada, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid9705815 raz\'f3n por la que}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400  }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid7951936 se }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 requ}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid7951936 iri\'f3}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400  en dos oportunidades}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid735513  a esta entidad de salud}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid6124516 . }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid290116 Sin embargo}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid735513 ,}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\lang9226\langfe3082\langnp9226\insrsid7951936  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid9705815 no se recibi\'f3 ninguna contestaci\'f3n}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid7951936 .}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400 
+\par 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri0\widctlpar\wrapdefault\nooverflow\faauto\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid3366299 Por lo anterior, l}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid735513\charrsid735513 a Sala advierte que se parte de la buena fe y presunci\'f3n de veracidad de la afirmaci}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3366299 \'f3n}{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \insrsid735513\charrsid735513  realizada por }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid735513 la}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid735513\charrsid735513  accionante }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3366299 
+en cuanto a que su hijo requiere de las \'93Ortesis tobillo pie bilateral}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid6124516 \'94, m}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3366299 \'e1s a\'fan cuando la E.P.S. no desvirt}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid9397717 u\'f3}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3366299  el dicho de la se\'f1ora Claudia Yaneth Giraldo Rivera.}{\rtlch\fcs1 \ab\ai\af0 \ltrch\fcs0 \insrsid7951936 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3366299\charrsid735513 
+\par }\pard\plain \ltrpar\s27\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs28\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid3036762 En cuanto a la presunci\'f3n de veracidad}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid2243400  el}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12542468\charrsid12542468 
+ Decreto 2591 de 1991,}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11800867  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11293487 en el }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11800867 art\'edculo 20, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3036762 
+dispuso lo siguiente}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11800867 :
+\par 
+\par }\pard \ltrpar\s27\qj \li390\ri405\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin405\lin390\itap0\pararsid10821261 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11800867  \'93}{\rtlch\fcs1 \ai\af0 \ltrch\fcs0 \i\insrsid11800867 
+Articulo 20. PRESUNCION DE VERACIDAD. Si el informe no fuere rendido dentro del plazo correspondiente, se tendr\'e1n por ciertos los hechos y se entrar\'e1 a resolver de plano, salvo que el juez estime necesaria otra averiguaci\'f3n previa\'94}{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid11800867 
+\par }\pard \ltrpar\s27\qj \li0\ri0\nowidctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5854915 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12542468\charrsid12542468 Como quiera que en el caso objeto de estudio, la }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5854915 E.P.S. del Seguro S}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12542468\charrsid12542468 
+ocial no rind}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5854915 i\'f3 el informe solicitado por esta Corporaci\'f3n}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid12542468\charrsid12542468 , se tendr\'e1n por ciertos los hechos relatados por la se\'f1ora }{
+\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5854915 Claudia Yaneth Giraldo Rivera en representaci\'f3n de su hijo menor de edad Jhoan Felipe Sastre Giraldo.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid12542468\charrsid12542468 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri-219\sa120\widctlpar\wrapdefault\nooverflow\faauto\rin-219\lin0\itap0\pararsid4154712 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid12542468\charrsid12542468 
+\par }\pard\plain \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid5375334 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \ab\af0\afs28 
+\ltrch\fcs0 \fs28\insrsid4021358\charrsid5375334 Por lo anterior, la Sala ordenar\'e1 a la E.P.S. del Seguro Social, Seccional Bogot\'e1 que en el t\'e9rmino de cuarenta y ocho (48) horas siguientes a la notificaci\'f3
+n de esta Providencia, si no lo hubiere hecho, proceda a }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4021358\charrsid5375334 autori}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\lang9226\langfe3082\langnp9226\insrsid5858004 zar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid4021358\charrsid5375334  la entrega de las \'93Ortesis tobillo pie bilateral\'94 al menor Jhoan Felipe Sastre Giraldo}{
+\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid4021358\charrsid5375334  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid5375334\charrsid5375334 y el tratamiento integral que por su enfermedad y estado de salud requiera.}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid5375334\charrsid5375334 
+\par }\pard \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3626169 
+\par }\pard \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid126 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 La E.P.S. del Seguro Social, Seccional Bogot\'e1}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid126\charrsid3170333  tiene derecho a repetir contra el Estado, a trav\'e9s del FOSYGA, para recuperar }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 el 50% }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \cs22\fs28\super\insrsid1001492 \chftn 
+{\footnote \ltrpar \pard\plain \ltrpar\s16\ql \li0\ri0\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 
+\ltrch\fcs0 \cs22\super\insrsid14103397 \chftn }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid14103397  }{\rtlch\fcs1 \af0 \ltrch\fcs0 \lang9226\langfe3082\langnp9226\insrsid14103397  Sentencia C-463 de {\*\xmlopen\xmlns2{\factoidname metricconverter}
+{\xmlattr\xmlattrns0{\xmlattrname ProductID}{\xmlattrvalue 2008. M}}}2008. M{\*\xmlclose}.P. Jaime Araujo Renter\'eda.}}}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid10907001  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 de}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid126\charrsid3170333  los gastos en los que incurra y que legalmente no le corresponda asumir, de acuerdo con la parte motiva de esta providencia. El FOSYGA dispondr\'e1 de quince (15) d\'ed
+as para reconocer lo debido o indicar la fecha m\'e1xima en la cual lo har\'e1, fecha que no podr\'e1 exceder}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid126  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126\charrsid3170333 
+de seis (6) meses una vez presentada la solicitud para el pago por la E}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126\charrsid3170333 P}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 .}{
+\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126\charrsid3170333 S.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126\charrsid126 
+\par }\pard \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid2981341 
+\par }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 
+\par }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid6687762\charrsid6647635 La Corte debe}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid6687762 
+ aplicar directamente la preceptiva constitucional e inaplicar}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid6687762  en el presente caso las normas que se encuentran contenidas en el art\'ed
+culo 10 del Decreto 806 de 1998 \'93exclusiones y limitaciones del Plan Obligatorio de Salud\'94, la Resoluci\'f3n 5261 de 1994 \'93Manual de Actividades, Intervenciones y procedimientos\'94,  y el Acuerdo 228 de 2002 CNSSS.}{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\fs28\insrsid6687762 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri15\widctlpar\wrapdefault\nooverflow\faauto\rin15\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\insrsid6687762 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid1529910 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid10108911 IV}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\insrsid15156238 .  DECISI\'d3N
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15156238 
+\par En m\'e9rito de lo expuesto, la Sala }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5799648 Sexta}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15156238  de }{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid5799648 R}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid15156238 evisi\'f3
+n de la Corte Constitucional, administrando justicia en nombre del pueblo y por mandato de la Constituci\'f3n
+\par }\pard\plain \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\b\fs28\insrsid15156238 
+\par }\pard \ltrpar\qc \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par RESUELVE:
+\par }\pard \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 PRIMERO. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid2907068 RE}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 VOCAR }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13187070 
+la sentencia del Juzgado Cuarenta y Uno Civil del Circuito de Bogot\'e1 el 12 de septiembre de 2007, y en su lugar, }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid13187070 CONCEDER}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid13187070 
+ el amparo a los derechos fundamentales del menor Jhon Felipe Sastre Giraldo.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid13187070 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 SEGUNDO}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 .}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238  ORDENAR}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  }{\rtlch\fcs1 \af0 
+\ltrch\fcs0 \fs28\insrsid5375334 a }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid5375334\charrsid5375334 la Sala ordenar\'e1 a la E.P.S. del Seguro Social, Seccional Bogot\'e1 que en el t\'e9
+rmino de cuarenta y ocho (48) horas siguientes a la notificaci\'f3n de esta Providencia, si no lo hubiere hecho, }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\lang9226\langfe3082\langnp9226\insrsid5375334\charrsid5375334 autorice la entrega de las \'93
+Ortesis tobillo pie bilateral\'94 al menor Jhoan Felipe Sastre Giraldo}{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid5375334\charrsid5375334  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid5375334 y el tratamiento integral }{\rtlch\fcs1 
+\ab\af0\afs28 \ltrch\fcs0 \fs28\insrsid5375334\charrsid5375334 que por su enfermedad y estado de salud requiera.}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid13187070\charrsid3626169 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid1529910 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 TERCERO.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238  }{\rtlch\fcs1 \ab\af0\afs28 \ltrch\fcs0 \b\fs28\insrsid3170333\charrsid3170333 Reconocer}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 
+\fs28\insrsid3170333\charrsid3170333  que }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333 la E.P.S. Seguro Social, Seccional Bogot\'e1}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333\charrsid3170333 
+ tiene derecho a repetir contra el Estado, a trav\'e9s del FOSYGA, para recuperar }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 el 50% de}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333\charrsid3170333 
+ los gastos en los que incurra y que legalmente no le corresponda asumir, de acuerdo con la parte motiva de esta providencia. El FOSYGA dispondr\'e1 de quince (15) d\'edas para reconocer lo debido o indicar la fecha m\'e1xima en la cual lo har\'e1
+, fecha que no podr\'e1 exceder}{\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid3170333  }{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333\charrsid3170333 de seis (6) meses una vez presentada la solicitud para el pago por la E}{\rtlch\fcs1 \af0\afs28 
+\ltrch\fcs0 \fs28\insrsid126 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333\charrsid3170333 P}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid126 .}{\rtlch\fcs1 \af0\afs28 \ltrch\fcs0 \fs28\insrsid3170333\charrsid3170333 S.}{\rtlch\fcs1 
+\af0\afs28 \ltrch\fcs0 \fs28\insrsid15156238\charrsid126 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid14816475 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid1529910 CUART}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 O. }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\expnd1\expndtw5\insrsid15156238 L\'cdBRESE }{\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\expnd1\expndtw5\insrsid15156238 por Secretar\'eda la comunicaci\'f3n de que trata el art\'edculo 36 del Decreto 2591 de 1991, para los efectos all\'ed contemplados.}{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\expnd1\expndtw5\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }\pard\plain \ltrpar\s20\qj \li0\ri15\widctlpar\wrapdefault\nooverflow\faauto\rin15\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs20\alang1025 \ltrch\fcs0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\insrsid15156238 C\'f3piese, notif\'edquese, comun\'edquese, ins\'e9rtese en la Gaceta de la Corte Constitucional y c\'famplase. 
+\par }\pard\plain \ltrpar\qc \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 \rtlch\fcs1 \af0\afs24\alang1025 \ltrch\fcs0 \fs24\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\rtlch\fcs1 \af0 \ltrch\fcs0 
+\fs28\insrsid15156238 
+\par 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid290116 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \b\fs28\insrsid290116 
+\par 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 MARCO GERARDO MONROY CABRA
+\par Magistrado
+\par 
+\par 
+\par 
+\par 
+\par NILSON PINILLA PINILLA
+\par Magistrado
+\par 
+\par 
+\par 
+\par 
+\par HUMBERTO ANTONIO SIERRA PORTO
+\par Magistrado
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid10108911\charrsid10108911 Ausente en comisi\'f3n}{\rtlch\fcs1 \af0 \ltrch\fcs0 \i\fs28\insrsid15156238\charrsid10108911 
+\par }{\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 
+\par 
+\par 
+\par MARTHA VICTORIA SACHICA DE MONCALEANO
+\par Secretaria General
+\par }\pard \ltrpar\qj \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \fs28\insrsid15156238\charrsid10108911 
+\par }\pard \ltrpar\ql \li0\ri15\widctlpar\wrapdefault\aspalpha\aspnum\faauto\adjustright\rin15\lin0\itap0\pararsid6124516 {\rtlch\fcs1 \af0 \ltrch\fcs0 \insrsid8919252\charrsid10108911 
+\par }}

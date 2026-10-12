@@ -1,0 +1,93 @@
+{
+  "case_id": "string",
+  "phase": "pending | in_progress | completed",
+  "facts": [
+    {
+      "case_type": "medicamento | cita | tratamiento | procedimiento | respuesta_administrativa",
+      "request": {
+        "description": "string",
+        "date_requested": "YYYY-MM-DD",
+        "method": "string",
+        "radicado": "string"
+      },
+      "entity": {
+        "name": "string",
+        "type": "EPS | IPS | Clínica | Hospital"
+      },
+      "response": {
+        "status": "En trámite | Negado | Sin respuesta | Incompleto",
+        "date": "YYYY-MM-DD or null",
+        "document": "string or null"
+      },
+      "impact": {
+        "urgency": "Normal | Alta | Crítica",
+        "reason": "string"
+      },
+      "documents": {
+        "medical_order": "string",
+        "request_file": "string",
+        "response_file": "string",
+        "clinical_history": "string"
+      }
+    }
+  ],
+  "missing_fields": ["string"],
+  "confidence_score": "float",
+  "completion_score": "float",
+  "consent": {
+    "status": "accepted | rejected",
+    "date": "YYYY-MM-DD",
+    "method": "digital signature | verbal | written"
+  },
+  "risk_level": "low | medium | high",
+  "timestamp": "ISO-8601",
+  "interview_flow": {
+    "initial_state": "CONSENT",
+    "states": [
+      {
+        "id": "CONSENT",
+        "description": "Obtención de consentimiento informado para tratamiento de datos sensibles (salud)",
+        "prompt": "Bienvenido/a a AMPARA. Para asesorarte en la protección de tu derecho a la salud y preparar los documentos necesarios, requerimos tu consentimiento para tratar tus datos de salud de forma confidencial y segura. ¿Autorizas el tratamiento de tus datos para este fin? (Sí / No)",
+        "next": "CLASSIFICATION"
+      },
+      {
+        "id": "CLASSIFICATION",
+        "description": "Identificación de la necesidad jurídica en salud",
+        "prompt": "Por favor cuéntame brevemente: ¿cuál es tu situación actual con la EPS o servicio de salud? (ej. falta de entrega de medicamentos, cita con especialista demorada, cirugía pendiente o negativa de autorización)",
+        "next": "COLLECTION"
+      },
+      {
+        "id": "COLLECTION",
+        "description": "Entrevista guiada para recolectar hechos y campos obligatorios",
+        "next": "RISK_ASSESSMENT"
+      },
+      {
+        "id": "RISK_ASSESSMENT",
+        "description": "Evaluación de urgencia vital o afectación grave a la salud",
+        "next": "COMPLETED"
+      },
+      {
+        "id": "COMPLETED",
+        "description": "Información suficiente para fase de RAG, OCR y borrador de memorial"
+      }
+    ],
+    "field_prompts": {
+      "entity.name": "¿A qué EPS o entidad promotora de salud te encuentras afiliado/a? (ej. Sura, Nueva EPS, Sanitas, Salud Total, Capital Salud)",
+      "entity.regime": "¿En qué régimen estás afiliado/a? (Contributivo o Subsidiado)",
+      "request.description": "¿Qué medicamento, cita o procedimiento específico te fue ordenado por tu médico tratante?",
+      "request.date_requested": "¿En qué fecha te fue formulado o cuándo solicitaste el servicio a la EPS? (Aproximada o en formato AAAA-MM-DD)",
+      "response.status": "¿La EPS te dio alguna respuesta formal? (ej. 'Negado por no estar en PBS/MIPRES', 'Sin existencias / agotado', 'En trámite', o 'No han respondido')",
+      "impact.urgency": "¿Cuál es tu estado actual de salud respecto a esta demora? ¿Es un tratamiento continuo que se suspendió, o compromete gravemente tu vida o dolor intolerable?",
+      "documents.medical_order": "¿Tienes la fórmula médica o la orden expedida por el médico tratante a la mano? (Sí / No)",
+      "special_protection": "¿La persona afectada es menor de edad, adulto mayor, mujer gestante o tiene diagnóstico de enfermedad ruinosa/huérfana/catastrófica/cáncer? (Sí / No / Cuál)"
+    },
+    "risk_triggers": {
+      "critical_keywords": [
+        "cáncer", "quimioterapia", "diálisis", "uci", "infarto", "oxígeno", "trasplante", "inminente", "vih", "antirretroviral", "urgencias vital", "convulsiones"
+      ],
+      "high_keywords": [
+        "dolor severo", "suspensión de tratamiento", "insulina", "enfermedad huérfana", "medicamento no pos", "mipres vencido", "menor de edad", "adulto mayor"
+      ]
+    }
+  }
+}

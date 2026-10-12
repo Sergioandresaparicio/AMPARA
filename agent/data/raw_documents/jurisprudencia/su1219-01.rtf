@@ -1,0 +1,961 @@
+{\rtf1\ansi\ansicpg1252\uc1\deff0\stshfdbch0\stshfloch0\stshfhich0\stshfbi0\deflang3082\deflangfe3082{\fonttbl{\f0\froman\fcharset0\fprq2{\*\panose 02020603050405020304}Times New Roman;}{\f1\fswiss\fcharset0\fprq2{\*\panose 020b0604020202020204}Arial;}
+{\f36\fswiss\fcharset0\fprq2{\*\panose 020b0604030504040204}Tahoma;}{\f40\froman\fcharset238\fprq2 Times New Roman CE;}{\f41\froman\fcharset204\fprq2 Times New Roman Cyr;}{\f43\froman\fcharset161\fprq2 Times New Roman Greek;}
+{\f44\froman\fcharset162\fprq2 Times New Roman Tur;}{\f45\froman\fcharset177\fprq2 Times New Roman (Hebrew);}{\f46\froman\fcharset178\fprq2 Times New Roman (Arabic);}{\f47\froman\fcharset186\fprq2 Times New Roman Baltic;}
+{\f48\froman\fcharset163\fprq2 Times New Roman (Vietnamese);}{\f50\fswiss\fcharset238\fprq2 Arial CE;}{\f51\fswiss\fcharset204\fprq2 Arial Cyr;}{\f53\fswiss\fcharset161\fprq2 Arial Greek;}{\f54\fswiss\fcharset162\fprq2 Arial Tur;}
+{\f55\fswiss\fcharset177\fprq2 Arial (Hebrew);}{\f56\fswiss\fcharset178\fprq2 Arial (Arabic);}{\f57\fswiss\fcharset186\fprq2 Arial Baltic;}{\f58\fswiss\fcharset163\fprq2 Arial (Vietnamese);}{\f400\fswiss\fcharset238\fprq2 Tahoma CE;}
+{\f401\fswiss\fcharset204\fprq2 Tahoma Cyr;}{\f403\fswiss\fcharset161\fprq2 Tahoma Greek;}{\f404\fswiss\fcharset162\fprq2 Tahoma Tur;}{\f405\fswiss\fcharset177\fprq2 Tahoma (Hebrew);}{\f406\fswiss\fcharset178\fprq2 Tahoma (Arabic);}
+{\f407\fswiss\fcharset186\fprq2 Tahoma Baltic;}{\f408\fswiss\fcharset163\fprq2 Tahoma (Vietnamese);}{\f409\fswiss\fcharset222\fprq2 Tahoma (Thai);}}{\colortbl;\red0\green0\blue0;\red0\green0\blue255;\red0\green255\blue255;\red0\green255\blue0;
+\red255\green0\blue255;\red255\green0\blue0;\red255\green255\blue0;\red255\green255\blue255;\red0\green0\blue128;\red0\green128\blue128;\red0\green128\blue0;\red128\green0\blue128;\red128\green0\blue0;\red128\green128\blue0;\red128\green128\blue128;
+\red192\green192\blue192;}{\stylesheet{\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \snext0 Normal;}{\s1\ql \li0\ri0\keepn\widctlpar\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 
+\fs28\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 \sbasedon0 \snext0 heading 1;}{\s2\qc \li0\ri51\keepn\widctlpar\faauto\outlinelevel1\adjustright\rin51\lin0\itap0 \b\fs32\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 \sbasedon0 \snext0 
+heading 2;}{\s3\qj \li0\ri51\keepn\widctlpar\faauto\outlinelevel2\adjustright\rin51\lin0\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext0 heading 3;}{
+\s4\qj \li360\ri0\keepn\widctlpar\faauto\outlinelevel3\adjustright\rin0\lin360\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext0 heading 4;}{
+\s5\qj \li3686\ri51\keepn\widctlpar\faauto\outlinelevel4\adjustright\rin51\lin3686\itap0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext0 heading 5;}{\s6\qc \li0\ri193\sl360\slmult0
+\keepn\widctlpar\faauto\outlinelevel5\adjustright\rin193\lin0\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext0 heading 6;}{\s7\qc \li0\ri482\sl300\slmult0
+\keepn\widctlpar\faauto\outlinelevel6\adjustright\rin482\lin0\itap0 \b\fs26\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext0 heading 7;}{\s8\qj \li0\ri0\sl360\slmult0\keepn\widctlpar\faauto\outlinelevel7\adjustright\rin0\lin0\itap0 
+\fs28\cf6\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext0 heading 8;}{\s9\qj \li3119\ri482\sl300\slmult0\keepn\widctlpar\faauto\outlinelevel8\adjustright\rin482\lin3119\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 
+\sbasedon0 \snext0 heading 9;}{\*\cs10 \additive \ssemihidden Default Paragraph Font;}{\*
+\ts11\tsrowd\trftsWidthB3\trpaddl108\trpaddr108\trpaddfl3\trpaddft3\trpaddfb3\trpaddfr3\trcbpat1\trcfpat1\tscellwidthfts0\tsvertalt\tsbrdrt\tsbrdrl\tsbrdrb\tsbrdrr\tsbrdrdgl\tsbrdrdgr\tsbrdrh\tsbrdrv 
+\ql \li0\ri0\widctlpar\aspalpha\aspnum\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1024\langfe1024\cgrid\langnp1024\langfenp1024 \snext11 \ssemihidden Normal Table;}{\s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext15 Body Text Indent;}{\s16\qj \li426\ri1185\widctlpar\faauto\adjustright\rin1185\lin426\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext16 
+Block Text;}{\s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 \sbasedon0 \snext17 Body Text;}{\*\cs18 \additive \super \sbasedon10 \ssemihidden footnote reference;}{
+\s19\ql \li0\ri0\sb100\sa100\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext19 Normal (Web);}{\s20\qj \li0\ri-496\widctlpar\faauto\adjustright\rin-496\lin0\itap0 
+\i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext20 Body Text 3;}{\s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 \sbasedon0 \snext21 \ssemihidden 
+footnote text;}{\*\cs22 \additive \sbasedon10 page number;}{\s23\ql \li0\ri0\widctlpar\tqc\tx4419\tqr\tx8838\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext23 header;}{\s24\ql \li0\ri0\widctlpar
+\tqc\tx4252\tqr\tx8504\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 \sbasedon0 \snext24 footer;}{\*\cs25 \additive \fs20\super \sbasedon10 Ref,de nota al pie;}{
+\s26\qj \li0\ri51\nowidctlpar\faauto\adjustright\rin51\lin0\itap0 \f1\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext26 Body Text 21;}{\s27\qj \li709\ri709\nowidctlpar\faauto\adjustright\rin709\lin709\itap0 
+\f1\fs26\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext27 cita textual;}{\s28\qj \li567\ri0\sl360\slmult0\widctlpar\faauto\adjustright\rin0\lin567\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 \sbasedon0 \snext28 
+Body Text Indent 2;}{\s29\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \f36\fs16\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 \sbasedon0 \snext29 \ssemihidden \styrsid4344437 Balloon Text;}}{\*\latentstyles\lsdstimax156\lsdlockeddef0}
+{\*\rsidtbl \rsid4344437\rsid12146519}{\*\generator Microsoft Word 11.0.6568;}{\info{\title Sentencia SU}{\author Corte Constitucional}{\operator  }{\creatim\yr2006\mo9\dy20\hr9\min34}{\revtim\yr2006\mo9\dy20\hr9\min35}{\version3}{\edmins1}{\nofpages37}
+{\nofwords14334}{\nofchars78838}{\*\company Corte Constitucional}{\nofcharsws92987}{\vern24579}}\paperw12242\paperh20163\margl1701\margr1701\margt1701\margb2835 
+\deftab708\widowctrl\ftnbj\aenddoc\hyphhotz425\revisions\noxlattoyen\expshrtn\noultrlspc\dntblnsbdb\nospaceforul\lytprtmet\hyphcaps0\formshade\horzdoc\dghspace120\dgvspace120\dghorigin1701\dgvorigin1984\dghshow0\dgvshow3
+\jcompress\viewkind4\viewscale100\pgbrdrhead\pgbrdrfoot\nolnhtadjtbl\rsidroot12146519 \fet0{\*\ftnsep \pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\chftnsep 
+\par }}{\*\ftnsepc \pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 \chftnsepc 
+\par }}{\*\aftnsep \pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 \chftnsep 
+\par }}{\*\aftnsepc \pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 \chftnsepc 
+\par }}\sectd \psz5\linex0\headery709\footery709\colsx709\endnhere\titlepg\sectdefaultcl\sftnbj {\header \pard\plain \s23\ql \li0\ri0\widctlpar\tqc\tx4419\tqr\tx8838\pvpara\phmrg\posxr\posy0\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\field{\*\fldinst {\cs22\insrsid12146519 PAGE  }}{\fldrslt {\cs22\lang1024\langfe1024\noproof\insrsid4344437 3}}}{\cs22\insrsid12146519 
+\par }\pard \s23\ql \li0\ri360\widctlpar\tqc\tx4419\tqr\tx8838\faauto\adjustright\rin360\lin0\itap0 {\insrsid12146519 
+\par }}{\footer \pard\plain \s24\ql \li0\ri0\widctlpar\tqc\tx4252\tqr\tx8504\pvpara\phmrg\posxr\posy0\faauto\adjustright\rin0\lin0\itap0 \fs20\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 {\cs22\insrsid12146519 
+\par }\pard \s24\ql \li0\ri360\widctlpar\tqc\tx4252\tqr\tx8504\faauto\adjustright\rin360\lin0\itap0 {\insrsid12146519 
+\par }}{\*\pnseclvl1\pnucrm\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl2\pnucltr\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl3\pndec\pnstart1\pnindent720\pnhang {\pntxta .}}{\*\pnseclvl4\pnlcltr\pnstart1\pnindent720\pnhang {\pntxta )}}
+{\*\pnseclvl5\pndec\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl6\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl7\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl8
+\pnlcltr\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}{\*\pnseclvl9\pnlcrm\pnstart1\pnindent720\pnhang {\pntxtb (}{\pntxta )}}\pard\plain \qj \li0\ri618\widctlpar\faauto\adjustright\rin618\lin0\itap0 
+\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid12146519 Sentencia SU1219/01
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\b\insrsid12146519 
+\par }\pard \qj \li560\ri51\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\insrsid12146519 ACCION DE TUTELA CONTRA SENTENCIA DE TUTELA}{\insrsid12146519 -Prohibici\'f3n
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\i\insrsid12146519 La Corte debe decidir si contra una sentencia de tutela procede una nueva acci\'f3
+n de tutela basada exclusivamente en el argumento de que al concederla se incurri\'f3 en una v\'eda de hecho porque la tutela era desde el principio improcedente. Se observa c\'f3mo el c
+uestionamiento al fallo de tutela versa sobre el juicio de procedencia de la acci\'f3n como elemento constitutivo e inescindible del fallo, sin que se cuestionen actuaciones del juez de tutela diferentes a la sentencia misma. En consideraci\'f3
+n a lo expresado anteriormente, la \'fanica alternativa para manifestar inconformidad con la sentencia de tutela de segunda instancia propiamente dicha que se encuentra en firme, es la intervenci\'f3n de la parte interesada en el proceso de selecci\'f3
+n para revisi\'f3n ante la Corte Constitucional por las razones anteriormente expuestas. En efecto, de la Constituci\'f3n se concluye que no procede la acci\'f3n de tutela contra fallos de tutela. No siendo posible interponer acci\'f3n de tutela por v\'ed
+as de hecho contra fallos de tutela, tampoco hay lugar a revisar el fallo de segunda instancia que concediera la tutela.
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard \qj \li560\ri51\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\insrsid12146519 REVISION FALLO DE TUTELA}{\insrsid12146519 -Alcance
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s19\qj \li0\ri51\sb100\sa100\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\i\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 
+Las anteriores premisas normativas permiten sostener que en la revisi\'f3n de las decisiones judiciales relacionadas con la acci\'f3n de tutela la Corte ejerce la guarda de la integridad y supremac\'eda de la Constituci\'f3n y act\'faa como \'f3
+rgano de cierre de la jurisdicci\'f3n constitucional de tutela mediante la unificaci\'f3n de la jurisprudencia constitucional. En esta tarea la Corte debe fijar, como int\'e9rprete autorizado de la Constituci\'f3
+n, las reglas constitucionales que sirvan para ilustrar la Constituci\'f3n en casos dudosos y asegurar su fuerza normativa. Por su parte, los jueces al estar sujetos al imperio de la ley, lo est\'e1n a su vez a la Constituci\'f3n y a su interpretaci\'f3
+n autorizada.
+\par }\pard \s19\ql \li560\ri51\sb100\sa100\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 CONTROL DE CONSTITUCIONALIDAD}{\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 -Naturaleza mixta
+\par }\pard \s19\qj \li0\ri51\sb100\sa100\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\i\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 
+Cuando la Corte Constitucional se pronuncia sobre una materia respecto de la cual debe unificar jurisprudencia y obrar como cabeza de la jurisdicci\'f3
+n constitucional, sus decisiones tienen un alcance mayor a las que adopta generalmente en salas de revisi\'f3
+n de tutela. El sistema de control constitucional adoptado en Colombia es mixto en la medida en que combina elementos del sistema difuso y del sistema
+ concentrado. No es necesario abundar en los elementos concentrados del sistema colombiano. Es suficiente con subrayar que la opci\'f3n del constituyente de 1991 de crear una Corte Constitucional fortaleci\'f3 en forma significativa esta dimensi\'f3
+n concentrada de nuestro sistema. Al haberle atribuido a ese \'f3rgano de cierre de las controversias relativas a la interpretaci\'f3n de la Constituci\'f3n la facultad de conocer cualquier acci\'f3n de tutela no s\'f3lo reafirm\'f3
+ este elemento de concentraci\'f3n en materia de derechos constitucionales fundamen\-tales, sino que le confiri\'f3 una trascendencia especial a la unificaci\'f3
+n de jurisprudencia en estos asuntos. Cuando la Corte Constitucional decide en Sala Plena sobre estas materias desarrolla su misi\'f3n constitucional y por lo tanto est\'e1 obligada a asumir su responsabilidad como \'f3
+rgano unificador de la jurisprudencia.
+\par }\pard \s19\ql \li560\ri51\sb100\sa100\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 OBITER DICTA}{\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 -Alcance}{
+\b\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 /RATIO DECIDENDI}{\fs28\lang9226\langfe3082\langnp9226\insrsid12146519 -Alcance
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\insrsid12146519 
+\par }{\i\insrsid12146519 La jurisprudencia ha distinguido entre obiter dicta y ratio decidendi, para sostener que el car\'e1cter vinculante se refiere a esta \'faltima y no a la primera. La ratio decidendi abarca el criterio jur\'eddico determinante as\'ed
+ como las razones inescindiblemente relacionadas con el decisum y sin las cuales la decisi\'f3n del caso no ser\'eda comprensible o carecer\'eda de fundamento. El obiter dicta, lo que se dice de paso, carece del car\'e1
+cter vinculante de la ratio decidendi. La doctrina constitucional re\'fane tanto dicho criterio determinante de la decisi\'f3n adoptada como las razones espec\'edficas para justificarla y aplicarla en un caso concreto. Es un concepto m\'e1
+s amplio que el de ratio decidendi puesto que comprende las consideraciones que justifican la decisi\'f3n y lo resuelto. La ratio decidendi surge de la propia lectura autorizada de la Constituci\'f3n por parte del \'f3rgano constitucional encargado
+ de velar por su interpretaci\'f3n y aplicaci\'f3n integrales. Exhibe un grado mayor de abstracci\'f3n que el decisum, el cual surte efectos en el caso concreto. La ratio decidendi se proyecta \endash 
+ en virtud del principio de igualdad, de la seguridad jur\'eddica, del principio de confianza leg\'edtima, y de la supremac\'eda de la Constituci\'f3n\endash  m\'e1s all\'e1
+ del caso concreto y tiene la fuerza y el valor de precedente para todos los jueces en sus decisiones. Una vez fijado con autoridad, por el \'f3rgano competente y siguiendo el proced
+imiento constitucional para ese fin, el significado de la norma constitucional, \'e9ste se integra a ella y adquiere fuerza vinculante al ser parte del derecho a cuyo imperio est\'e1n sometidas todas las autoridades en un Estado Social de Derecho. El art
+\'edculo 230 de la Constituci\'f3n establece que los jueces est\'e1n sometidos al imperio de la ley, concepto que no abarca exclusivamente las leyes en sentido formal, sino que comprende obviamente la Constituci\'f3
+n y, en un sentido amplio, el derecho dentro del cual la ratio de las sentencias ocupa un lugar primordial puesto que le confieren efectividad a las normas, al concretar sus alcances. Adem\'e1
+s, de lo contrario - es decir, de escindirse la norma de la ratio que le fija su significado para asegurar su aplicaci\'f3n efectiva y la concreta para precisar sus alcances - se romper\'eda la unidad del ordenamiento jur\'eddico y se resquebrajar\'ed
+a su coherencia en desmedro de la seguridad jur\'eddica, de la aplicaci\'f3n igual de las normas a casos iguales y de la confianza leg\'edtima de los habitantes en que el derecho ser\'e1 aplicado de manera consistente y predecible.
+\par }{\highlight7\insrsid12146519 
+\par }\pard \s17\qj \li560\ri0\widctlpar\faauto\adjustright\rin0\lin560\itap0 {\b\insrsid12146519 AUTONOMIA JUDICIAL}{\insrsid12146519 -Independencia es para aplicar las normas
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }{\i\insrsid12146519 La Corte, advierte que los jueces son independientes y aut\'f3nomos. Subraya, tambi\'e9n, que su independencia es para aplicar las normas, no para dejar de aplicar la Constituci\'f3
+n. Un juez no puede invocar su independencia para eludir el imperio de la ley, y mucho menos, para dejar de aplicar la ley de leyes, la norma suprema que es la Constituci\'f3n. La alternativa, inaceptable e
+n una democracia constitucional, es que el significado de la Constituci\'f3n cambie seg\'fan el parecer de cada juez. Entonces, ser\'e1 vinculante no la norma constitucional objetiva, sino la opini\'f3
+n de cada funcionario judicial que puede variar de despacho en despacho y cambiar de tiempo en tiempo, seg\'fan evolucionen las tesis de cada juez. Nada m\'e1s contrario al concepto mismo de derecho. Nada m\'e1
+s lesivo para la efectividad de un Estado Social de Derecho. Nada que le reste m\'e1s vigencia y eficacia a la Constituci\'f3n.
+\par }{\insrsid12146519 
+\par }\pard \s17\qj \li560\ri0\widctlpar\faauto\adjustright\rin0\lin560\itap0 {\b\insrsid12146519 ACCION DE TUTELA CONTRA SENTENCIA DE TUTELA Y RATIO DECIDENDI
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 La ratio decidendi en este caso excluye la acci\'f3
+n de tutela contra sentencias de tutela. El afectado e inconforme con un fallo en esa jurisdicci\'f3n, puede acudir ante la Corte Constitucional para solicitar su revisi\'f3n. En el tr\'e1mite de selecci\'f3n y revisi\'f3
+n de las sentencias de tutela la Corte Constitucional analiza y adopta la decisi\'f3n que pone fin al debate constitucional. Este procedimiento garantiza que el \'f3rgano de cierre de la jurisdicci\'f3n 
+constitucional conozca la totalidad de las sentencias sobre la materia que se profieren en el pa\'eds y, mediante su decisi\'f3n de no seleccionar o de revisar, defina cu\'e1l es la \'faltima palabra en cada caso. As\'ed
+ se evita la cadena de litigios sin fin que se generar\'eda de admitir la procedencia de acciones de tutela contra sentencias de tutela, pues es previsible que los peticionarios intentar\'edan ejercerla sin l\'ed
+mite en busca del resultado que consideraran m\'e1s adecuado a sus intereses lo que significar\'eda dejar en la indefinici\'f3n la solicitud de protecci\'f3n de los derechos fundamentales. La Corte Constitucional, como \'f3
+rgano de cierre de las controversias constitucionales, pone t\'e9rmino al debate constitucional, e impide mantener abierta una disputa que involucra los derechos fundamentales de la persona, para garantizar as\'ed su protecci\'f3n oportuna y efectiva.
+
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par }\pard \qj \li560\ri51\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\insrsid12146519 ACCION DE TUTELA CONTRA SENTENCIA DE TUTELA}{\insrsid12146519 -Si se aceptara la acci\'f3n perder\'eda su efectividad
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 De aceptarse que la tutela procede contra sentencias de tutela \'e9sta perder\'ed
+a su efectividad como mecanismo de acceso a la justicia para amparar los derechos fundamentales. El derecho a acceder a la justicia no comprende tan s\'f3lo la existencia formal de acciones y recursos sino ante todo que las personas puedan obtener de los
+ jueces una decisi\'f3n que resuelva las controversias jur\'eddicas conforme a derecho. Si la acci\'f3n de tutela procediera contra fallos de tutela, siempre ser\'eda posible postergar la resoluci\'f3n definitiva de la petici\'f3
+n de amparo de los derechos fundamentales, lo cual har\'eda inocua \'e9sta acci\'f3n y vulnerar\'eda el derecho constitucional a acceder a la justicia. La Corte Constitucional tiene la misi\'f3n institucional de impedir que ello ocurra porque lo que est
+\'e1 en juego no es nada menos que la efectividad de todos los derechos constitucionales, la cual quedar\'ed
+a indefinidamente postergada hasta que el vencido en un proceso de tutela decidiera no insistir en presentar otra tutela contra el fallo que le fue adverso para buscar que su posici\'f3n coincida con la opini\'f3n de alg\'fan 
+juez. En este evento, seguramente el anteriormente triunfador iniciar\'e1 la misma cadena de intentos hasta volver a vencer.
+\par }\pard\plain \qj \li0\ri618\widctlpar\faauto\adjustright\rin618\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid12146519 
+\par }\pard \qj \li567\ri618\widctlpar\faauto\adjustright\rin618\lin567\itap0 {\b\insrsid12146519 COSA JUZGADA EN TUTELA}{\insrsid12146519 
+\par }\pard \qj \li0\ri618\widctlpar\faauto\adjustright\rin618\lin0\itap0 {\insrsid12146519 
+\par }\pard \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\i\insrsid12146519 La decisi\'f3n de la Corte Constitucional consistente en no seleccionar para revisi\'f3n una sentencia de tutela ti
+ene como efecto principal la ejecutoria formal y material de esta sentencia, con lo que opera el fen\'f3meno de la cosa juzgada constitucional. Salvo la eventualidad de la anulaci\'f3
+n de dicha sentencia por parte de la misma Corte Constitucional de conformidad con la ley, la decisi\'f3n de excluir la sentencia de tutela de la revisi\'f3
+n se traduce en el establecimiento de una cosa juzgada inmutable y definitiva. De esta forma se resguarda el principio de la seguridad jur\'eddica y se manifiesta el car\'e1cter de la Corte Constitucional como \'f3rgano de cierre del sistema jur\'eddico. 
+
+\par }\pard \qj \li0\ri618\widctlpar\faauto\adjustright\rin618\lin0\itap0 {\insrsid12146519 
+\par }\pard \qc \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\b\insrsid12146519 
+\par }\pard \qj \li3960\ri51\widctlpar\faauto\adjustright\rin51\lin3960\itap0 {\insrsid12146519 Referencia: expediente T-388435 
+\par Acci\'f3n de tutela instaurada por Humberto Fortich Vasquez contra la Caja De Compensaci\'f3n Familiar De Cartagena. 
+\par 
+\par Referencia: expediente T-412756
+\par Acci\'f3n de tutela instaurada por la CAJA DE COMPENSACI\'d3N FAMILIAR DE CARTAGENA contra el JUZGADO 1 CIVIL DEL CIRCUITO DE CARTAGENA y OTRO.
+\par 
+\par Temas:
+\par Tutela contra sentencias de tutela - prohibici\'f3n
+\par Alcance de la revisi\'f3n de sentencias de tutela por la Corte Constitucional
+\par 
+\par Magistrado Ponente:
+\par }\pard\plain \s5\qj \li3960\ri51\keepn\widctlpar\faauto\outlinelevel4\adjustright\rin51\lin3960\itap0 \b\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b0\insrsid12146519 Dr. MANUEL JOSE CEPEDA ESPINOSA
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par Bogot\'e1, D.C., veintiuno (21) de noviembre de dos mil uno (2001).
+\par 
+\par La Sala Plena de la Corte Constitucional, en ejercicio de sus atribuciones constitucionales y previo el cumplimiento de los requisitos y tr\'e1mites legales y reglamentarios, ha proferido la siguiente
+\par 
+\par }\pard\plain \s2\qc \li0\ri51\keepn\widctlpar\faauto\outlinelevel1\adjustright\rin51\lin0\itap0 \b\fs32\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\fs28\lang9226\noproof0\langnp9226\insrsid12146519 SENTENCIA
+\par }\pard\plain \qc \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\insrsid12146519 En el proceso de revisi\'f3n de la sentencia del seis (6) de diciembre de dos mil (2000), proferida por la Corte Suprema de Justicia, Sala de Casaci\'f3
+n Civil y Agraria, en el proceso de tutela T-412756 de la Caja de Compensaci\'f3n Familiar de Cartagena contra el Juzgado Primero Civil del Circuito de Cartagena y otro.
+\par 
+\par }{\b\insrsid12146519 I. ANTECEDENTES
+\par 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\i0\insrsid12146519 La Sala de Selecci\'f3n N\'famero Dos, mediante auto del nueve (9) de febre
+ro de dos mil uno (2001), resolvi\'f3 seleccionar el proceso de tutela radicado bajo el n\'famero T-412756 para revisi\'f3n y acumularlo, por unidad de materia, al proceso de tutela radicado bajo el n\'fa
+mero T-388435, inicialmente no seleccionado para revisi\'f3n. A continuaci\'f3n se exponen los hechos y las decisiones correspondientes a cada uno de los dos procesos de tutela.}{\b\i0\insrsid12146519 
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid12146519 
+\par A. Expediente T-388435
+\par 
+\par 1. Hechos
+\par }\pard\plain \s1\qc \li0\ri0\keepn\widctlpar\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \fs28\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 {\b\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 1.1 Humberto Fortich V\'e1squez present\'f3 acci\'f3n de tutela en contra de la Caja de Compensaci\'f3
+n Familiar de Cartagena (Comfamiliar), por considerar que estaban siendo violados sus derechos a la vida digna, al trabajo, a la vivienda digna y a la subsistencia, por parte de la entidad demandada. El actor trabaja como m\'e9
+dico de medio tiempo de la entidad desde 1985, pero en el a\'f1o de 1994 decidi\'f3 cambiarse al horario nocturno, por lo cual suscribi\'f3 nuevo contrato en el que se pact\'f3 que su salario continuar\'eda siendo el mismo y que se considerar\'edan en 
+\'e9l incluidas las horas extras que \'e9ste trabajara (cl\'e1usula adicional al contrato individual de trabajo). 
+\par 
+\par 1.2 A juicio del actor, adem\'e1s de que la cl\'e1usula adicional es ineficaz de acuerdo con la normativa laboral por desmejorar la situaci\'f3n del trabajador, dicha cl\'e1usula no incluye los recargos a que tiene derecho por trabajar e
+n las noches y en d\'edas festivos (del 35% y del 100% sobre el salario base, respectivamente). Considera que le son adeudados con la respectiva indexaci\'f3n dado que no le han sido reconocidos por la entidad pese a sus peticiones al respecto.}{
+\b\insrsid12146519 
+\par 
+\par }{\insrsid12146519 Consider\'f3 el actor que su situaci\'f3n era digna de protecci\'f3n por v\'eda de tutela pues si bien exist\'eda un mecanismo judicial para hacer valer sus derechos, como es el proceso laboral ordinario, \'e9ste era ineficaz en raz\'f3
+n de su demora, la que pod\'eda ocasionarle un perjuicio irremediable. El riesgo de sufrir un tal perjuicio radicaba en que el salario que al momento recib\'ed
+a no le alcanzaba para cumplir las cuotas hipotecarias de vivienda (varias de las cuales ya estaban atrasadas) ni el pago de la educaci\'f3n de sus hijas, lo que pod\'eda llevar a la p\'e9
+rdida de su vivienda, a la falta de condiciones para vivir de forma digna y a la afectaci\'f3n de su m\'ednimo vital. As\'ed las cosas, estim\'f3 que la tutela era procedente como mecanismo transitorio.
+\par 
+\par }{\b\insrsid12146519 2. Intervenciones en el proceso de tutela de primera instancia
+\par 
+\par }{\insrsid12146519 2.1 Comfamiliar, la entidad demandada, contest\'f3 la tutela y se opuso a la misma por considerarla improcedente. Argument\'f3 la entidad que el salario pagado al trabajador a lo largo de la vigencia del contrato cubr\'ed
+a tanto las horas extras como los recargos, a manera de jornada ordinaria susceptible de ser pactada por empleado y empleador de acuerdo con el C\'f3digo Sustantivo de Trabajo. Adem\'e1s, dado que el salario del trabajador hab\'ed
+a sido siempre cancelado oportunamente, el pago de dichos recargos constituir\'eda pago de lo no debido.
+\par 
+\par 2.2 La demandada consider\'f3 adem\'e1s que si el salario pagado al trabajador no le era suficiente para cubrir todos sus gastos, poni\'e9ndose de esa manera en riesgo su subsistencia, ello obedec\'eda al mal c\'e1lculo del dema
+ndante y no era del resorte de la entidad cumplidora de sus obligaciones salariales. Por otro lado, consider\'f3 que los derechos reclamados por el accionante eran de car\'e1cter litigioso y que, como tales, deb\'ed
+an controvertirse en el proceso indicado para ello, es decir el proceso laboral ordinario pues, de lo contrario, la naturaleza subsidiaria de la acci\'f3n de tutela se ver\'eda negada, convirti\'e9ndose as\'ed en v\'eda procesal preferente.
+\par 
+\par }{\b\insrsid12146519 3. Sentencia de tutela en primera instancia
+\par }{\insrsid12146519 
+\par El Juzgado Sexto Civil Municipal de Cartagena de Indias, mediante sentencia del quince (15) de agosto de dos mil (2000) deneg\'f3 la tutela impetrada.
+\par 
+\par El fallador de tutela consider\'f3 que, si bien la situaci\'f3n econ\'f3mica del accionante era grave, seg\'fan las declaraciones juramentadas dadas en audiencia p\'fablica por conocidos suyos, e imped\'eda la satisfacci\'f3n de sus necesidades b\'e1
+sicas de acuerdo con su nivel de vida, y que en ese sentido cabr\'eda en principio la existencia de un perjuicio irremediable que hiciera viable la tutela, \'e9sta no era procedente. Lo anterior porque el empleador hab\'ed
+a cumplido con el pago de los salarios a que estaba obligado, de manera que no era su actuar, sino la falta de previsi\'f3n del empleado, la causa del perjuicio que \'e9ste se ve\'eda en peligro de sufrir. Afirm\'f3 el juez de primera instancia: 
+\par 
+\par }\pard\plain \s16\qj \li567\ri902\widctlpar\faauto\adjustright\rin902\lin567\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\i0\lang9226\langfe3082\langnp9226\insrsid12146519 \'93(S)i los ingresos que \'e9l recibe por parte de \'e9
+sta (sic) entidad no son suficientes para satisfacer todas sus necesidades, no es la entidad tutelada, la obligada a solucionarle tales perjuicios.\'94 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang3082\noproof0\langnp3082\insrsid12146519 Adicionalmente consider\'f3 que no era la tutela el medio id\'f3
+neo para el reconocimiento de acreencias laborales, por lo que \'e9ste deb\'eda ser declarado acudiendo de la jurisdicci\'f3n laboral ordinaria, de forma tal que no se viera violado el derecho a la defensa de la entidad en cuesti\'f3n
+. En ese orden de ideas la tutela era improcedente.
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid12146519 
+\par 4. Impugnaci\'f3n del accionante
+\par 
+\par }{\insrsid12146519 El accionante impugn\'f3 el fallo de primera instancia e insisti\'f3 en que los recargos por trabajo nocturno y en dominicales y festivos no estaban incluidos dentro del salario 
+efectivamente cancelado por la demandada, por lo que es exigible el pago del salario completo. Adem\'e1s, sostuvo que al ser el monto de su salario inferior a diez salarios m\'ednimos mensuales, no pod\'eda pactarse entre \'e9
+l y su empleador un salario integral. Por lo anterior, los recargos le eran legalmente adeudados y su pago no ser\'eda de ninguna manera un pago doble. 
+\par 
+\par Tambi\'e9n indic\'f3 el accionante que la tutela s\'ed era el medio id\'f3neo para la protecci\'f3n de sus derechos dado el perjuicio irremediable que pod\'eda surgir si ellos no eran salvaguardados. Adicionalmente, consider\'f3
+ que no negaba a la demandada el derecho de defensa, dado que pod\'eda aportar pruebas y declaraciones dentro del proceso. Adem\'e1s, consider\'f3 que la entidad demandada no hab\'eda aportado todas las pruebas que le hab\'ed
+an sido exigidas, por lo cual deb\'eda presumirse la veracidad de lo aportado por el accionante al respecto.
+\par }{\b\insrsid12146519 
+\par 5. Fallo de segunda instancia objeto de revisi\'f3n
+\par 
+\par }{\insrsid12146519 El Juzgado Primero Civil del Circuito de Cartagena, mediante sentencia del veintiocho (28) de septiembre de dos mil (2000), le otorg\'f3 raz\'f3n al impugnante y concedi\'f3 la tutela solicitada.
+\par 
+\par Consider\'f3 que era la acci\'f3n procedente \'93como mecanismo para evitar que el trabajador sufra una situaci\'f3n cr\'edtica econ\'f3mica y psicol\'f3gica\'94, dada la amenaz
+a de que un perjuicio irremediable le fuera causado si se utilizaba el medio ordinario, m\'e1s demorado que el de la tutela. Aval\'f3
+ el juez todos y cada uno de los argumentos esbozados por el accionante, decidiendo entonces, amparar sus derechos mediante la revocaci\'f3
+n del anterior fallo y la orden a la entidad empleadora de pagar las sumas debidas relativas a los recargos por trabajo nocturno, festivo y dominicales, con su respectiva indexaci\'f3n, de manera que el salario fuera pagado de manera completa.
+\par 
+\par Estim\'f3 el juez de tutela en segunda instancia que, en consideraci\'f3n a lo establecido en el art\'edculo 43 del C\'f3digo Sustantivo del Trabajo, la cl\'e1
+usula adicional incluida en el contrato de trabajo era totalmente ineficaz, por desmejorar la situaci\'f3n del trabajador en relaci\'f3n con lo dispuesto por la legislaci\'f3n laboral para el caso del trabajo, dominical y festivo. Sostuvo, adem\'e1
+s, que el pago del salario al demandante no ha sido completo y que la entidad demandada no demostr\'f3 haber cancelado lo correspondiente a recargos por trabajo nocturno, dominicales y festivos. Invoc\'f3, adem\'e1
+s, jurisprudencia de la Corte Constitucional (ST-161 de 1998) en la que se sostiene que el derecho fundamental al trabajo consagrado en el art\'edculo 25 de la Constituci\'f3n debe ser protegido en todas sus modalidades. Sostuvo que los m\'e9dicos no est
+\'e1n excluidos del trato digno que merece todo trabajador y que el trato digno al trabajador no s\'f3lo incluye el pago oportuno de su salario, sino su pago completo.
+\par 
+\par }{\b\insrsid12146519 6. No selecci\'f3n para revisi\'f3n por parte de la Corte Constitucional
+\par 
+\par }{\insrsid12146519 Mediante auto del diecisiete (17) de noviembre de dos mil (2000), proferido por la Sala Novena de Selecci\'f3n de la Corte Constitucional, la anterior sentencia de tutela no fue seleccionada para revisi\'f3n. Sin embargo, fue objeto
+ de otra acci\'f3n de tutela dirigida contra ella, como se ver\'e1 a continuaci\'f3n.
+\par }{\b\insrsid12146519  
+\par B. Expediente T- 412756
+\par 
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\b\insrsid12146519 1. Hechos
+\par }\pard\plain \s1\qc \li0\ri0\keepn\widctlpar\faauto\outlinelevel0\adjustright\rin0\lin0\itap0 \fs28\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 {\b\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 La entidad demandada procedi\'f3 a instaurar acci\'f3
+n de tutela en contra del juez de segunda instancia y del accionante de la acci\'f3n de tutela inicial, por considerar que le hab\'edan sido violados sus derechos al debido proceso y a la defensa. Espec\'edficamente, el mencionado juez habr\'ed
+a incurrido en una v\'eda de hecho con su actuaci\'f3n, al no reconocer que la competente para conocer del asunto debatido era la jurisdicci\'f3n laboral ordinaria. As\'ed, el juez al fallar en segunda instancia, sin fundamento objetivo alguno, viol\'f3
+ disposiciones de la Carta, por tratar de manera inadecuada los hechos y aplicar incorrectamente las normas relevantes, haciendo procedente la acci\'f3n de tutela en su contra. 
+\par 
+\par }{\b\insrsid12146519 2. Intervenciones en el proceso de tutela de primera instancia
+\par }{\insrsid12146519  
+\par Se opuso a esta acci\'f3n el juez demandado alegando que su decisi\'f3n hab\'eda sido tomada de acuerdo con el derecho, tal y como lo demuestra la argumentaci\'f3n del fallo, mediante la aplicaci\'f3
+n de las normas legales apropiadas y la jurisprudencia de la Corte Constitucional, y no por desconocimiento de ellas, de manera que no pod\'eda alegarse que hab\'eda incurrido en v\'eda de hecho alguna. Consider\'f3 que, 
+adicionalmente, no era posible la procedencia de la acci\'f3n de tutela contra una sentencia de tutela ya fallada y ejecutoriada. 
+\par 
+\par }{\b\insrsid12146519 3. Sentencia de tutela en primera instancia
+\par 
+\par }{\insrsid12146519 El Tribunal Superior del Distrito Judicial de Cartagena, Sala de Decisi\'f3n Civil-Familia, mediante sentencia del veinticinco (25) de octubre de dos mil (2000) deneg\'f3 la tutela solicitada, por considerar que el tr\'e1
+mite llevado a cabo por el juez demandado se adecu\'f3 a la ley, se permiti\'f3 a las partes el ejercicio de su derecho a la defensa, se fall\'f3 por el funcionario competente y se tom\'f3 la decisi\'f3
+n con fundamento en las pruebas aportadas y en las normas legales aplicables, de modo que no se configur\'f3 ninguna v\'eda de hecho. Adem\'e1s, estim\'f3 que la acci\'f3n de tutela en contra de una decisi\'f3n de
+ tutela no era procedente porque no es posible volver a debatir los hechos objeto del fallo anterior, y hab\'eda operado ya el principio de cosa juzgada. 
+\par 
+\par }{\b\insrsid12146519 4. Impugnaci\'f3n del accionante
+\par 
+\par }{\insrsid12146519 El apoderado de la entidad desfavorecida por la decisi\'f3n inicial y ahora accionante impugn\'f3 el fallo del a quo, y tuvo dicha impugnaci\'f3n la oposici\'f3
+n del beneficiado por el fallo atacado. En ambos casos se reiteraron los argumentos ya expuestos.
+\par 
+\par 
+\par }{\b\insrsid12146519 5. Fallo de segunda instancia objeto de revisi\'f3n
+\par 
+\par }{\insrsid12146519 La Corte Suprema de Justicia, Sala de Casaci\'f3n Civil y Agraria, en sentencia del seis (6) de diciembre de dos mil (2000), revoc\'f3 el fallo impugnado, concedi\'f3 la tutela deprecada y dej\'f3
+ sin efectos el fallo de tutela proferido en segunda instancia por el Juzgado Primero Civil del Circuito de Cartagena el 28 de septiembre de 2000. El fallador de segunda instancia consider\'f3
+ que los derechos al debido proceso y a la defensa de la entidad accionante hab\'edan sido violados por la decisi\'f3n del Juez Primero Civil del Circuito al no haber declarado improcedente la acci\'f3
+n de tutela ante la existencia de otro medio de defensa judicial, incurriendo con ello en una v\'eda de hecho. Estim\'f3 que la actuaci\'f3n del mencionado juez desconoci\'f3 la naturaleza residual de la acci\'f3n de tutela y suplant\'f3 al mecanismo 
+principal y al juez natural al decidir aspectos de competencia de la jurisdicci\'f3n laboral. Adem\'e1s, dado que fue una decisi\'f3n de segunda instancia, el referido fallador impidi\'f3
+ que los argumentos que le sirvieron de fundamento fueran rebatidos, afectando as\'ed el derecho de defensa de la entidad tutelada. 
+\par 
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\b\caps\insrsid12146519 
+\par II. Consideraciones y Fundamentos
+\par }{\b\insrsid12146519 
+\par 
+\par 1. Competencia
+\par }{\insrsid12146519 
+\par La Sala Plena de la Corte Constitucional es competente para unificar la jurisprudencia con fundamento en lo dispuesto por los art\'edculos 86, inciso tercero y 241, numeral noveno de la Constituci\'f3n Pol\'edtica, en concordancia con los art\'ed
+culos 33, 34, 35 y 36 del Decreto 2591 de 1991.
+\par 
+\par }{\b\insrsid12146519 2. Problema jur\'eddico
+\par }\pard \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par En este caso el problema se puede sintetizar en la siguiente pregunta: \'bfPuede interponerse una acci\'f3n de tutela contra una sentencia de tutela, alegando que se ha incurrido en una v\'eda de hecho?
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang9226\noproof0\langnp9226\insrsid12146519 
+\par }{\b\lang9226\noproof0\langnp9226\insrsid12146519 3. La falibilidad de los jueces no conduce a la procedencia de la tutela contra sentencias de tutela
+\par 
+\par }{\lang9226\noproof0\langnp9226\insrsid12146519 3.1 Es incontestable que, trat\'e1ndose de fallos de tutela, un juez tambi\'e9
+n puede equivocarse. Los jueces de tutela no son infalibles en sus decisiones y actuaciones, como tampoco inmunes a las reclamaciones por violaci\'f3n de derechos fundamentales.
+\par 
+\par No obstante, hay diferencias de competencia y de procedimiento entre las actuaciones de los jueces ordinarios y las actuaciones de los jueces de tutela que justifican la existencia de mecanismos diferentes para la protecci\'f3
+n de los derechos fundamentales ante un error judicial.
+\par 
+\par En efecto, las actuaciones judiciales de lo
+s jueces ordinarios al decidir, principalmente, sobre asuntos de orden legal eventualmente pueden representar un desconocimiento absoluto de los derechos constitucionales fundamentales y constituir en situaciones extremas v\'ed
+as de hecho susceptibles de impugnaci\'f3n mediante la acci\'f3n de tutela. Tal conclusi\'f3n se impone por la necesidad de proteger los derechos constitucionales fundamentales \endash  que no son el referente usual e inmediato de los jueces ordinarios 
+\endash  y de acompasar la jurisprudencia y la legislaci\'f3n a la Constituci\'f3n. La raz\'f3n de esta exigencia de unidad y coherencia es obvia: el ordenamiento jur\'eddico es uno s\'f3lo y la legislaci\'f3
+n debe interpretarse y aplicarse de conformidad con la Constituci\'f3n. 
+\par 
+\par En el caso de los fallos de tutela, en cambio, el objeto principal y espec\'edfico es precisamente la protecci\'f3n de los derechos fundamentales. En el proceso de tutela se aplica de manera directa la Constituci\'f3n al an\'e1
+lisis de las acciones u omisiones de autoridades p\'fablicas o de ciertos particulares. La principal caracter\'edstica de la acci\'f3n de tutela, su rasgo definitorio, es su especificidad: la acci\'f3n de tutela es un mecanismo cuya funci\'f3
+n esencial es asegurar el respeto y el goce efectivo de los derechos constitucionales fundamentales y, en ese sentido, su raz\'f3n de ser espec\'edfica es lograr la aplicaci\'f3
+n directa de los derechos constitucionales, no de las leyes, sin que ello signifique que las leyes sean irrelevantes en el an\'e1lisis constitucional de cada caso concreto. 
+\par 
+\par Ahora bien, los jueces de tutela tambi\'e9n pueden incurrir en arbitrariedades inexcusables al proferir una sentencia de tutela, que sit\'fa
+an su conducta en los extramuros del derecho. Frente a esta posibilidad la persona no debe quedar inerme. En este evento, el ordenamiento jur\'eddico colombiano ha establecido un mecanismo de control para evitar la vulneraci\'f3
+n de los derechos fundamentales mediante sentencias de tutela, en nombre de la defensa de los mismos. Es as\'ed como la misma Constituci\'f3n en su art\'edculo 86 inciso 2, segunda oraci\'f3n, dispone:
+\par 
+\par }\pard\plain \s16\qj \li567\ri902\widctlpar\tx7938\faauto\adjustright\rin902\lin567\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\i0\lang9226\langfe3082\langnp9226\insrsid12146519 "El fallo, que ser\'e1 de inmediato cumplimiento, podr
+\'e1 impugnarse ante el juez competente y, en todo caso, \'e9ste lo remitir\'e1 a la Corte Constitucional para su eventual revisi\'f3n." 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang9226\noproof0\langnp9226\insrsid12146519 
+\par El mecanismo constitucional dise\'f1ado para controlar las sentencias de tutela de los jueces constitucionales que conocen y deciden sobre las acciones de tutela, por decisi\'f3n del propio Constituyente, es el de la revisi\'f3
+n por parte de la Corte Constitucional. Esta regulaci\'f3n, no s\'f3lo busca unificar la interpretaci\'f3n constitucional en materia de derechos fundamentales sino erigir a la Corte Constitucional como m\'e1
+ximo tribunal de derechos constitucionales y como \'f3rgano de cierre de las controversias sobre el alcance de los mismos. Adem\'e1s, excluye la posibilidad de impugnar las sentencias de tutela mediante una nueva acci\'f3n de tutela \endash 
+ bajo la modalidad de presuntas v\'edas de hecho - porque la Constituci\'f3n defini\'f3 directamente las etapas b\'e1sicas del procedimiento de tutela y previ\'f3 que los errores de los jueces de instancia, o inclusive sus inte
+rpretaciones de los derechos constitucionales, siempre pudieran ser conocidos y corregidos por un \'f3rgano creado por \'e9l \endash  la Corte Constitucional \endash  y por un medio establecido tambi\'e9n por \'e9l \endash  la revisi\'f3n. 
+\par 
+\par 3.2 La intenci\'f3n del legislador colombiano, cuando regul\'f3 el procedimiento de la acci\'f3n de tutela en el Decreto 2591 de 1991, fue excluir tajantemente la posibilidad de tutela contra fallos de tutela (art. 40, par\'e1grafo 4\'ba
+ del D. 2591 de 1991). Pese a la declaratoria de inconstitucionalidad del mencionado art\'edculo 40, por considerar la Corte que la tutela contra providencias judiciales era contraria a la Constituci\'f3n \endash ,}{
+\cs18\lang9226\super\noproof0\langnp9226\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{
+\insrsid12146519  Corte Constitucional C-543 de 1992, M.P. Jos\'e9 Gregorio Hern\'e1ndez Galindo. }}}{\lang9226\noproof0\langnp9226\insrsid12146519  lo cierto es que la doctrina de la tutela por las v\'ed
+as de hecho contra decisiones judiciales se ha impuesto jurisprudencialmente.}{\cs18\lang9226\super\noproof0\langnp9226\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  Corte Constitucional: Sentencias C-543 de 1992, M.P. Jos\'e9 Gregorio Hern\'e1ndez; T-079 de 1993, M.P. Eduardo Cifuentes Mu\'f1
+oz; T-055 de 1994, M.P., Dr. Eduardo Cifuentes Mu\'f1oz; T-538 de 1994, M.P., Dr. Eduardo Cifuentes Mu\'f1oz; T-518 de 1995, M.P. Vladimiro Naranjo; T-401 de 1996, M.P. Dr. Vladimiro Naranjo Mesa; T-567 de 1998, M.P. Dr. Eduardo Cifuentes Mu\'f1
+oz; Corte Suprema de Justicia: Sala de Casaci\'f3n Civil, Sentencia del veintitr\'e9s (23) de febrero de 1995; Consejo de Estado: Sentencia del 10 de octubre de 1996, Expediente N}{\super\insrsid12146519 o }{\insrsid12146519 
+AC-3944,C.P. Juan Alberto Polo Figueroa. }}}{\lang9226\noproof0\langnp9226\insrsid12146519  Sin embargo, es pertinente recordar que la inexequibilidad del par\'e1grafo que prohib\'eda la presentaci\'f3n de acciones de tutela contra fallos de tutela result
+\'f3 de la integraci\'f3n normativa que en la C-543 de 1992 efectu\'f3 la Corte. En ning\'fan caso hubo un estudio de fondo sobre este punto preciso ni juzg\'f3 que s\'ed deber\'eda proceder la tutela contra fallos de tutela.
+\par 
+\par Ahora bien, la importancia de evitar que toda sentencia de tutela pueda impugnarse, a su vez, mediante una nueva tutela, con lo que la resoluci\'f3n del conflicto se prolongar\'eda indefinidamente en desmedro tanto de la seguridad jur\'ed
+dica como del goce efectivo de los derechos fundamentales, radica en la necesidad de brindar una protecci\'f3n cierta, estable y oportuna a las personas cuyos derechos fundamentales han sido vulnerados o amenazados. De all\'ed
+ la perentoriedad de los plazos para decidir, la informalidad del procedimiento y el mecanismo de cierre encomendado a la propia Corte Constitucional, v.gr. el tr\'e1mite procesal de la revisi\'f3n eventual, con miras a garantizar la unificaci\'f3
+n de criterios y la supremac\'eda constitucional. Todo ello por decisi\'f3n del Constituyente, que opt\'f3 por regular de manera directa la acci\'f3n de tutela y no sigui\'f3 la t\'e9
+cnica tradicional de deferir al legislador estos aspectos de orden procedimental.
+\par }{\b\lang9226\noproof0\langnp9226\insrsid12146519 
+\par 4. El valor de la revisi\'f3n de los fallos de tutela por la Corte Constitucional
+\par 
+\par }{\lang9226\noproof0\langnp9226\insrsid12146519 4.1 La Constituci\'f3n misma previ\'f3 un proceso especial contra cualquier falta de protecci\'f3n de los derechos fundamentales: la revisi\'f3
+n de las sentencias de tutela proferidas por los jueces constitucionales (art. 86 inciso 2\'ba C.P.). La revisi\'f3n que lleva a cabo la Corte Constitucional incluye las v\'ed
+as de hecho de los mismos jueces de tutela. Se trata de un mecanismo especial para garantizar el cierre del sistema jur\'eddico por el \'f3rgano constitucional encargado de salvaguardar la supremac\'eda de la Constituci\'f3n. 
+\par }{\lang9226\highlight4\noproof0\langnp9226\insrsid12146519 
+\par }{\lang9226\noproof0\langnp9226\insrsid12146519 4.2 La revisi\'f3n de las sentencias de tutela abarca tres dimensiones: 1) el deber de remitir a la Corte Constitucional la totalidad de los fallos de tutela adoptados por los jueces de la Rep\'fa
+blica para su eventual revisi\'f3n; 2) los efectos de la decisi\'f3n de la Corte respecto de cada uno de los casos a ella remitidos y 3) el \'e1mbito del control ejercido por la Corte cuando decide revisar un fallo de tutela.
+\par }{\lang9226\highlight4\noproof0\langnp9226\insrsid12146519 
+\par }{\insrsid12146519 Primero, el deber de remisi\'f3n de todos los fallos de tutela a la Corte Constitucional obedece a la necesidad de que sea un \'f3rgano centralizado al cual se le confi\'f3 la guarda de la integridad y supremac\'eda de la Constituci\'f3
+n el que finalmente determine cu\'e1les son los fallos de tutela que representan una aplicaci\'f3n adecuada de los derechos constitucionales y as\'ed ejerza la tarea de unificaci\'f3
+n jurisprudencial en materia de derechos fundamentales y de desarrollo judicial de la Constituci\'f3n. Con esta decisi\'f3n el Constituyente ha creado el mecanismo m\'e1s amplio, y a la vez eficaz, para evitar que los derechos fundamentales no obtenga
+n la protecci\'f3n que merecen como principios medulares de la organizaci\'f3n pol\'edtica colombiana. Es as\'ed
+ como la Corte Constitucional debe mirar la totalidad de las sentencias de tutela, bien sea para seleccionar las sentencias que ameritan una revisi\'f3n o para decretar su no selecci\'f3
+n pero en cualquiera de estos dos eventos debe estudiar el fallo de instancia y adoptar una decisi\'f3n al respecto. Por otra parte, en el proceso de selecci\'f3n, cualquier persona tiene la posibilidad de elevar una petici\'f3n ante la Cort
+e para que una determinada sentencia sea escogida porque, a su juicio, incurri\'f3 en un error, incluso si \'e9ste no tiene la entidad y la gravedad para constituir una v\'eda de hecho.}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain 
+\s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  As\'ed lo hacen diariamente muchas personas, cuyos memoriales son estudiados al 
+momento de analizar el expediente antes de elaborar el informe que la Unidad de Tutela le presenta a los magistrados para que estos seleccionen los fallos que habr\'e1n de ser revisados.}}}{\insrsid12146519 
+\par 
+\par Segundo, la decisi\'f3n de la Corte Constitucional consistente en no seleccionar para revisi\'f3n una sentencia de tutela tiene como efecto principal la ejecutoria formal y material de esta sentencia, con lo que opera el fen\'f3
+meno de la cosa juzgada constitucional. Salvo la eventualidad de la anulaci\'f3n de dicha sentencia por parte de la misma Corte Constitucional de conformidad con la ley, la decisi\'f3n de excluir la sentencia de tutela de la revisi\'f3
+n se traduce en el establecimiento de una cosa juzgada inmutable y definitiva. De esta forma se resguarda el principio de la seguridad jur\'eddica y se manifiesta el car\'e1cter de la Corte Constitucional como \'f3rgano de cierre del sistema jur\'eddico. 
+
+\par 
+\par Tercero, el \'e1mbito del control que ejerce la Corte cuando adelanta el proceso de selecci\'f3n de fallos de tutela es mucho m\'e1s amplio que el efectuado respecto de las v\'ed
+as de hecho. En otras palabras, la Corte no se limita a seleccionar los fallos de tutela arbitrarios, sino que adem\'e1s escoge fallos que as\'ed no se hayan situado en los extramuros del orden jur\'eddico, representan interpretaciones de los dere
+chos que plantean un problema valioso para el desarrollo jurisprudencial de la Constituci\'f3n ya que el Decreto 2591 le confiere esa facultad. Pero, obviamente, cuando un fallo de tutela constituye una v\'eda de hecho, \'e9
+ste es contrario a la Constituci\'f3n y existen poderosas razones para que forme parte de las sentencias de instancia seleccionadas para ser revisadas por esta Corte. As\'ed la instituci\'f3n de la revisi\'f3n se erige, adem\'e1
+s de las funciones ya mencionadas, como una control espec\'edfico e id\'f3neo de los fallos de instancia que violan de manera grosera la Constituci\'f3n, esto es, son una v\'eda de hecho.
+\par 
+\par 4.3 El procedimiento de revisi\'f3n es, por tanto, un mecanismo expresamente regulado en la Constituci\'f3n con el fin de brindar una protecci\'f3n \'f3ptima a los derechos fundamentales en atenci\'f3
+n a la importancia que ellos tienen para las personas y el sistema democr\'e1tico y constitucional de derecho. Ninguna otra acci\'f3n, sea constitucional o legal, goza de un mecanismo equivalente al de la revisi\'f3n de la decisi\'f3n judicial. Y no pod
+\'eda ser de otra manera, dada la funci\'f3n confiada a la la Corte Constitucional para la constante defensa de los derechos fundamentales.
+\par }\pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang3082\noproof0\langnp3082\insrsid12146519 4.4 Es de anotar que en sede de selecci\'f3
+n, la Corte Constitucional decidi\'f3 inicialmente no escoger el expediente de tutela T-388435 para revisi\'f3n. No obstante, ante la presentaci\'f3n de una nueva tutela en contra de la actuaci\'f3
+n judicial del juez de tutela en segunda instancia, la Corte Constitucional decidi\'f3 seleccionar el proceso inicialmente excluido, dada la unidad de materia con el segundo proceso de tutela (T-412756) escogido para revisi\'f3n. As\'ed la Corte podr\'ed
+a analizar la situaci\'f3n y las decisiones judiciales en su integridad.  
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par Resuelto el problema jur\'eddico sobre la posibilidad de presentar tutela contra sentencias de tutela por v\'edas de hecho, se concluye que no hay lugar, por sustracci\'f3
+n de materia, a revisar el fallo de tutela de segunda instancia en el primer proceso de tutela (T-388435). 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\lang9226\langfe3082\langnp9226\insrsid12146519 En conclusi\'f3n, no procede la acci\'f3n de tutela contra fallos de tutela.
+\par 
+\par }\pard\plain \s4\qj \li0\ri0\keepn\widctlpar\faauto\outlinelevel3\adjustright\rin0\lin0\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\insrsid12146519 5. Cosa juzgada constitucional y cosa juzgada ordinaria
+\par }\pard\plain \qj \li360\ri0\widctlpar\faauto\adjustright\rin0\lin360\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }\pard \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\lang9226\langfe3082\langnp9226\insrsid12146519 5}{\insrsid12146519 .1 Admitir que los fallos de tutela definitivamente decididos o excluidos para revisi\'f3
+n sean luego objeto de una nueva acci\'f3n de tutela, ser\'eda como instituir un recurso adicional ante la Corte Constitucional para la insistencia en la revisi\'f3n de un proceso de tutela ya concluido, lo cual es contrario a la Constituci\'f3
+n (art. 86 C.P.), a la ley (art. 33 del Decreto 2591 de 1991) y a las normas reglamentarias en la materia (arts. 49 a 52 del Reglamento Interno de la Corte Constitucional). Las Salas de Selecci\'f3
+n de la Corte Constitucional, salvo sus facultades legales y reglamentarias, no tienen la facultad de seleccionar lo que ya ha sido excluido de selecci\'f3n para revisi\'f3n ni una acci\'f3n de tutela contr
+a uno de sus fallos de tutela. Esto por una poderosa raz\'f3n. Decidido un caso por la Corte Constitucional o terminado el proceso de selecci\'f3n para revisi\'f3n y precluido el lapso establecido para insistir en la selecci\'f3
+n de un proceso de tutela para revisi\'f3n (art. 33 del Decreto 2591 de 1991 y art. 49 a 52 del Reglamento Interno de la Corte Constitucional}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain 
+\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs18\fs20\super\insrsid12146519 \chftn }{\fs20\insrsid12146519  }{\b\fs20\insrsid12146519 Reglamento Interno de la Corte Constitucional,}{
+\fs20\insrsid12146519  }{\b\fs20\insrsid12146519 Art\'edculo 49. Sala de Selecci\'f3n de Tutelas. }{\fs20\insrsid12146519 (\'85) Seg\'fan el art\'edculo 33 del decreto 2591 de 1991, es facultad de la Sala de Selecci\'f3
+n escoger de forma discrecional las sentencias de tutela que ser\'e1n objeto de revisi\'f3n. En tal virtud, las peticiones que se reciban de personas interesadas en que se revise un fallo de tutela, ser\'e1n respondidas por el secretario general
+ de la Corporaci\'f3n, de conformidad con lo ordenado por la Sala de Selecci\'f3n }{\i\fs20\insrsid12146519 (Acuerdo 01 de 1997).
+\par }{\fs20\insrsid12146519 De la misma manera, se proceder\'e1 en caso de petici\'f3n de insistencia de los particulares en la revisi\'f3n de un fallo excluido de revisi\'f3n, la cual es facultativ
+a del Defensor del Pueblo o de un magistrado de la Corte Constitucional, en los t\'e9rminos del citado art\'edculo 33 del decreto 2591 de 1991 }{\i\fs20\insrsid12146519 (Acuerdo 01 de 1997).
+\par }{\b\fs20\insrsid12146519 Art\'edculo 51. Insistencia. }{\fs20\insrsid12146519 Adem\'e1s de los treinta d\'edas de que dispone la Sala de Selecci\'f3n y en virtud de lo dispuesto por el art\'ed
+culo 33 del Decreto 2591 de 1991, cualquier Magistrado titular o el Defensor del Pueblo, podr\'e1 insistir en la selecci\'f3n de una o m\'e1s tutelas para su revisi\'f3n, dentro de los quince d\'edas calendario siguientes a:
+\par 1. La comunicaci\'f3n de la Secretar\'eda General de la Corte al despacho del Magistrado sobre la decisi\'f3n negativa de la Sala de Selecci\'f3n.
+\par 2. El recibo de dicha informaci\'f3n por parte del Defensor del Pueblo.
+\par }{\i\fs20\insrsid12146519 (Acuerdo 04 de 1992)
+\par Mediante sentencia del Consejo de Estado del 28 de julio de 1995 (C.P.: Dr. Yesid Rojas Serrano), se resolvi\'f3 no acceder a la petici\'f3n de nulidad de este art\'edculo. 
+\par }{\b\fs20\insrsid12146519 Art\'edculo 52. Tr\'e1mite de la insistencia. }{\fs20\insrsid12146519 Recibida la solicitud, la Sala de Selecci\'f3n de turno entrar\'e1 a reexaminar en los t\'e9rminos y por las causales previstas en el art\'ed
+culo 33 del Decreto 2591 de 1991, la tutela objeto de insistencia. Si encuentra procedente la selecci\'f3n, as\'ed lo har\'e1 y dispondr\'e1 su reparto. Si la decisi\'f3n fuere negativa, se informar\'e1 de ello al solicitante dentro de los tres d\'ed
+as siguientes. Contra las decisiones de selecci\'f3n no proceder\'e1 recurso alguno }{\i\fs20\insrsid12146519 (Acuerdo 04 de 1992).
+\par }{\fs20\insrsid12146519 Mediante sentencia del Consejo de Estado del 28 de julio de 1995 (C.P.: Dr. Yesid Rojas Serrano), se resolvi\'f3 no acceder a la petici\'f3n de nulidad de este art\'edculo. }}}{\insrsid12146519 ), opera el fen\'f3meno de la }{
+\b\insrsid12146519 cosa juzgada constitucional}{\insrsid12146519  (art. 243 numeral 1 C.P.). Una vez ha quedado definitivamente en firme una sentencia de tutela por decisi\'f3
+n judicial de la Corte Constitucional, no hay lugar a reabrir el debate sobre lo decidido. 
+\par }\pard \qj \li360\ri0\widctlpar\faauto\adjustright\rin0\lin360\itap0 {\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang3082\noproof0\langnp3082\insrsid12146519 5.2. A este respecto, es importante distinguir entre el fen\'f3
+meno de la cosa juzgada en materia ordinaria y el mismo fen\'f3meno en materia constitucional. Mientras que en el primer caso es generalmente admitida la procedencia de la acci\'f3n de tutela por v\'edas de hecho, en el segundo caso, trat\'e1
+ndose de un proceso judicial constitucional, donde se persigue en forma expl\'edcita y espec\'edfica la protecci\'f3n de los derechos fundamentales y la observancia plena del orden constitucional, la oportunidad para alegar la existencia de v\'ed
+as de hecho en los fallos de tutela es hasta la finalizaci\'f3n del t\'e9rmino de insistencia de los magistrados y del Defensor del Pueblo respecto de las sentencias no seleccionadas. Una vez terminados definitivamente los procedimientos de selecci\'f3
+n y revisi\'f3n, la sentencia hace tr\'e1nsito a cosa juzgada constitucional (art. 243 numeral 1 C.P.), y se torna, entonces, inmutable y definitivamente vinculante.
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par 5.3 En el presente caso, la Corte debe decidir si contra una sentencia de tutela procede una nueva acci\'f3n de tutela basada exclusivamente en el argumento de que al concederla se incurri\'f3 en una v\'ed
+a de hecho porque la tutela era desde el principio improcedente. Se observa c\'f3mo el cuestionamiento al fallo de tutela versa sobre el juicio de procedencia de la acci\'f3n como elemento constitutivo e inescindible del fallo. La \'fa
+nica alternativa para manifestar inconformidad con la sentencia de tutela de segunda instancia propiamente dicha que se encuentra en firme, es la intervenci\'f3n de la parte interesada en el proceso de selecci\'f3n para revisi\'f3
+n ante la Corte Constitucional, ya que de otra forma se propiciar\'eda una cadena interminable de demandas contra sentencias de tutela, lo que pugna contra la efectividad de este mecanismo de protecci\'f3
+n constitucional (art. 86 C.P.), contra el principio fundamental dirigido a asegurar el goce efectivo de los derechos y deberes constitucionales (art. 2 C.P.) y contra el principio de la seguridad jur\'eddica.
+\par 
+\par 5.4 La tensi\'f3n entre derechos fundamentales y seguridad jur\'eddica que justifica admitir la acci\'f3n de tutela por v\'edas de hecho contra sentencias judiciales, se disuelve al impedir la tutela contra fallos de tutela, ya que en este evento
+ la protecci\'f3n de los derechos fundamentales y la seguridad jur\'eddica no entran en conflicto sino que confluyen hacia un mismo prop\'f3sito, v.gr. el goce efectivo de los derechos el cual ser\'eda tan s\'f3lo ret\'f3
+rico si un derecho protegido en un fallo de tutela no fuera cierto y estable sino que fuera sometido a la eventualidad de una nueva acci\'f3n de tutela contra el fallo y a que otro juez lo ampare, as\'ed
+ como a que contra ese segundo fallo no sea interpuesta otra acci\'f3n de tutela. De esta forma, la acci\'f3n de tutela ser\'eda desnaturalizada y se frustrar\'eda la funci\'f3n que la Constituci\'f3n le ha encomendado. 
+\par 
+\par Este tratamiento diferencial seg\'fan el tipo de sentencia judicial \endash  los fallos de tutela y las dem\'e1s providencias - se justifica por la especificidad del mecanismo judicial para la protecci\'f3
+n de los derechos fundamentales. Los eventuales errores de los jueces de tutela constitutivos de v\'edas de hecho pueden ser corregidos en el tr\'e1mite de revisi\'f3n que se surte por parte de la Corte Constitucional como \'f3rgano de cierre 
+del ordenamiento jur\'eddico y garante de la seguridad jur\'eddica. No escapa a la Corte que el tr\'e1mite de selecci\'f3n de las sentencias de tutela para revisi\'f3n puede incurrirse en una equivocaci\'f3
+n al excluir un fallo de tutela que constituye una verdadera v\'eda de hecho y con ello en una afectaci\'f3n de derechos o bienes jur\'ed
+dicamente protegidos. Pero esta posibilidad es ocasional y excepcional. En cambio, de admitirse que contra toda sentencia de tutela puede presentarse una nueva tutela por v\'edas de hecho, la afectaci\'f3n de los derechos fundamentales as\'ed
+ como del mecanismo judicial efectivo para su protecci\'f3n ser\'eda en la pr\'e1ctica permanente y general, y, por lo tanto, desproporcionadamente mayor. En todo caso el sistema de selecci\'f3n para revisi\'f3n puede ser susceptible 
+de mejoras tendientes a minimizar la ocurrencia de errores en el estudio de la totalidad de las decisiones de tutela remitidas a la Corte Constitucional. Es por ello que ponderados todos estos factores la Corte arriba a la conclusi\'f3
+n que la respuesta que m\'e1s se ajusta a la Constituci\'f3n es que no procede la tutela contra sentencias de tutela. 
+\par 
+\par }{\b\insrsid12146519 6. Unificaci\'f3n jurisprudencial en la materia
+\par }{\insrsid12146519 
+\par 6.1 La Corte ha admitido en el pasado la posibilidad de interponer acciones de tutela contra las actuaciones judiciales arbitrarias, incluso de los jueces de tutela, pero no respecto de sentencias de tutela. En efecto, en sentencia T-162 de 1997,}{
+\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  M.P. Carlos Gaviria D
+\'edaz.}}}{\insrsid12146519  la Corte concedi\'f3 una tutela contra la actuaci\'f3n de un juez de tutela consistente en negarse a conceder la impugnaci\'f3
+n del fallo de tutela de primera instancia con el argumento de que el poder presentado para impugnar no era aut\'e9ntico, pese a que el Decreto 2591 de 1991 establece al respecto una presunci\'f3n de autenticidad que no fue desvirtuada en el pro
+ceso. Por otra parte, en sentencia T-1009 de 1999,}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {
+\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  M.P. Alejandro Mart\'ednez Caballero. }}}{\insrsid12146519  se concedi\'f3 una acci\'f3n de tutela contra la actuaci\'f3
+n de un juez de tutela consistente en no vincular al correspondiente proceso a un tercero potencialmente afectado por la decisi\'f3n. En ese caso, la Corte declar\'f3 la nulidad de todo lo actuado a partir del auto admisorio de la acci\'f3n de tutela.
+
+\par 
+\par 6.2 En el presente caso, sin embargo el problema jur\'eddico es distinto: la Corte debe decidir si contra una sentencia de tutela procede una nueva acci\'f3n de tutela basada exclusivamente en el argumento de que al concederla se incurri\'f3 en una v\'ed
+a de hecho porque la tutela era desde el principio improcedente. Se observa c\'f3mo el cuestionamiento al fallo de tutela versa sobre el juicio de procedencia de la acci\'f3
+n como elemento constitutivo e inescindible del fallo, sin que se cuestionen actuaciones del juez de tutela diferentes a la sentencia misma. En consideraci\'f3n a lo expresado anteriormente, la \'fanica alternativa para manifestar incon
+formidad con la sentencia de tutela de segunda instancia propiamente dicha que se encuentra en firme, es la intervenci\'f3n de la parte interesada en el proceso de selecci\'f3n para revisi\'f3
+n ante la Corte Constitucional por las razones anteriormente expuestas.
+\par 
+\par En efecto, de la Constituci\'f3n se concluye que no procede la acci\'f3n de tutela contra fallos de tutela.
+\par 
+\par }{\b\insrsid12146519 7. Doctrina constitucional y }{\b\i\insrsid12146519 ratio decidendi}{\b\insrsid12146519 . No hay tutela contra sentencias de tutela
+\par }{\insrsid12146519 
+\par 7.1 La conclusi\'f3n anterior no es m\'e1s que una regla derivada del propio texto constitucional que regul\'f3 directa y espec\'edficamente el procedimiento que habr\'ed
+an de seguir las acciones de tutela, el cual fue desarrollado por el Decreto 2591 de 1991 que tiene rango estatutario.
+\par  
+\par Ante la controversia sobre la posibilidad de interponer acci\'f3
+n de tutela contra sentencias de tutela es necesario hacer claridad sobre el fundamento de la doctrina constitucional sentada por la Corte, a saber, el propio texto constitucional. Resulta pertinente citar los art\'edculos constitucionales, adem\'e1
+s del art\'edculo 86, trascrito anteriormente (subrayado fuera de texto). 
+\par }\pard \qj \li540\ri560\widctlpar\faauto\adjustright\rin560\lin540\itap0 {\insrsid12146519 
+\par \'93Art\'edculo 4.- La Constituci\'f3n es }{\ul\insrsid12146519 norma de normas}{\insrsid12146519 . En todo caso de incompatibilidad entre la Constituci\'f3n y la ley u otra norma jur\'eddica, se aplicar\'e1n las disposiciones constitucionales.\'94
+\par }\pard\plain \s19\qj \li540\ri560\sb100\sa100\widctlpar\faauto\adjustright\rin560\lin540\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\fs28\insrsid12146519 \'93Art\'edculo 230.- Los jueces, en sus providencias, s\'f3lo }{
+\fs28\ul\insrsid12146519 est\'e1n sometidos al imperio de la ley}{\fs28\insrsid12146519 .
+\par La equidad, la jurisprudencia, los principios generales del derecho y la doctrina son criterios auxiliares de la actividad judicial.\'94
+\par }\pard\plain \qj \li540\ri560\widctlpar\faauto\adjustright\rin560\lin540\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 \'93Art\'edculo 241-. }{\ul\insrsid12146519 A la Corte Constitucional se le conf\'ed
+a la guarda de la integridad y supremac\'eda de la Constituci\'f3n}{\insrsid12146519 , en los estrictos y precisos t\'e9rminos de este art\'edculo. Con tal fin, cumplir\'e1 las siguientes funciones:
+\par (...)
+\par }\pard\plain \s16\qj \li540\ri560\widctlpar\faauto\adjustright\rin560\lin540\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\i0\lang3082\langfe3082\langnp3082\insrsid12146519 9. Revisar, en la forma q
+ue determine la ley, las decisiones judiciales relacionadas con la acci\'f3n de tutela de los derechos constitucionales.\'94
+\par }\pard\plain \s19\qj \li0\ri0\sb100\sa100\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\fs28\insrsid12146519 Ahora bien, la Ley \endash  aqu\'ed el Decreto Ley 2591 de 1991 \endash  estableci\'f3
+ que \'93(l)as}{\b\fs28\insrsid12146519  }{\fs28\insrsid12146519 decisiones de revisi\'f3n que revoquen o modifiquen el fallo, unifiquen la jurisprudencia constitucional o aclaren el alcance general de las normas constitucionales deber\'e1n ser motivadas
+\'94 (art\'edculo 35 inciso 1).
+\par Las anteriores premisas normativas permiten sostener que en la revisi\'f3n de las decisiones judiciales relacionadas con la acci\'f3n de tutela la Corte ejerce la guarda de la integridad y supremac\'eda de la Constituci\'f3n (art. 241 C.P.) y act\'fa
+a como \'f3rgano de cierre de la jurisdicci\'f3n constitucional de tutela mediante la unificaci\'f3n de la jurisprudencia constitucional. En esta tarea la Corte debe fijar, como int\'e9rprete autorizado de la Constituci\'f3
+n, las reglas constitucionales que sirvan para ilustrar la Constituci\'f3n en casos dudosos y asegurar su fuerza normativa (art. 4\'b0 C.P.). Por su parte, los jueces al estar sujetos al imperio de la ley (art. 230 C.P.), lo est\'e1
+n a su vez a la Constituci\'f3n y a su interpretaci\'f3n autorizada.}{\cs18\fs28\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {
+\cs18\super\insrsid12146519 \chftn }{\lang3082\langfe3082\langnp3082\insrsid12146519  Corte Constitucional, Sentencia T-221 de 1993, M.P. Hernando Herrera Vergara: \'93}{\insrsid12146519 La interpretaci\'f3n constitucional fijada por la Corte determina e
+l contenido y alcance de los preceptos de la Carta y hace parte, a su vez, del "imperio de la ley" a que est\'e1n sujetos los jueces.\'94}}}{\fs28\insrsid12146519  As\'ed lo ha expuesto la Corte de manera clara y reiterada en el pasado:
+\par }\pard \s19\qj \li720\ri560\sb100\sa100\widctlpar\faauto\adjustright\rin560\lin720\itap0 {\fs28\insrsid12146519 \'93El papel que cumple la Corte Constitucional cuando aborda la revisi\'f3n eventual consagrada en los art\'ed
+culos 86 y 241, numeral 9, de la Carta Pol\'edtica no es otro que el de unificar a nivel nacional los criterios judiciales en la interpretaci\'f3n y aplicaci\'f3n de las normas constitucionales, precisando el alcance
+ de los derechos fundamentales, trazando pautas acerca de la procedencia y desarrollo del amparo como mecanismo de protecci\'f3n y efectividad de los mismos y estableciendo la doctrina constitucional, que, seg\'fan el art\'edculo 8\'ba
+ de la Ley 153 de 1887, declarado exequible por Sentencia C-083 del 1 de marzo de 1995, es obligatoria para los jueces en todos los casos en que no haya normas legales exactamente aplicables al asunto controvertido.\'94}{\cs18\fs28\super\insrsid12146519 
+\chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519 
+ Corte Constitucional, Sentencia T-068 de 2000, M.P. Jos\'e9 Gregorio Hern\'e1ndez. }}}{\fs28\insrsid12146519  
+\par }\pard \s19\qj \li0\ri0\sb100\sa100\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\fs28\insrsid12146519 Cuando la Corte Constitucional se pronuncia sobre una materia respecto de la cual debe unificar jurisprudencia y obrar como cabeza de la jurisdicci\'f3
+n constitucional, sus decisiones tienen un alcance mayor a las que adopta generalmente en salas de revisi\'f3
+n de tutela. El sistema de control constitucional adoptado en Colombia es mixto en la medida en que combina elementos del sistema difuso y del sistema concentrado. No es necesario abundar en los elementos concentrados del sistema colombiano. Es suf
+iciente con subrayar que la opci\'f3n del constituyente de 1991 de crear una Corte Constitucional fortaleci\'f3 en forma significativa esta dimensi\'f3n concentrada de nuestro sistema. Al haberle atribuido a ese \'f3
+rgano de cierre de las controversias relativas a la interpretaci\'f3n de la Constituci\'f3n la facultad de conocer cualquier acci\'f3n de tutela no s\'f3lo reafirm\'f3 este elemento de concentraci\'f3n en materia de derechos constitucionales fundamen\-
+tales, sino que le confiri\'f3 una trascendencia especial a la unificaci\'f3n de jurisprudencia en estos asuntos. Cuando la Corte Constitucional decide en Sala Plena sobre estas materias desarrolla su misi\'f3n constitucional y por lo tanto est\'e1
+ obligada a asumir su responsabilidad como \'f3rgano unificador de la jurisprudencia}{\cs18\fs28\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\lang3082\langfe3082\langnp3082\insrsid12146519  }{\insrsid12146519 La Corte Co
+nstitucional incluso ha admitido que los fallos de tutela proferidos por sus salas de revisi\'f3n son excepcionalmente anulables precisamente cuando \'e9stos se apartan de la doctrina que en sede de unificaci\'f3n ha sentado la Sala Plena de la Corporaci
+\'f3n. Esto se debe a que el art. 34 del Decreto 2591 de 1991 establece claramente que los cambios de jurisprudencia deben ser adoptados por la Sala Plena a quien corresponde la funci\'f3n de unificar jurisprudencia. La seguridad jur\'ed
+dica, la consistencia que debe guiar el ejercicio de la funci\'f3n jurisdiccional, el sometimiento de los jueces a la Constituci\'f3n y la efectividad del derecho a la igualdad as\'ed lo exigen. }}}{\fs28\insrsid12146519 .
+\par 7.2 La Corte Constitucional, como interprete autorizado y supremo de la Constituci\'f3n, define la opci\'f3n m\'e1s compatible con la Constituci\'f3n dentro de las alternativas concebibles, opci\'f3
+n que precisamente queda fijada en la doctrina constitucional y en la }{\i\fs28\insrsid12146519 ratio decidendi}{\fs28\insrsid12146519  que concretan el alcance de la propia Constituci\'f3n. 
+\par }\pard\plain \s17\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\insrsid12146519 La jurisprudencia ha distinguido entre }{\i\insrsid12146519 obiter dicta}{\insrsid12146519  y }{
+\i\insrsid12146519 ratio decidendi}{\insrsid12146519 , para sostener que el car\'e1cter vinculante se refiere a esta \'faltima y no a la primera. La }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519  abarca el criterio jur\'eddico determinante as\'ed
+ como las razones inescindiblemente relacionadas con el }{\i\insrsid12146519 decisum}{\insrsid12146519  y sin las cuales la decisi\'f3n del caso no ser\'eda comprensible o carecer\'eda de fundamento. El }{\i\insrsid12146519 obiter dicta}{\insrsid12146519 
+, lo que se dice de paso, carece del car\'e1cter vinculante de la }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519 . La doctrina constitucional re\'fane tanto dicho criterio determinante de la decisi\'f3n adoptada como las razones espec\'ed
+ficas para justificarla y aplicarla en un caso concreto. Es un concepto m\'e1s amplio que el de }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519  puesto que comprende las consideraciones que justifican la decisi\'f3n y lo resuelto.
+\par }{\highlight3\insrsid12146519 
+\par }{\insrsid12146519 La }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519  surge de la propia lectura autorizada de la Constituci\'f3n por parte del \'f3rgano constitucional encargado de velar por su interpretaci\'f3n y aplicaci\'f3
+n integrales. Exhibe un grado mayor de abstracci\'f3n que el }{\i\insrsid12146519 decisum}{\insrsid12146519 , el cual surte efectos en el caso concreto. La }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519  se proyecta \endash 
+ en virtud del principio de igualdad, de la seguridad jur\'eddica, del principio de confianza leg\'edtima, y de la supremac\'eda de la Constituci\'f3n\endash  m\'e1s all\'e1 del caso concreto y tiene la fuerza y el valor de precedente para todos los
+ jueces en sus decisiones. Una vez fijado con autoridad, por el \'f3rgano competente y siguiendo el procedimiento constitucional para ese fin, el significado de la norma constitucional, \'e9
+ste se integra a ella y adquiere fuerza vinculante al ser parte del derecho a cuyo imperio est\'e1n sometidas todas las autoridades en un Estado Social de Derecho. El art\'edculo 230 de la Constituci\'f3n establece que los jueces est\'e1
+n sometidos al imperio de la ley, concepto que no abarca exclusivamente las leyes en sentido formal, sino que comprende obviamente la Constituci\'f3
+n y, en un sentido amplio, el derecho dentro del cual la ratio de las sentencias ocupa un lugar primordial puesto que le confieren efectividad a las normas, al concretar sus alcances. Adem\'e1s, de lo contrario - es d
+ecir, de escindirse la norma de la ratio que le fija su significado para asegurar su aplicaci\'f3n efectiva y la concreta para precisar sus alcances - se romper\'eda la unidad del ordenamiento jur\'eddico y se resquebrajar\'ed
+a su coherencia en desmedro de la seguridad jur\'eddica, de la aplicaci\'f3n igual de las normas a casos iguales y de la confianza leg\'edtima de los habitantes en que el derecho ser\'e1 aplicado de manera consistente y predecible.
+\par }{\highlight7\insrsid12146519 
+\par }{\insrsid12146519 La Corte, advierte que los jueces son independientes y aut\'f3nomos. Subraya, tambi\'e9n, que su independencia es para aplicar las normas, no para dejar de aplicar la Constituci\'f3n (art\'ed
+culo 230 de la C.P.). Un juez no puede invocar su independencia para eludir el imperio de la ley, y mucho menos, para dejar de aplicar la ley de leyes, la norma suprema que es la Constituci\'f3
+n. La alternativa, inaceptable en una democracia constitucional, es que el significado de la Constituci\'f3n cambie seg\'fan el parecer de cada juez. Entonces, ser\'e1 vinculante no la norma constitucional objetiva, sino la opini\'f3
+n de cada funcionario judicial que puede variar de despacho en despacho y cambiar de tiempo en tiempo, seg\'fan evolucionen las tesis de cada juez. Nada m\'e1s contrario al concepto mismo de derecho. Nada m\'e1
+s lesivo para la efectividad de un Estado Social de Derecho. Nada que le reste m\'e1s vigencia y eficacia a la Constituci\'f3n.
+\par 
+\par Estas consideraciones son a\'fan m\'e1s imperiosas en el contexto de los derechos constitucionales, primero, porque las normas constitucionales, por su generalidad y textura abierta, permiten al juez un mayor margen de interpretaci\'f3
+n y, segundo, porque una persona puede escoger ante qu\'e9 \'f3rgano judicial presentar\'e1 la acci\'f3n de tutela para exigir el amparo de sus derechos fundamentales. Aceptar que los alcances de la tutela y de cada derecho fundamental depende de la opini
+\'f3n de cada juez aisladamente considerado, equivale a restarle toda fuerza normativa a la Constituci\'f3n, cuyo contenido ser\'e1 distinto en cada despacho y vinculante s\'f3lo si coincide con las tesis del juez acerca de la necesidad de br
+indarle amparo al tutelante. Por eso, la Corte Constitucional ha explicado y reiterado en muchas sentencias el valor y la fuerza de los precedentes, respetando claro est\'e1 el \'e1mbito de independencia de los jueces para decidir cada caso, no seg\'fa
+n su opini\'f3n, sino aplicando el derecho constitucional.}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {
+\cs18\super\insrsid12146519 \chftn }{\lang3082\langfe3082\langnp3082\insrsid12146519  Ver en especial las sentencias}{\insrsid12146519  C-083 del 1 de marzo de 1995}{\lang3082\langfe3082\langnp3082\insrsid12146519 , M.P. Carlos Gaviria D\'ed
+az; SU-047 de 1999, MM. PP. Carlos Gaviria D\'edaz y Alejandro Mart\'ednez Caballero; C-674 de 1999, MM.PP. Alejandro Mart\'ednez Caballero y Alvaro Tafur Galvis.}}}{\insrsid12146519 
+\par 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 7.3 La }{\i\insrsid12146519 ratio decidendi}{\insrsid12146519  en este caso excluye la acci\'f3
+n de tutela contra sentencias de tutela. El afectado e inconforme con un fallo en esa jurisdicci\'f3n, puede acudir ante la Corte Constitucional para solicitar su revisi\'f3n.}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain 
+\s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\lang1033\langfe3082\langnp1033\insrsid12146519  Art. 86 C.P., y arts. }{\insrsid12146519 
+32 y 33 del Decreto 2591de 1991. Adem\'e1s, sentencia C-1716 de 2000, MP Carlos Gaviria D\'edaz.}}}{\insrsid12146519  En el tr\'e1mite de selecci\'f3n y revisi\'f3n de las sentencias de tutela la Corte Constitucional analiza y adopta la decisi\'f3
+n que pone fin al debate constitucional. Este procedimiento garantiza que el \'f3rgano de cierre de la jurisdicci\'f3n constitucional conozca la totalidad de las sentencias sobre la materia que se profieren en el pa\'eds y, mediante su decisi\'f3
+n de no seleccionar o de revisar, defina cu\'e1l es la \'faltima palabra en cada caso. As\'ed se evita la cadena de litigios sin fin que se generar\'ed
+a de admitir la procedencia de acciones de tutela contra sentencias de tutela, pues es previsible que los peticionarios intentar\'edan ejercerla sin l\'edmite en busca del resultado que consideraran m\'e1s adecuado a sus intereses lo que significar\'ed
+a dejar en la indefinici\'f3n la solicitud de protecci\'f3n de los derechos fundamentales. La Corte Constitucional, como \'f3rgano de cierre de las controversias constitucionales, pone t\'e9rmino 
+al debate constitucional, e impide mantener abierta una disputa que involucra los derechos fundamentales de la persona, para garantizar as\'ed su protecci\'f3n oportuna y efectiva (art\'edculo 2 C.P.).
+\par 
+\par Adem\'e1s, de aceptarse que la tutela procede contra sentencias de tutela \'e9sta perder\'eda su efectividad como mecanismo de acceso a la justicia para amparar los derechos fundamentales. El derecho a acceder a la justicia no comprende tan s\'f3
+lo la existencia formal de acciones y recursos sino ante todo que las personas puedan obtener de los jueces una decisi\'f3n que resuelva las controversias jur\'eddicas conforme a derecho. Si la acci\'f3
+n de tutela procediera contra fallos de tutela, siempre ser\'eda posible postergar la resoluci\'f3n definitiva de la petici\'f3n de amparo de los derechos fundamentales, lo cual har\'eda inocua \'e9sta acci\'f3n y vulnerar\'ed
+a el derecho constitucional a acceder a la justicia. La Corte Constitucional tiene la misi\'f3n institucional de impedir que ello ocurra porque lo que est\'e1 en juego no es nada menos que la efectividad 
+de todos los derechos constitucionales, la cual quedar\'eda indefinidamente postergada hasta que el vencido en un proceso de tutela decidiera no insistir en presentar otra tutela contra el fallo que le fue adverso para buscar que su posici\'f3
+n coincida con la opini\'f3n de alg\'fan juez. En este evento, seguramente el anteriormente triunfador iniciar\'e1 la misma cadena de intentos hasta volver a vencer.
+\par 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\b\lang9226\noproof0\langnp9226\insrsid12146519 8. El caso concreto
+\par 
+\par }{\lang9226\noproof0\langnp9226\insrsid12146519 8.1. El peticionario de tutela, apoderado de Comfamiliar, present\'f3 acci\'f3n de tutela contra el fallador de segunda instancia que concedi\'f3
+ la tutela interpuesta contra su poderdante. Aduce que dicho juez incurri\'f3 en v\'edas de hecho violatorias de su derecho fundamental al debido proceso, consistentes en decidir un asunto de competencia de la justicia laboral y en pretermitir las garant
+\'edas procesales de cada proceso con respecto a la oportunidad, conducencia y contradicci\'f3n de pruebas. 
+\par 
+\par 8.2. El fallador de primera instancia rechaz\'f3 la tutela contra la decisi\'f3n judicial por considerar que el demandante no pod\'ed
+a pretender revivir un asunto ya debatido en su oportunidad en otro proceso de tutela, sin violar con ello el principio de la cosa juzgada. Adem\'e1s, consider\'f3 que el juez que concedi\'f3 la tutela contra Comfamiliar no incurri\'f3 en v\'ed
+as de hecho.
+\par 
+\par 8.3. La Sala de Casaci\'f3n Civil y Agraria de la Corte Suprema de Justicia se aparta de la anterior decisi\'f3n y considera que se incurre en v\'eda de hecho por conceder una tutela cuando dicha acci\'f3
+n es improcedente por existir otros medios de defensa judicial, en este caso las acciones ante la jurisdicci\'f3n ordinaria laboral. Constata, adem\'e1s, que trat\'e1ndose de una decisi\'f3
+n de segunda instancia, la entidad demandada no tuvo oportunidad para rebatir los fundamentos esgrimidos por el juez para conceder la tutela en contra de sus intereses.  
+\par 
+\par 8.4 Adem\'e1s de la imposibilidad de demandar por v\'eda de tutela sentencias de tutela, los argumentos esgrimidos por el fallador de segunda instancia para revocar la sentencia que inicialmente concediera la tutela en contra de la ahora peti
+cionaria son insuficientes para llegar a una conclusi\'f3n contraria. 
+\par 
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+En criterio del juez constitucional de segunda instancia en el proceso de HUMBERTO FORTICH VASQUEZ contra la CAJA DE COMPENSACI\'d3N FAMILIAR DE CARTAGENA (expediente T-388435), la acci\'f3n de
+ tutela era procedente porque la conducta demandada compromete derechos fundamentales y porque el peticionario se hallaba ante un perjuicio irremediable. Contra ese fallo de tutela se present\'f3 la acci\'f3
+n de tutela que dio origen al presente proceso. No pod\'eda otro juez de tutela revivir lo ya debatido y fallado en el proceso de tutela anterior, e imponer un criterio contrario, seg\'fan el cual la acci\'f3
+n de tutela inicialmente concedida era improcedente por la existencia de otros medios de defensa judicial. Llama la atenci\'f3n de la Corte que el }{\i\insrsid12146519 ad quem}{\insrsid12146519  en el segundo proceso de tutela ni siquiera eval\'fa
+a la eficacia del otro medio de defensa judicial presuntamente a disposici\'f3n del afectado, para concluir \endash  sin an\'e1lisis f\'e1ctico o normativo alguno y pese a la exigente doctrina constitucional en torno a la procedencia de la tutela por v
+\'edas de hecho}{\cs18\super\insrsid12146519 \chftn {\footnote \pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\cs18\fs20\super\insrsid12146519 \chftn }{
+\fs20\insrsid12146519  Corte Constitucional, Sentencia T-162 de 1998, M.P. Eduardo Cifuentes Mu\'f1oz: \'93La Corte ha considerado que una sentencia podr\'e1 ser atacada a trav\'e9s de la acci\'f3n de tutela cuando (1) presente un }{
+\i\fs20\insrsid12146519 defecto sustantivo}{\fs20\insrsid12146519 , es decir, cuando se encuentre basada en una norma claramente inaplicable al caso concreto; (2) presente un }{\i\fs20\insrsid12146519 defecto f\'e1ctico}{\fs20\insrsid12146519 
+, esto es, cuando resulta evidente que el apoyo probatorio en que se bas\'f3 el juez para aplicar una determinada norma es absolutamente inadecuado; (3) presente un }{\i\fs20\insrsid12146519 defecto org\'e1nico}{\fs20\insrsid12146519 
+, el cual se produce cuando el fallador carece por completo de competencia para resolver el asunto de que se trate; y, (4) presente un }{\i\fs20\insrsid12146519 defecto procedimental}{\fs20\insrsid12146519 , es decir, cuando el juez se desv\'ed
+a por completo del procedimiento fijado por la ley para dar tr\'e1mite a determinadas cuestiones. En suma, una v\'eda de hecho se produce cuando el juzgador, en forma arbitraria y con fundamento en su sola voluntad, act\'faa en franca y absoluta desconexi
+\'f3n con la voluntad del ordenamiento jur\'eddico.  
+\par 
+\par }\pard\plain \s21\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\insrsid12146519 La Sala no duda en reiterar que la intervenci\'f3n del juez de tutela en una sentencia judicial, calific
+\'e1ndola como una v\'eda de hecho, s\'f3lo puede producirse en aquellos casos en que el vicio alegado sea }{\i\insrsid12146519 constatable a simple vista}{\insrsid12146519 . Adicionalmente, la falencia cuyo restablecimiento se persiga por v\'ed
+a de la acci\'f3n de tutela debe conllevar, en forma inmediata, la violaci\'f3n de uno o m\'faltiples derechos fundamentales, lo cual determina que s\'f3lo las decisiones 
+judiciales cuyos efectos trasciendan el campo de los anotados derechos, en detrimento de \'e9stos, pueden ser atacadas mediante la acci\'f3n de tutela\'94.}}}{\insrsid12146519  \endash  la existencia de una v\'ed
+a de hecho por parte del juez de tutela al conceder la protecci\'f3n de los derechos fundamentales impetrada. En efecto, el }{\i\insrsid12146519 ad quem}{\insrsid12146519  no eval\'faa qu\'e9
+ defecto manifiesto violatorio de un derecho fundamental presenta el fallo de tutela impugnado mediante la segunda acci\'f3n de tutela, limit\'e1ndose a afirmar la existencia de una v\'ed
+a de hecho. De aceptarse que un segundo juez de tutela puede revocar sentencias de tutela con el argumento de que la acci\'f3n era improcedente, el sistema constitucional de protecci\'f3n de derechos fundamentales colapsar\'ed
+a por quedar supeditado a una cadena ilimitada de tutelas contra sentencias de tutela dirigidas a reducir el \'e1mbito de esta acci\'f3n y a restarle efectividad, lo cual contrar\'eda claramente la decisi\'f3
+n del constituyente de establecer un procedimiento r\'e1pido y oportuno para la protecci\'f3n de los derechos fundamentales.
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang9226\noproof0\langnp9226\insrsid12146519 
+\par Adicionalmente, tampoco es atendible el segundo argumento esgrimido por el }{\i\lang9226\noproof0\langnp9226\insrsid12146519 ad quem}{\lang9226\noproof0\langnp9226\insrsid12146519 , seg\'fa
+n el cual se viola el derecho de defensa de la entidad condenada por no poder \'e9sta impugnar los fundamentos de la decisi\'f3n de segunda instancia. No obstante, en el caso de las sentencias de tutela en segunda instancia, \'e9
+ste no es el caso, ya que a\'fan es posible en sede de revisi\'f3n la revocatoria del fallo adverso. Siendo el mecanismo de revisi\'f3n eventual el procedimiento establecido por la propia Constituci\'f3n para el tr\'e1
+mite de las controversias por posibles arbitrariedades en el fallo de una tutela, la \'fanica  alternativa procesal que le quedaba a la entidad condenada en el primer proceso de tutela era solicitar la selecci\'f3n d
+e la sentencia de tutela objeto de su inconformidad por parte de la Corte Constitucional para su revisi\'f3n. 
+\par 
+\par Por \'faltimo, de todo lo dicho anteriormente se concluye que no siendo posible interponer acci\'f3n de tutela por v\'edas de hecho contra fallos de tutela, tampoco hay lugar a revisar el fallo de segunda instancia de fecha }{\insrsid12146519 
+veintiocho (28) de septiembre de dos mil (2000), }{\lang9226\noproof0\langnp9226\insrsid12146519 que concediera la tutela al se\'f1or }{\insrsid12146519 HUMBERTO FORTICH VASQUEZ contra la CAJA DE COMPENSACI\'d3N FAMILIAR DE CARTAGENA,}{
+\lang9226\noproof0\langnp9226\insrsid12146519  proferido en el Juzgado Primero Civil del Circuito de Cartagena.
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\b\insrsid12146519 
+\par 
+\par }\pard \qc \li0\ri51\widctlpar\tx3685\faauto\adjustright\rin51\lin0\itap0 {\b\lang1033\langfe3082\langnp1033\insrsid12146519 D E C I S I O N
+\par }\pard\plain \s20\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \i\fs28\lang1034\langfe3082\cgrid\langnp1034\langfenp3082 {\i0\lang1033\langfe3082\langnp1033\insrsid12146519 
+\par }\pard\plain \qj \li0\ri51\widctlpar\tx3685\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 En m\'e9rito de lo expuesto, se determina que la acci\'f3
+n de tutela no procede contra sentencias de tutela. 
+\par  
+\par }\pard \qc \li0\ri51\widctlpar\tx3685\faauto\adjustright\rin51\lin0\itap0 {\b\insrsid12146519 R E S U E L V E
+\par }\pard \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\insrsid12146519 
+\par 
+\par }\pard\plain \s3\qj \li0\ri51\keepn\widctlpar\faauto\outlinelevel2\adjustright\rin51\lin0\itap0 \b\fs28\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\insrsid12146519 Primero}{\b0\insrsid12146519 .- }{\insrsid12146519 LEVANTAR}{\b0\insrsid12146519 
+, la suspensi\'f3n de t\'e9rminos ordenada mediante auto del cinco (5) de junio de dos mil uno (2001).}{\insrsid12146519 
+\par 
+\par Segundo.- REVOCAR }{\b0\insrsid12146519 la sentencia de segunda instancia del seis (6) de diciembre de dos mil (2000), proferida por la Sala de Casaci\'f3n Civil y Agraria de la H. Corte Suprema de Justicia, en el proceso de tutela promovi
+do por la Caja de Compensaci\'f3n Familiar de Cartagena \endash  Comfamiliar \endash  contra el Juzgado Primero Civil del Circuito de Cartagena y otro.}{\insrsid12146519 
+\par }\pard\plain \qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par }{\b\insrsid12146519 Tercero.-}{\insrsid12146519  Confirmar, por las razones expuestas, la sentencia de primera instancia del veinticinco (25) de octubre de dos
+ mil (2000), proferida por el Tribunal Superior del Distrito Judicial de Cartagena, Sala de Decisi\'f3n Civil-Familia, en el proceso de tutela promovido por la Caja de Compensaci\'f3n Familiar de Cartagena \endash  Comfamiliar \endash 
+ contra el Juzgado Primero Civil del Circuito de Cartagena y otro.
+\par 
+\par }{\b\insrsid12146519 Cuarto.-}{\insrsid12146519  }{\b\insrsid12146519 DEJAR EN FIRME}{\insrsid12146519 
+ la sentencia de segunda instancia del veintiocho (28) de septiembre de dos mil (2000), proferido en el Juzgado Primero Civil del Circuito de Cartagena, en el proceso de tutela de HUMBERTO FORTICH VASQUEZ contra la CAJA DE COMPENSACI\'d3
+N FAMILIAR DE CARTAGENA.
+\par 
+\par Por Secretar\'eda, l\'edbrese la comunicaci\'f3n prevista en el art\'edculo 36 del Decreto 2591 de 1991.
+\par }\pard \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par Notif\'edquese, comun\'edquese, c\'f3piese, publ\'edquese en la Gaceta de la Corte Constitucional y c\'famplase.
+\par 
+\par 
+\par 
+\par }\pard \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s17\qc \li0\ri-232\widctlpar\faauto\adjustright\rin-232\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\insrsid12146519 ALFREDO BELTR\'c1N SIERRA
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 Presidente 
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par 
+\par 
+\par 
+\par 
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 JAIME ARAUJO RENTER\'cdA
+\par Magistrado
+\par 
+\par 
+\par 
+\par 
+\par }\pard \s17\qj \li0\ri-232\widctlpar\faauto\adjustright\rin-232\lin0\itap0 {\insrsid12146519 
+\par }\pard \s17\qc \li0\ri-232\widctlpar\faauto\adjustright\rin-232\lin0\itap0 {\insrsid12146519 MANUEL JOS\'c9 CEPEDA ESPINOSA
+\par Magistrado
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par 
+\par 
+\par 
+\par 
+\par JAIME C\'d3RDOBA TRIVI\'d1O
+\par Magistrado
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\i\insrsid12146519 
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par 
+\par 
+\par 
+\par RODRIGO ESCOBAR GIL
+\par Magistrado
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par MARCO GERARDO MONROY CABRA
+\par Magistrado
+\par 
+\par 
+\par 
+\par 
+\par 
+\par 
+\par ALVARO TAFUR GALVIS
+\par }\pard \s17\qc \li0\ri-232\widctlpar\faauto\adjustright\rin-232\lin0\itap0 {\insrsid12146519 Magistrado
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par 
+\par 
+\par 
+\par 
+\par }\pard \s17\qc \li0\ri20\widctlpar\faauto\adjustright\rin20\lin0\itap0 {\insrsid12146519 RODRIGO UPRIMNY YEPES
+\par Magistrado (E)
+\par }\pard \s17\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par 
+\par 
+\par 
+\par 
+\par CLARA IN\'c9S VARGAS HERN\'c1NDEZ
+\par Magistrada
+\par 
+\par 
+\par 
+\par 
+\par MARTHA VICTORIA S\'c1CHICA M\'c9NDEZ
+\par Secretaria General
+\par }\pard \s17\qj \li0\ri0\widctlpar\tx5740\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 \page }{\b\insrsid12146519 Salvamento de voto a la Sentencia SU.1219/01
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\b\insrsid12146519 
+\par }\pard \s17\qj \li560\ri0\widctlpar\faauto\adjustright\rin0\lin560\itap0 {\b\insrsid12146519 ACCION DE TUTELA CONTRA SENTENCIA DE TUTELA POR VIA DE HECHO}{\insrsid12146519 -Procedencia (Salvamento de voto)
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+En un Estado de Derecho no pueden existir autoridades que dispongan de poderes ilimitados. Siempre deben tener sin excepci\'f3n alguna como l\'edmite la propia Constituci\'f3n. Excluir para casos excepcionales la acci\'f3
+n de tutela respecto de las mismas sentencias de tutela, cuyo cometido es justamente la protecci\'f3n de los derechos constitucionales fundamentales, significa dejar sin ning\'fan medio de control el actuar del jue
+z constitucional en materia de tutela cuando ha actuado por fuera de la Constituci\'f3n. Negar la acci\'f3n de tutela contra sentencias  de tutela, no obstante que pudiere existir y comprobarse que es el producto de una v\'ed
+a de hecho, significa hacerla prevalecer sobre la Constituci\'f3n pese a su inconstitucionalidad. Aceptada por la jurisprudencia de esta Corte, desde a\'f1os atr\'e1s, la posibilidad de interponer acci\'f3
+n de tutela contra otra tutela cuando en la primera hubiere existido v\'eda de hecho, no se gener\'f3 la prolongaci\'f3n indefinida de conflictos ni cadenas ininterrumpidas de tutelas que propiciaran la inseguridad jur\'ed
+dica ni el desmedro de los derechos fundamentales, como se plantea aventuradamente en la sentencia de la cual me separo. Por lo tanto, \'e9sta no debe ser raz\'f3n para cerrar  toda posibilidad de correcci\'f3n de v\'ed
+as de hecho en sentencias de tutela para ajustarlas a la Constituci\'f3n.
+\par }{\i0\insrsid12146519 
+\par }\pard \s15\qj \li560\ri51\widctlpar\faauto\adjustright\rin51\lin560\itap0 {\b\i0\insrsid12146519 REVISION FALLO DE TUTELA}{\i0\insrsid12146519 -No garantiza el cierre del sistema por el \'f3rgano jurisdiccional (Salvamento de voto)
+\par }\pard \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 {\i0\insrsid12146519 
+\par }{\insrsid12146519 La revisi\'f3n eventual que debe efectuar la Corte Constitucional de las sentencias de tutela tiene como finalidad, seg\'fa
+n el Decreto Reglamentario respectivo, la de unificar la jurisprudencia constitucional o aclarar el alcance general de las normas constitucionales. Pero atendiendo a que el fin espec\'edfico de la acci\'f3n de tutela es la protecci\'f3
+n de los derechos fundamentales, es obvio que otra de las finalidades de la revisi\'f3n sea principalmente la de examinar aquellos fallos de instancia que son contrarios a la Constituci\'f3n, es decir, que son el producto de una v\'ed
+a de hecho. Pero una vez proferido un fallo de revisi\'f3n por la Sala respectiva, tal actuaci\'f3n no garantiza el cierre del sistema jur\'eddico por el \'f3rgano constitucional encargado de salvaguardar la supremac\'eda de la Constituci\'f3
+n. Una sentencia de revisi\'f3n no garantiza por s\'ed sola tal cierre, pues para que ello suceda debe encontrarse ajustada a los lineamientos que sobre el punto ha dispuesto la jurisprudencia unificada de la Corte Constitucional, es decir, debe en
+contrarse ajustada a la Constituci\'f3n. De no ser as\'ed, la misma Corte constitucional ha admitido la posibilidad de su anulaci\'f3n.
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\insrsid12146519 
+\par }\pard \s17\qj \li560\ri0\widctlpar\faauto\adjustright\rin0\lin560\itap0 {\b\insrsid12146519 REVISION FALLO DE TUTELA}{\insrsid12146519 -Decisi\'f3n de no revisarlo no tiene efecto de cosa juzgada (Salvamento de voto)
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 La decisi\'f3n de una Sala de Selecci\'f3
+n de la Corte Constitucional sobre cuales fallos de tutelas han de ser revisados y cuales no, se adopta con base en el criterio de los dos Magistrados que la conforman, pero no requiere motivaci\'f3n alguna. Esta determinaci\'f3n, respecto de los caso
+s que no se revisar\'e1n, pudo haber dejado por fuera en forma involuntaria casos que constitu\'edan v\'eda de hecho o eventualmente entra\'f1ar una consideraci\'f3n que impl\'ed
+citamente implique un cambio de jurisprudencia. Por ello, este tipo de determinaci\'f3n no puede tener un efecto superior al de las sentencias proferidas por las Salas de Revisi\'f3
+n y tornar en inmutables y definitivas todas las providencias que  comprenden la no selecci\'f3n, y menos a\'fan si alguna de ellas es constitutiva de una v\'eda de hecho. Aunque el efecto de la cosa juzgada constitucional es especial\'edsimo, a\'fa
+n estas decisiones tambi\'e9n solo lo adquieren cuando re\'fanen las condiciones propias para ser denominadas providencias. Pero si tenemos presente que una providencia proferida por la v\'eda de hecho, aunqu
+e sea dictada por un juez de tutela, no puede ser considerada como tal, la decisi\'f3n de no seleccionarla no puede tener la virtud de convertirla en una verdadera sentencia y por ello otorgarle los efectos de cosa juzgada, con lo que, la sola decisi\'f3
+n de la Sala de Selecci\'f3n de tutelas, sin motivaci\'f3n alguna y compuesta por dos Magistrados, seg\'fan criterio de la sentencia de la que me aparto, transforma lo inconstitucional en constitucional.
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\insrsid12146519 
+\par }\pard \s17\qj \li560\ri0\widctlpar\faauto\adjustright\rin0\lin560\itap0 {\b\insrsid12146519 ACCION DE TUTELA CONTRA SENTENCIA DE TUTELA}{\insrsid12146519 -Procedencia por ser sentencia violatoria de la Constituci\'f3n (Salvamento de voto)
+\par }\pard \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }\pard\plain \s15\qj \li0\ri51\widctlpar\faauto\adjustright\rin51\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 La sentencia violatoria de la Constituci\'f3n, invadi\'f3 y suplant\'f3 en forma total a la Jurisdicci
+\'f3n Ordinaria a la que  le correspond\'eda por ley decidir en forma definitiva el asunto de car\'e1cter laboral planteado por el accionante de la primera tutela. En mi criterio, tal sentencia ha debido ser seleccionada para revisi\'f3
+n en la oportunidad correspondiente; pero como ello no ocurri\'f3,  qued\'f3 el camino abierto para su correcci\'f3n solo a trav\'e9s de la interposici\'f3n de otra acci\'f3n de tutela. En la sentencia de la que me aparto se defini\'f3
+ la no procedencia de la tutela contra tutela, y al resolver el caso concreto, adem\'e1s se incurri\'f3 en imprecisi\'f3n al no haber revocado las dos decisiones proferidas en la segunda tutela. Si de acuerdo con la motivaci\'f3
+n de la providencia, no procede la tutela contra una sentencia de tutela, el juez constitucional al que le corresponda resolver una situaci\'f3n de tal naturaleza, debe rechazar de plano la demanda interpuesta en tal sentido, porque ning\'fa
+n caso tiene, como en efecto lo hizo el Tribunal Superior del Distrito Judicial de Cartagena, acometer el estudio de fondo de la demanda para dilucidar si existi\'f3 una v\'eda de hecho o no. Cuando la Sala Plena de la Corte Constitucional conclu
+ye que no es posible \'93}{\b\insrsid12146519 interponer}{\insrsid12146519 \'94 acci\'f3n de tutela por v\'edas de hecho contra fallos de tutela,  debi\'f3 aclarar y orientar el proceder que deben adoptar los jueces en casos semejantes en el futuro.  
+
+\par }{\i0\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\tx5740\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\b\insrsid12146519 
+\par }\pard\plain \s1\ql \li3960\ri0\keepn\widctlpar\faauto\outlinelevel0\adjustright\rin0\lin3960\itap0 \fs28\lang1031\langfe3082\cgrid\langnp1031\langfenp3082 {\insrsid12146519 Referencia: expedientes T- 388435 y T- 412756
+\par }\pard\plain \qj \li3960\ri0\widctlpar\faauto\adjustright\rin0\lin3960\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par Magistrado Ponente:
+\par Dr. MANUEL JOSE CEPEDA ESPINOSA
+\par }\pard \qj \li3600\ri0\widctlpar\faauto\adjustright\rin0\lin3600\itap0 {\insrsid12146519 
+\par 
+\par }\pard \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 Con el acostumbrado respeto presento a continuaci\'f3n  los motivos que me apartan de la decisi\'f3
+n mayoritaria, por cuanto considero que es procedente de manera excepcional la interposici\'f3n de una tutela contra providencia de tutela en la que se haya incurrido en v\'eda de hecho. Por ello, en el caso objeto de revisi\'f3
+n ha debido confirmarse la sentencia respectiva que revocaba la proferida en el proceso T- 388435 que se encontraba en dichas circunstancias.
+\par 
+\par }\pard\plain \s2\qj \li0\ri51\keepn\widctlpar\faauto\outlinelevel1\adjustright\rin51\lin0\itap0 \b\fs32\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\fs28\insrsid12146519 La tutela contra providencias judiciales.
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par }\pard\plain \s17\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang1024\langfe1024\cgrid\noproof\langnp1033\langfenp3082 {\lang3082\noproof0\langnp3082\insrsid12146519 Mediante la sentencia C-543 de 1992 la Corte Constitucional consider
+\'f3 inconstitucional la tutela contra providencias judiciales y fue as\'ed como declar\'f3 inexequibles los art\'edculos 11 y 12 del Decreto 2591 de 1991 y dada su unidad normativa igualmente lo hizo con la integridad del art\'ed
+culo 40 del mismo Decreto que en su Par\'e1grafo 4\'ba  dispon\'eda la no procedencia de tutela contra fallos de tutela. 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par Parece apresurado considerar que la Corte Constitucional resuelva mediante sentencia declarar la inexequibilidad de una disposici\'f3
+n de rango legal sin hacer un estudio de fondo sobre el respectivo punto, tal y como se afirma en la sentencia de la que me separo, respecto del Par\'e1grafo mencionado. Del texto \'edntegro de la sentenc
+ia anteriormente citada se desprende, que al concluir la Corte la improcedencia de la tutela contra providencia judicial, era obvio que el Par\'e1grafo  4\'ba del art\'edculo 40 del Decreto 2591 de 1992 perd\'eda toda raz\'f3
+n de ser, pues al haber sido concebido solo bajo el supuesto de la procedencia de la tutela contra providencia judicial era el querer del legislador excluir expresamente de aquella acci\'f3n a las mismas sentencias de tutela.
+\par }\pard\plain \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 
+\par }{\i0\insrsid12146519 Pero, ya por fuera del ordenamiento legal todo el art\'edculo 40 as\'ed como los art\'edculos 11 y 12 del mismo Decreto 2591 de 1991, bajo el entendido de la improcedencia de la tutela contra providencia judicial, lo cierto s\'ed
+ es que se ha impuesto jurisprudencialmente la tesis de la procedencia de la tutela contra providencias judiciales cuando ellas constituyen v\'eda de hecho, con fundamento  en que \'e9stas son una ostensible desviaci\'f3n del ordenamiento jur\'ed
+dico y por ello no merecen siquiera tal denominaci\'f3n, ni tienen el car\'e1cter de providencias para los efectos de establecer la procedencia de la acci\'f3n de tutela, dado que no es el ropaje o la apariencia de una decisi\'f3
+n sino su contenido lo que amerita la intangibilidad constitucionalmente conferida a la autonom\'eda funcional del juez}{\cs18\b\i0\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  Sentencia T-173 de 4 de mayo de 1993}}}{\i0\insrsid12146519 . Igualmente ha sido l
+a Corte la que ha decantado los supuestos en los cuales una sentencia puede ser atacada a trav\'e9s de la acci\'f3n de tutela}{\cs18\b\i0\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  Sentencia T-162 de 1998, entre otras.}}}{\i0\insrsid12146519 , sin hacer distinci\'f3n alguna respecto de las sentencias de tutela. 
+\par }{\insrsid12146519 
+\par }{\b\i0\insrsid12146519 Procedencia de la tutela contra v\'edas de hecho en sentencias de tutela.}{\i0\insrsid12146519 
+\par }{\insrsid12146519 
+\par }\pard\plain \qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 El ejercicio de la funci\'f3n p\'fa
+blica de defensa del orden constitucional ha sido confiado por la misma Constituci\'f3n a la Jurisdicci\'f3n Constitucional, cuya configuraci\'f3n ha sido abordada directamente por ella con base en un criterio material, seg\'fa
+n el cual, todas las funciones de la Corte Constitucional integran la Jurisdicci\'f3n Constitucional, pero no todos los asuntos que pertenecen a \'e9sta se han adscrito a su conocimiento. Este criterio es la extensi\'f3n del derec
+ho fundamental de toda persona a la integridad y primac\'eda de la Constituci\'f3n y se concreta en el logro de la suprema condici\'f3n de la paz social y por ende en  el desarrollo de una Constituci\'f3n con car\'e1cter material. 
+\par 
+\par La Jurisdicci\'f3n Constitucional entonces, es la llamada a asegurar la defensa de los derechos constitucionales fundamentales, la efectividad de los mismos y su oponibilidad frente a todos los \'f3
+rganos del Estado. Defensa de los derechos que puede plantearse a trav\'e9s de las acciones de inexequibilidad o nulidad, seg\'fan se trate de una transgresi\'f3
+n originada en una ley o en un acto administrativo respectivamente. Ante violaciones concretas de derechos fundamentales producidas por la acci\'f3n o la omisi\'f3n  de cualquier autoridad p\'fablica, o por los part
+iculares en casos concretos, la Constituci\'f3n consagr\'f3 en el art\'edculo 86 la acci\'f3n de tutela, como un tipo de control de constitucionalidad, para el cual el legislador organiz\'f3
+ de manera especial un procedimiento preferente y sumario que incluye una decisi\'f3n de primera instancia, la posibilidad de su impugnaci\'f3n y una eventual revisi\'f3n por parte de la Corte Constitucional. 
+\par 
+\par }\pard\plain \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\i0\insrsid12146519 Y en este procedimiento, o en la culminaci\'f3n de sus diferentes etapas, pueden tambi\'e9
+n los jueces constitucionales violar la Constituci\'f3n, errores para cuya  correcci\'f3n deben utilizarse los recursos consagrados en la ley y que incluyen la revisi\'f3n si as\'ed lo decide la respectiva Sala de Selecci\'f3
+n. Pero es el criterio de la mayor\'eda de la Corte, que una vez decidida la no revisi\'f3n de una sent
+encia de tutela adquiere de inmediato el sello de la cosa juzgada y por ello no puede ser nuevamente cuestionada judicialmente, es decir, goza de la presunci\'f3n de constitucionalidad aunque en ella se haya incurrido en v\'eda de hecho.
+\par }{\insrsid12146519 
+\par }{\i0\insrsid12146519 En un Estado de Derecho no pueden existir autoridades que dispongan de poderes ilimitados. Siempre deben tener sin excepci\'f3n alguna como l\'edmite la propia Constituci\'f3n. Excluir para casos excepcionales la acci\'f3
+n de tutela respecto de las mismas sentencias de tutela, cuyo cometido es justamente la protecci\'f3n de los derechos constitucionales fundamentales, significa dejar sin ning\'fa
+n medio de control el actuar del juez constitucional en materia de tutela cuando ha actuado por fuera de la Constituci\'f3n. Negar la acci\'f3n de tutela contra
+ sentencias  de tutela, no obstante que pudiere existir y comprobarse que es el producto de una v\'eda de hecho, significa hacerla prevalecer sobre la Constituci\'f3n pese a su inconstitucionalidad.
+\par }{\insrsid12146519 
+\par }{\i0\insrsid12146519 La Corte ha admitido en el pasado la posibilidad de interponer acciones de tutela contra las actuaciones de tutela. En la sentencia T- 699 de 1996 dijo: 
+\par }{\insrsid12146519 
+\par }\pard \s15\qj \li539\ri561\widctlpar\faauto\adjustright\rin561\lin539\itap0 {\fs24\insrsid12146519 \'93As\'ed
+, pues, aplicada a las decisiones judiciales proferidas por los jueces ordinarios con el objeto de definir si contra ellas cabe extraordinariamente la acci\'f3n de tutela en cuanto se configure un actuaci\'f3n burdamente contraria al ordenamiento jur\'ed
+dico que, por eso mismo, desconoce el debido proceso y vulnera los derechos fundamentales en juego dentro del respectivo juicio, la }{\fs24\ul\insrsid12146519 v\'eda de hecho}{\fs24\insrsid12146519  puede tambi\'e9n configurars
+e dentro del proceso de tutela o al culminar \'e9ste en primera o segunda instancia (...) Desde luego, tambi\'e9n hay v\'eda de hecho cuando se concede la protecci\'f3
+n impetrada con protuberante desconocimiento del material probatorio que demuestra a las claras la inexistencia de la violaci\'f3n o amenaza, o no obstante la indudable  improcedencia de la tutela en el caso concreto\'94.
+\par }\pard \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }{\i0\insrsid12146519 Y en la T- 1009 de 1999 se dijo: 
+\par }{\insrsid12146519 
+\par }\pard \s15\qj \li539\ri561\widctlpar\faauto\adjustright\rin561\lin539\itap0 {\fs24\insrsid12146519 \'93 En principio no hay tutela contra tutela, salvo que en la primera acci\'f3n de tutela hubiere existido una ostensible v\'eda de hecho....\'94.
+\par }\pard \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }{\i0\insrsid12146519 Aceptada por la jurisprudencia de esta Corte, desde a\'f1os atr\'e1s, la posibilidad de interponer acci\'f3n de tutela contra otra tutela cuando en la primera hubiere existido v\'eda de hecho, no se gener\'f3 la prolongaci\'f3
+n indefinida de conflictos ni cadenas ininterrumpidas de tutelas que propiciaran la inseguridad jur\'eddica ni el desmedro de los derechos fundamentales, como se plantea aventuradamente en la sentencia de la cual me separo. Por lo tanto, \'e9sta 
+no debe ser raz\'f3n para cerrar  toda posibilidad de correcci\'f3n de v\'edas de hecho en sentencias de tutela para ajustarlas a la Constituci\'f3n.
+\par 
+\par }{\b\i0\insrsid12146519 La revisi\'f3n de los fallos de tutela no cierra el sistema del \'f3rgano constitucional encargado de salvaguardar la supremac\'eda de la Constituci\'f3n.
+\par 
+\par }{\i0\insrsid12146519 De acuerdo con lo dispuesto por la Constituci\'f3n Nacional, art\'edculo 241 numeral 9\'ba, le corresponde a la Corte Constitucional revisar, en la forma que determine la ley, las decisiones judiciales relacionadas con la acci\'f3
+n de tutela de los derechos constitucionales. Revisi\'f3n que de acuerdo con lo establecido en el art\'edculo 86 ib\'eddem no es obligatoria sino eventual.
+\par 
+\par En desarrollo de lo anterior, los art\'edculos 33 y 34 del Decreto 2591 de 1991}{\cs18\b\i0\fs24\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 
+\fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  Normas que fueron declaradas  exequibles en la Sentencia C-018 de 1993.}}}{\i0\insrsid12146519  disponen que la Corte Constitucional designar
+\'e1 dos de sus Magistrados para que seleccionen, sin motivaci\'f3n expresa y seg\'fan su criterio, las sentencias de tutela que habr\'e1n de ser revisadas, y los tres Magistrados de su seno que conformar\'e1n la Sala que habr\'e1
+ de revisar los fallos de tutela de conformidad con el procedimiento vigente para los Tribunales de Distrito Judicial.
+\par 
+\par La revisi\'f3n eventual que debe efectuar la Corte Constitucional de las sentencias de tutela tiene como finalidad, seg\'fa
+n el Decreto Reglamentario respectivo, la de unificar la jurisprudencia constitucional o aclarar el alcance general de las normas constitucionales. Pero atendiendo a que el fin espec\'edfico de la acci\'f3n de tutela es la protecci\'f3n de los derech
+os fundamentales, es obvio que otra de las finalidades de la revisi\'f3n sea principalmente la de examinar aquellos fallos de instancia que son contrarios a la Constituci\'f3n, es decir, que son el producto de una v\'eda de hecho.
+\par  
+\par Pero una vez proferido un fallo de revisi\'f3n por la Sala respectiva, tal actuaci\'f3n no garantiza el cierre del sistema jur\'eddico por el \'f3rgano constitucional encargado de salvaguardar la supremac\'eda de la Constituci\'f3
+n. Una sentencia de revisi\'f3n no garantiza por s\'ed sola tal cierre, pues para 
+que ello suceda debe encontrarse ajustada a los lineamientos que sobre el punto ha dispuesto la jurisprudencia unificada de la Corte Constitucional, es decir, debe encontrarse ajustada a la Constituci\'f3n. De no ser as\'ed
+, la misma Corte constitucional ha admitido la posibilidad de su anulaci\'f3n.
+\par 
+\par Al respecto, procede recordar lo expuesto por la Sala Plena de la Corte Constitucional en auto de 30 de junio de 1998:  
+\par 
+\par }\pard\plain \qj \li567\ri617\widctlpar\tx8222\faauto\adjustright\rin617\lin567\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\insrsid12146519 \'93En jurisprudencia reiterada de esta Corporaci\'f3n, ha sido acogido el criterio seg\'fa
+n el cual, la nulidad de una sentencia  de la Corte Constitucional reviste un car\'e1cter extraordinario. Por lo tanto, la petici\'f3n de nulidad de una providencia emanada de una sala de revisi\'f3n de la Corte, debe precisar la raz\'f3
+n en virtud de la cual ella se estima procedente. Se trata de un requisito inexcusable, si se tiene en cuenta que s\'f3lo excepcionalmente las sentencias de revisi\'f3
+n pueden ser revocadas por la Sala Plena, en el evento de que ellas modifiquen la jurisprudencia de la Corte.
+\par 
+\par \'93En efecto, en auto de fecha  5 de junio de 1997, la Sala consider\'f3:
+\par 
+\par }\pard \qj \li851\ri902\widctlpar\faauto\adjustright\rin902\lin851\itap0 {\insrsid12146519 \lquote Como resulta de los art\'edculos 241 y 243 de la Constituci\'f3n Pol\'ed
+tica, las sentencias que profiera la Corte Constitucional en desarrollo de sus atribuciones tienen car\'e1cter definitivo, en cuanto resuelven de manera i
+napelable los asuntos que ante ella se plantean, bien que se trate de procesos de constitucionalidad en estricto sentido (control abstracto), ya que aludan a la revisi\'f3n de los fallos de instancia en materia de protecci\'f3
+n a los derechos constitucionales fundamentales.
+\par 
+\par \lquote Razones de seguridad jur\'eddica y de efectiva prevalencia de los postulados y valores consagrados en la Carta Pol\'edtica aconsejan que los dictados de la Corte, guardiana de su integridad y supremac\'ed
+a, gocen de una estabilidad superlativa, a menos que se demuestre a plenitud su palmaria e indudable transgresi\'f3n a las prescripciones del Estatuto Fundamental.
+\par 
+\par \lquote Es por ello que la propia Carta ha consagrado, como instituci\'f3n diferente a la }{\b\insrsid12146519 cosa juzgada}{\insrsid12146519  com\'fan, que cobija los fallos proferidos por los jueces en las dem\'e1s jurisdicciones, la }{
+\b\insrsid12146519 cosa juzgada constitucional}{\insrsid12146519 , que otorga a las sentencias de la Corte un especial\'edsimo nivel dentro del sistema jur\'eddico.
+\par 
+\par \lquote Tambi\'e9n por esos motivos, como ya lo ha destacado la jurisprudencia, las normas vigentes confieren a las nulidades de los procesos que se llevan en la Corte Constitucional un car\'e1
+cter extraordinario, "por lo cual deben ser interpretadas y aplicadas de manera restrictiva, sin lugar a extensiones ni analog\'edas" (Cfr. Corte Constitucional. Sala Plena. Auto del 27 de junio de 1996. M.P.: Dr. Jos\'e9 Gregorio Hern\'e1ndez Galindo).
+
+\par 
+\par \lquote \'85\'85
+\par \lquote La Corte ha se\'f1alado, a la vez, que la extraordinaria posibilidad expuesta no significa que exista un recurso contra las sentencias dictadas por su Sala Plena o por sus salas de revisi\'f3n, pues ello est\'e1 expresamente excluido en el art\'ed
+culo 49 del Decreto 2067 de 1991.
+\par 
+\par \lquote Adem\'e1s, la Corte ha destacado que tales nulidades solamente pueden ser declaradas en casos extremos:
+\par 
+\par \lquote Dispone el precepto legal que s\'f3lo las irregularidades que impliquen violaci\'f3n del debido proceso podr\'e1n servir de base para que la Sala Plena de la Corte anule el proceso.
+\par 
+\par \lquote Como puede verse, se trata de nulidades circunscritas de manera expresa a las violaciones ostensibles y probadas del art\'edculo 29 de la Constituci\'f3n Pol\'edtica.
+\par 
+\par \lquote Se trata de situaciones jur\'eddicas especial\'edsimas y excepcionales, que tan s\'f3lo pueden provocar la nulidad del proceso cuando los fundamentos expuestos por quien la alega muestran, de manera i
+ndudable y cierta, que las reglas procesales aplicables a los procesos constitucionales, que no son otras que las previstas en los decretos 2067 y 2591 de 1991, han sido quebrantadas, con notoria y flagrante vulneraci\'f3
+n del debido proceso. Ella tiene que ser significativa y trascendental, en cuanto a la decisi\'f3n adoptada, es decir, debe tener unas repercusiones sustanciales, para que la petici\'f3n de nulidad pueda prosperar.
+\par 
+\par \lquote Se requiere, adem\'e1s, la evaluaci\'f3n del caso concreto por la Sala Plena de la Corte y la decisi\'f3n de \'e9sta por mayor\'eda de votos, seg\'fan las normas pertinentes.
+\par 
+\par  \lquote \'85
+\par 
+\par \lquote Entonces -ha insistido la Corte- \lquote la sola circunstancia de que el actor o alguno de los intervinientes dentro del proceso no compartan los argumentos expuestos por la Corporaci\'f3
+n en su providencia no es elemento suficiente para que pueda prosperar la pretensi\'f3n de su nulidad" (Auto del 27 de junio de 1996)\rquote .
+\par }\pard \qj \li567\ri617\widctlpar\tx8222\faauto\adjustright\rin617\lin567\itap0 {\insrsid12146519 
+\par \'93De otro lado, tambi\'e9n ha sostenido esta Corte, que el cambio de jurisprudencia debe ser expreso, entre otras razones, porque la propia Carta reconoce la autonom\'ed
+a interpretativa del juez y, por tanto, las plenas atribuciones para modificar los criterios jurisprudenciales que lo han inspirado anteriormente, con el fin de obtener progresos efectivos en la aplicaci\'f3n del dere
+cho. Pero los cambios de jurisprudencia no justificados o no advertidos de manera franca corresponden en el fondo a una arbitrariedad del fallador, que entonces deja irrealizada la igualdad de quienes se encuentran en id\'e9
+nticas circunstancias frente a la misma norma.  En consecuencia, en guarda  de la seguridad  jur\'eddica y de la estabilidad que se espera en la aplicaci\'f3n del derecho, exigen del juez la verificaci\'f3
+n razonada de los motivos que lo llevan a variar su entendimiento del orden jur\'eddico y la expresi\'f3n clara de los fundamentos de su decisi\'f3n, en el plano interpretativo, para introducir mutaciones o cambios en el rumbo de la jurisprudencia.
+\par 
+\par \'93En efecto, en el mismo auto atr\'e1s citado se dijo:   
+\par 
+\par }\pard \qj \li851\ri901\widctlpar\tx7938\faauto\adjustright\rin901\lin851\itap0 {\insrsid12146519 \lquote Mientras no sacrifique el principio de la cosa juzgada constitucional, la Corte, como toda corporaci\'f3
+n judicial, puede alterar su jurisprudencia, seg\'fan los cambios que el Constituyente introduzca en la normatividad, la evoluci\'f3n que vayan mostrando los hechos de la vida en sociedad, los nuevos enfoques que promueva el desarrollo del pensamiento jur
+\'eddico y la composici\'f3n misma del tribunal, no menos que las modificaciones que con el paso del tiempo vayan sufriendo las apreciaciones y convicciones de los magistrados, individualmente, en su interpretaci\'f3n del orden jur\'eddico vigente.
+\par 
+\par \lquote Desde luego, la normatividad establece las reglas m\'ednimas que deben observarse en lo relativo a las mutaciones en la jurisprudencia y se\'f1ala c\'f3mo han de tener lugar.
+\par 
+\par \lquote De gran inter\'e9s resulta la verificaci\'f3n de la competencia para los cambios jurisprudenciales, ya que, habi\'e9ndose creado las salas de revisi\'f3n de tutela, no toda la jurisprudencia est\'e1
+ contenida en fallos pronunciados por la Sala Plena de la Corporaci\'f3n. Es \'e9sta, por supuesto, la se\'f1alada para modificar las tendencias doctrinarias que ella misma ha venido estableciendo y, por expreso mandato del art\'ed
+culo 34 del Decreto 2591 de 1991, tambi\'e9n para adoptar las decisiones que modifiquen la jurisprudencia sentada en las sentencias sobre amparo constitucional.\rquote 
+\par }\pard \qj \li567\ri617\widctlpar\tx8222\faauto\adjustright\rin617\lin567\itap0 {\insrsid12146519 
+\par \'93Agreg\'f3 igualmente la providencia de la Sala Plena  de 5 de junio de 1997 que:
+\par 
+\par }\pard \qj \li851\ri901\widctlpar\tx7938\faauto\adjustright\rin901\lin851\itap0 {\insrsid12146519 \lquote De otro lado, el concepto de "cambio de jurisprudencia" \'fanicamente tiene lugar bajo el supuesto indispensable de que, en realidad, hay }{
+\b\insrsid12146519 jurisprudencia }{\insrsid12146519 en vigor, esto es, en el entendido de que las decisiones anteriores han dejado tras de s\'ed un sustrato de interpretaci\'f3n judicial que permite inferir criterios m\'ed
+nimos de alguna manera reiterados por la Corte en cuanto al alcance de las normas constitucionales aplicables y en lo relativo a la soluci\'f3n de controversias planteadas en los mismos t\'e9rminos.
+\par 
+\par \lquote Ello significa que no todo p\'e1rrafo de una sentencia aprobada por la Corte Constitucional, aun citado fuera de contexto, se convierte de manera autom\'e1tica en jurisprudencia.
+\par 
+\par \lquote En efecto, resulta indispensable la continuidad de unos criterios jur\'eddicamente relevantes, con arreglo a los cuales se haya venido resolviendo, bajo directrices que implican la concreci\'f3n de postulados, principios o normas
+ que se reflejan de la misma manera en casos similares, raz\'f3n por la cual el cambio de jurisprudencia se produce cuando, al modificarse la forma de interpretar el sistema jur\'eddico, se resuelve en un nuevo proceso, con caracter\'ed
+sticas iguales a las de los precedentes, de modo contrario o diverso
+\par .
+\par \lquote Esto \'faltimo no puede obedecer al mero capricho del juez, ni al voluntario olvido del reiterado sentido que, bajo los mismos supuestos, se ha venido dando a decisiones judiciales sobre hechos similares.
+\par 
+\par \lquote Si as\'ed fuera, desaparecer\'edan las reglas m\'ednimas inherentes a la certidumbre de los asociados sobre el alcance de las normas jur\'eddicas que regulan sus relaciones y se romper\'ed
+a, desde luego, el derecho a la igualdad. (Cfr.  Auto de junio 5 de 1997.  M.S. Dr. Jos\'e9 Gregorio Hern\'e1ndez Galindo).\'94
+\par }\pard\plain \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \i\fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\i0\insrsid12146519 
+\par De suerte que, la sentencia proferida por una Sala de Revisi\'f3n puede todav\'eda en casos excepcionales ser revisada por la Sala Plena de la Corporaci\'f3n dado que los cambios de jurisprudencia deber\'e1n ser decididos por la Sala plena de Corte. As
+\'ed, basta recordar el auto No. 080, de 24 de agosto de 2000, M. P. Jos\'e9 Gregorio Hern\'e1ndez Galindo, en el que se puntualiz\'f3:
+\par }{\insrsid12146519 
+\par }\pard \s15\qj \li539\ri561\widctlpar\faauto\adjustright\rin561\lin539\itap0 {\fs24\insrsid12146519 En conclusi\'f3n, se tiene que, en el presente caso, el giro interpretativo fue hecho por una Sala de Revisi\'f3n, \'f3rgano jud
+icial al que no le fue atribuida esa competencia, en abierta contradicci\'f3n con lo previsto en el art\'edculo 34 del Decreto 2591 de 1991. En consecuencia, estima esta Corporaci\'f3n que se ha incurrido en violaci\'f3
+n del debido proceso y, por tanto, al tenor del art\'edculo 49 del Decreto 2067 de 1991, la Sentencia T-441 de 2000, proferida por la Sala Primera de Revisi\'f3n, est\'e1 viciada de nulidad, y as\'ed habr\'e1 de declararse. Se dispondr\'e1
+ que se profiera nuevo fallo a cargo de la Sala Plena de esta Corporaci\'f3n.
+\par }\pard \s15\qj \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\insrsid12146519 
+\par }{\b\i0\insrsid12146519 La decisi\'f3n de no revisar un fallo de tutela no tiene el efecto de cosa juzgada constitucional.}{\i0\insrsid12146519 
+\par 
+\par La decisi\'f3n de una Sala de Selecci\'f3n de la Corte Constitucional sobre cuales fallos de tutelas han de ser revisados y cuales no, se adopta con base en el criterio de los dos Magistrados que la conforman, pero no requiere motivaci\'f3n alguna}{
+\cs18\b\i0\super\insrsid12146519 \chftn {\footnote \pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\cs18\super\insrsid12146519 \chftn }{\insrsid12146519  Art\'ed
+culo 34 del Decreto 2591 de 1991.}}}{\i0\insrsid12146519 . Esta determinaci\'f3n, respecto de los casos que no se revisar\'e1n, pudo haber dejado por fuera en forma involuntaria casos que constitu\'edan v\'eda de hecho o eventualmente entra\'f1
+ar una consideraci\'f3n que impl\'edcitamente implique un cambio de jurisprudencia. Por ello, este tipo de determinaci\'f3n no puede tener un efecto superior al de las sentencias proferidas por las Salas de Revisi\'f3
+n y tornar en inmutables y definitivas todas las providencias que  comprenden la no selecci\'f3n, y menos a\'fan si alguna de ellas es constitutiva de una v\'eda de hecho. Aunque el efecto de la cosa juzgada constitucional es especial\'edsimo, a\'fan esta
+s decisiones tambi\'e9n solo lo adquieren cuando re\'fanen las condiciones propias para ser denominadas providencias. Pero si tenemos presente que una providencia proferida por la v\'ed
+a de hecho, aunque sea dictada por un juez de tutela, no puede ser considerada como tal, la decisi\'f3
+n de no seleccionarla no puede tener la virtud de convertirla en una verdadera sentencia y por ello otorgarle los efectos de cosa juzgada, con lo que, la sola decisi\'f3n de la Sala de Selecci\'f3n de tutelas, sin motivaci\'f3n alguna y compuesta 
+por dos Magistrados, seg\'fan criterio de la sentencia de la que me aparto, transforma lo inconstitucional en constitucional.
+\par 
+\par Conociendo la suscrita la complejidad del procedimiento de selecci\'f3n de tutelas por el alto volumen de procesos que semanalmente deben someterse a dicha consideraci\'f3
+n, y por la variedad de temas que ellos involucran, es una labor que se ha venido desarrollando de manera seria  y responsable por parte de la Corte Constitucional. Pero no por ello es absurdo pensar que, por las mismas raz
+ones que hacen complejo tal procedimiento, se pueda escapar a la Sala de Selecci\'f3n, a\'fan mediando insistencia, la de una tutela en la que se ha incurrido en v\'ed
+a de hecho, o que no se seleccione sencillamente porque el criterio de los dos Magistrados que la 
+conforman se aparte de los lineamientos generales trazados por la jurisprudencia unificada de la Corte Constitucional, tal y como eventualmente puede ocurrir, as\'ed como ha sucedido en los casos de las sentencias de revisi\'f3
+n que han sido revisadas y anuladas por la Sala Plena.  Ante estas eventualidades excepcionales no puede la misma Corte Constitucional cerrar toda posibilidad de protecci\'f3
+n de los derechos fundamentales que en tales casos pueden estar conculcados, bien porque se niega el amparo ora porque se concede sin fundamento. 
+\par 
+\par Correspondiendo justamente a la Corte Constitucional la guarda de la integridad de la Constituci\'f3n y en general a todos los jueces de tutela espec\'edficamente la protecci\'f3n de los derechos fundamentales, es dif\'edcil considerar siqu
+iera que alguno de ellos se aparte deliberadamente de tal cometido y profiera providencias por las v\'edas de hecho; pero as\'ed como reconoce la sentencia de la que me aparto que ning\'fa
+n juez es infalible, es necesario que exista la posibilidad, aunque sea excepcional, de ajustar a la Constituci\'f3n actuaciones de tal naturaleza para garantizar en todo momento la protecci\'f3n de los derechos fundamentales, los cuales en ning\'fa
+n caso pueden quedar vulnerados so pretexto de la seguridad jur\'eddica, pues \'e9sta solo queda garantizada en la medida en que tambi\'e9n los jueces de tutela, emitan providencias ajustadas al marco de la Constituci\'f3n. 
+\par 
+\par }{\b\i0\insrsid12146519 El caso concreto.-}{\i0\insrsid12146519 
+\par 
+\par En el proceso T-388435, en segunda instancia se concedi\'f3 la tutela solicitada y se orden\'f3  a la entidad empleadora del actor pagar a \'e9
+ste las sumas debidas por concepto de recargos por trabajo nocturno, festivo y dominicales, con su respectiva indexaci\'f3n, de manera que el salario fuera pagado de manera completa, por cuanto se consider\'f3 que la tutela era el mecanismo pa
+ra evitar que el trabajador sufriera una situaci\'f3n cr\'edtica econ\'f3mica y psicol\'f3gica dada la amenaza de que un perjuicio irremediable le fuera causado si se utilizaba el medio ordinario, m\'e1s demorado que el de la tutela.
+\par 
+\par Esta sentencia de tutela no fue revisada por la Corte Constitucional.
+\par 
+\par En mi criterio, dicha sentencia constituye v\'eda de hecho, pues pese a que el art\'edculo 86 de la Constituci\'f3n Nacional dispone que la acci\'f3n de tutela solo procede cuando el afectado no disponga de otro medio de defensa judi
+cial, salvo que se utilice como mecanismo transitorio para evitar un perjuicio irremediable, y que el juez advirti\'f3 que exist\'eda otro mecanismo judicial pues as\'ed lo consider\'f3
+ en sentencia, la tutela no fue concedida como mecanismo transitorio. Adem\'e1s, no exist\'ed
+a en ese caso concreto el perjuicio irremediable que hiciera procedente el amparo transitorio, porque se reclamaba el pago de recargos por trabajo nocturno, festivos y dominicales, pero el accionante estaba recibiendo su salario mensual, de modo que no
+ podr\'eda predicarse con certeza la violaci\'f3n al m\'ednimo vital, ni respond\'eda a un sujeto que mereciera especial protecci\'f3n. El caso es equiparable a aquel en que un  servidor p\'fa
+blico solicita mediante tutela que se le pague el aumento salarial a que tiene derecho conforme a lo dispuesto por el Gobierno, o cualquier otro reajuste o prestaci\'f3
+n de rango legal, eventos en los cuales la Corte Constitucional en reiteradas oportunidades ha dicho que no procede el amparo.
+\par 
+\par Dicha sentencia entonces, violatoria de la Constituci\'f3n, invadi\'f3 y suplant\'f3 en forma total a la Jurisdicci\'f3n Ordinaria a la que  le correspond\'eda por ley decidir en forma definitiva el asunto de car\'e1
+cter laboral planteado por el accionante de la primera tutela. En mi criterio, tal sentencia ha debido ser seleccionada para revisi\'f3n en la oportunidad correspondiente; pero como ello no ocurri\'f3,  qued\'f3 el camino abierto para su correcci\'f3
+n solo a trav\'e9s de la interposici\'f3n de otra acci\'f3n de tutela. 
+\par 
+\par En la sentencia de la que me aparto se defini\'f3 la no procedencia de la tutela contra tutela, y al resolver el caso concreto, adem\'e1s se incurri\'f3 en imprecisi\'f3
+n al no haber revocado las dos decisiones proferidas en la segunda tutela. Si de acuerdo con la motivaci\'f3n de la providencia, no procede la tutela contra una sentencia de tutela, el juez constitucional al que le corresponda resolver una situaci\'f3
+n de tal naturaleza, debe rechazar de plano la demanda interpuesta en tal sentido, porque ning\'fan caso tiene, como en efecto lo hizo el Tribunal Superior del Distrito J
+udicial de Cartagena, acometer el estudio de fondo de la demanda para dilucidar si existi\'f3 una v\'eda de hecho o no. Cuando la Sala Plena de la Corte Constitucional concluye que no es posible \'93}{\b\i0\insrsid12146519 interponer}{\i0\insrsid12146519 
+\'94 acci\'f3n de tutela por v\'edas de hecho contra fallos de tutela,  debi\'f3 aclarar y orientar el proceder que deben adoptar los jueces en casos semejantes en el futuro.  
+\par 
+\par Fecha ut supra
+\par 
+\par }\pard \s15\qc \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 {\i0\insrsid12146519 CLARA IN\'c9S VARGAS HERN\'c1NDEZ
+\par Magistrada
+\par }\pard\plain \s21\ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs20\lang9226\langfe3082\cgrid\langnp9226\langfenp3082 {\fs28\insrsid12146519 
+\par 
+\par }\pard\plain \ql \li0\ri0\widctlpar\faauto\adjustright\rin0\lin0\itap0 \fs28\lang3082\langfe3082\cgrid\langnp3082\langfenp3082 {\lang9226\langfe3082\langnp9226\insrsid12146519 
+\par }}
